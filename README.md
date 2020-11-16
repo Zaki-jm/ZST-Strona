@@ -1,6 +1,8 @@
 <div align="center">
 <img src="https://i.imgur.com/lTNtFlW.png">
+<br>
 </div>
+
 # Strona internetowa szkoły ZST Jasło im Bohaterów Września
 Jest to repozytorium strony internetowej powstałej na e-praktykach.
 
