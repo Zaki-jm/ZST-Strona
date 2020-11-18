@@ -26,10 +26,10 @@ Jest to repozytorium strony internetowej powstałej na e-praktykach.
 | https://github.com/  | Dominik Stec | Wymagania techniczne |
 | https://github.com/  | Michał Hendzel  | Wymagania techniczne |
 | https://github.com/Konrad15433  | Konrad Płaziak  | Architektura technologiczna  |
-| https://github.com/MateuszOpiela  | Mateusz Opiela  | Wymagania techniczne |
-| https://github.com/piotrek666satan  | Piotr Skocz  | Wymagania techniczne |
-| https://github.com/AdiSoneq  | Adrian Janowiec  | Wymagania techniczne |
-| https://github.com/Mati8x  | Mateusz Stachurski  | Wymagania techniczne |
+| https://github.com/MateuszOpiela  | Mateusz Opiela  | Architektura technologiczna  |
+| https://github.com/piotrek666satan  | Piotr Skocz  | Architektura technologiczna  |
+| https://github.com/AdiSoneq  | Adrian Janowiec  | Architektura technologiczna  |
+| https://github.com/Mati8x  | Mateusz Stachurski  | Architektura technologiczna  |
 | https://github.com/RedeJot  | Korczykowski Kamil  | Wymagania graficzne |
 | https://github.com/AlwaysXD  | Gogola Patryk  | Wymagania graficzne |
 | https://github.com/KaxKox  | Kacper Biernacki  | Wymagania graficzne |
