@@ -17,7 +17,7 @@ Jest to repozytorium strony internetowej powstałej na e-praktykach.
 | ------------- | ------------- | ------------- |
 | https://github.com/m00kyo  | Oliwia Stoś | Wymagania SEO i RWD |
 | https://github.com/  | Hubert Sokołoski | Wymagania SEO i RWD |
-| https://github.com/ | Sebastian Rączka | gWymagania SEO i RWD |
+| https://github.com/ai3izu | Sebastian Rączka | gWymagania SEO i RWD |
 | https://github.com/avenjd  | Adam Wachel | Wymagania SEO i RWD |
 | https://github.com/  | Dariusz Kurowski | Wymagania SEO i RWD |
 | https://github.com/  | Dawid Chochół | Wymagania SEO i RWD |
