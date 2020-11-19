@@ -17,7 +17,7 @@ Jest to repozytorium strony internetowej powstałej na e-praktykach.
 | ------------- | ------------- | ------------- |
 | https://github.com/m00kyo  | Oliwia Stoś | Wymagania SEO i RWD |
 | https://github.com/  | Hubert Sokołoski | Wymagania SEO i RWD |
-| https://github.com/ai3izu | Sebastian Rączka | gWymagania SEO i RWD |
+| https://github.com/ai3izu | Sebastian Rączka | Wymagania SEO i RWD |
 | https://github.com/avenjd  | Adam Wachel | Wymagania SEO i RWD |
 | https://github.com/  | Dariusz Kurowski | Wymagania SEO i RWD |
 | https://github.com/  | Dawid Chochół | Wymagania SEO i RWD |
@@ -42,3 +42,19 @@ Jest to repozytorium strony internetowej powstałej na e-praktykach.
 | https://github.com/  | Dominik Kuczała  | Wymagania graficzne |
 | https://github.com/Xeno-coder  | Michał Chmura  | Określenie wymagań |
 | https://github.com/  | Amadeusz Pikul  | Okreslenie wymagań |
+
+## Grupy Dwuosobowe
+| Imie i Nazwisko | Grupa |
+| Hubert Sokołowski - Oliwia Stoś | gr1 |
+| Sebastian Rączka, Adam Wachel | gr2 |
+| Dariusz Kurowski Dawid Chochół | gr3 |
+| Gorczyca Dominik  Sebastian Baran  | gr4 |
+| Dominik Stec, Michał Hendzel  | gr5 |
+| Kacper Biernacki - Jakub Kołdarz | gr6 |
+| Patryk Lelko, Wiktor Musiał | gr7 |
+| Konrad Płaziak, Mateusz Opiela | gr8 |
+| Korczykowski Kamil, Gogola Patryk | gr9 |
+| Bartłomiej Szeląg Paweł Lejkowski | gr10 |
+| Adrian Janowiec-Mateusz Stachurski | gr11 |
+| Piotr Skocz, Gabriel Hołda | gr12 |
+| Dominik Kuczała, Michał Chmura | gr13 |
