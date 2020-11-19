@@ -45,6 +45,7 @@ Jest to repozytorium strony internetowej powstałej na e-praktykach.
 
 ## Grupy Dwuosobowe
 | Imie i Nazwisko | Grupa |
+| ------------- | ------------- |
 | Hubert Sokołowski - Oliwia Stoś | gr1 |
 | Sebastian Rączka, Adam Wachel | gr2 |
 | Dariusz Kurowski Dawid Chochół | gr3 |
