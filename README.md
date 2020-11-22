@@ -22,7 +22,7 @@ Jest to repozytorium strony internetowej powstałej na e-praktykach.
 | https://github.com/  | Dariusz Kurowski | Wymagania SEO i RWD |
 | https://github.com/  | Dawid Chochół | Wymagania SEO i RWD |
 | https://github.com/  | Bartłomiej Szeląg | Wymagania techniczne |
-| https://github.com/  | Paweł Lejkowski | Wymagania techniczne |
+| https://github.com/Paffet  | Paweł Lejkowski | Wymagania techniczne |
 | https://github.com/  | Dominik Stec | Wymagania techniczne |
 | https://github.com/  | Michał Hendzel  | Wymagania techniczne |
 | https://github.com/Konrad15433  | Konrad Płaziak  | Architektura technologiczna  |
