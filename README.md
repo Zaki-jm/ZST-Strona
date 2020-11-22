@@ -21,7 +21,7 @@ Jest to repozytorium strony internetowej powstałej na e-praktykach.
 | https://github.com/avenjd  | Adam Wachel | Wymagania SEO i RWD |
 | https://github.com/  | Dariusz Kurowski | Wymagania SEO i RWD |
 | https://github.com/  | Dawid Chochół | Wymagania SEO i RWD |
-| https://github.com/  | Bartłomiej Szeląg | Wymagania techniczne |
+| https://github.com/Badi00  | Bartłomiej Szeląg | Wymagania techniczne |
 | https://github.com/Paffet  | Paweł Lejkowski | Wymagania techniczne |
 | https://github.com/  | Dominik Stec | Wymagania techniczne |
 | https://github.com/Michau03  | Michał Hendzel  | Wymagania techniczne |
