@@ -35,11 +35,11 @@ Jest to repozytorium strony internetowej powstałej na e-praktykach.
 | https://github.com/KaxKox  | Kacper Biernacki  | Wymagania graficzne |
 | https://github.com/KoudiQ  | Jakub Kołdarz  | Wymagania graficzne |
 | https://github.com/  | Gabriel Hołda  | Wymagania graficzne |
-| https://github.com/Zaki-jm  | Patryk Lelko  | Wymagania graficzne |
-| https://github.com/ExenHomie  | Wiktor Musiał  | Wymagania graficzne |
-| https://github.com/Baranek-programmer  | Sebastian Baran  | Wymagania graficzne |
-| https://github.com/  | Gorczyca Dominik  | Wymagania graficzne |
-| https://github.com/  | Dominik Kuczała  | Wymagania graficzne |
+| https://github.com/Zaki-jm  | Patryk Lelko  | Git |
+| https://github.com/ExenHomie  | Wiktor Musiał  | Git |
+| https://github.com/Baranek-programmer  | Sebastian Baran  | Git |
+| https://github.com/  | Gorczyca Dominik  | Git |
+| https://github.com/  | Dominik Kuczała  | Git |
 | https://github.com/Xeno-coder  | Michał Chmura  | Określenie wymagań |
 | https://github.com/  | Amadeusz Pikul  | Okreslenie wymagań |
 
