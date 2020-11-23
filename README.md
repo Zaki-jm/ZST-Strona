@@ -34,7 +34,7 @@ Jest to repozytorium strony internetowej powstałej na e-praktykach.
 | https://github.com/AlwaysXD  | Gogola Patryk  | Wymagania graficzne |
 | https://github.com/KaxKox  | Kacper Biernacki  | Wymagania graficzne |
 | https://github.com/KoudiQ  | Jakub Kołdarz  | Wymagania graficzne |
-| https://github.com/  | Gabriel Hołda  | Wymagania graficzne |
+| https://github.com/GabrielHolda  | Gabriel Hołda  | Wymagania graficzne |
 | https://github.com/Zaki-jm  | Patryk Lelko  | Git |
 | https://github.com/ExenHomie  | Wiktor Musiał  | Git |
 | https://github.com/Baranek-programmer  | Sebastian Baran  | Git |
