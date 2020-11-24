@@ -1,1 +1,398 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  /* 
+kolor ciemny niebieski - 10,60,132 0A3C84
+kolor ciemny-odcien niebieski - 18,96,206 1260ce
+kolor jasny-stary niebieski - 3,169,244 03A9F4
+*/--tlo: #000;
+  --gradient: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 60%, rgba(12,12,12,1) 100%);
+  --text_shadow: -1px -1px 1px rgba(172,172,171, .1), 1px 1px 1px rgba(236,236,236, .8);
+  --box_shadow: 5px 5px 10px 5px rgba(255,255,255,.4);
+  --text_tlo: #000;
+  --text_strona: #FFF;
+  --primary: #0A3C84;
+  --success: #00FF08;
+  --info: #0098FF;
+  --warning: #FFC300;
+  --danger: #F80006;
+  --light: #f8f9fa;
+  --dark: #161616;
+  --white: #FFF;
+  --black: #000;
+  --font_family: 'Montserrat', sans-serif;
+  --menu_tlo: rgba(0,0,0,.4);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font-family: var(--font_family);
+  font-size: .8rem; 
+  background: var(--tlo);
+  color: var(--text_tlo);
+}
+h6 {
+  font-family: var(--font_family);
+  font-size: 1rem;
+  font-weight: 700;
+}
+h5 {
+  font-family: var(--font_family);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+h4 {
+  font-family: var(--font_family);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+h3 {
+  font-family: var(--font_family);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+h2 {
+  font-family: var(--font_family);
+  font-size: 2rem;
+  font-weight: 700;
+}
+h1 {
+  font-family: var(--font_family);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.container-fluid {
+  width: 100%;
+  margin: 0;
+}
+.container {
+  width: 60%;
+  margin: 0 20% 0 20%;
+}
+/* banner slider */
+.slider {
+  overflow: hidden;
+  height: 100vh;
+}
+.slider .banner {
+  width: 1000vw;
+  margin: 0;
+  left: 0;
+  position: relative;
+  animation: 50s slide infinite;
+}
+.slider .banner .banner_img {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background-image: url(../../img/slider/czarno_biale/programista.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(0%); */
+}
+.slider .banner .banner_img1 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background-image: url(../../img/slider/czarno_biale/informatyk2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(0%); */
+}
+.slider .banner .banner_img2 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background-image: url(../../img/slider/czarno_biale/spawacz.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+.slider .banner .banner_img3 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background-image: url(../../img/slider/czarno_biale/int_dom.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+.slider .banner .banner_img4 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background-image: url(../../img/slider/czarno_biale/mechanik2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+.slider .banner .banner_img5 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background-image: url(../../img/slider/czarno_biale/cnc.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+.slider .banner .banner_img6 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background-image: url(../../img/slider/czarno_biale/elektryk.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+.slider .banner .banner_img7 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background-image: url(../../img/slider/czarno_biale/elektro_mechanik.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+.slider .banner .banner_img8 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background-image: url(../../img/slider/czarno_biale/mechanik.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  5% {
+    left: 0;
+  }
+  10% {
+    left: -100.6%;
+  }
+  15% {
+    left: -100.6%;
+  }
+  20% {
+    left: -201%;
+  }
+  25% {
+    left: -201%;
+  }
+  30% {
+    left: -301.8%;
+  }
+  35% {
+    left: -301.8%;
+  }
+  40% {
+    left: -402.4%;
+  }
+  45% {
+    left: -402.4%;
+  }
+  50% {
+    left: -503%;
+  }
+  55% {
+    left: -503%;
+  }
+  60% {
+    left: -603.6%;
+  }
+  65% {
+    left: -603.6%;
+  }
+  70% {
+    left: -704.2%;
+  }
+  75% {
+    left: -704.2%;
+  }
+  80% {
+    left: -804.8%;
+  }
+  85% {
+    left: -804.8%;
+  }
+  90% {
+    left: -905.4%;
+  }
+  95% {
+    left: -905.4%;
+  }
+  100% {
+    left: -905.4%;
+  }
+}
+.slider .banner .banner_info {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.slider .banner .banner_info h1 {
+  text-transform: uppercase;
+  font-size: 4vw;
+  letter-spacing: .1vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  color: #000;
+  text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+/*   background: -webkit-linear-gradient(120deg, #000, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+.slider .banner .banner_info h6 {
+  text-transform: uppercase;
+  padding-left: 20vw;
+  color: var(--text_strona);
+}
+.slider .banner .banner_info p {
+  font-size: 1vw;
+  padding-left: 20vw;
+  color: var(--text_strona);
+}
+/* banner koniec */
+.zaciemnienie {
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  position: absolute;
+}
+/* pasek logo telefony */
+.info_zst {
+  min-height: 60px;
+  padding: .4vh 2vw .4vh 2vw;
+  color: var(--text_strona);
+  background: var(--menu_tlo);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info_zst a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.info_zst ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.info_zst ul li {
+  padding-left: 1vw;
+  font-size: 1rem;
+}
+/* pasek logo telefony koniec */
+/* nawigacja kontrast */
+.navbar {
+  background: var(--menu_tlo);
+  padding: .4vh 2vw .4vh 2vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr .3fr .3fr .1fr;
+  grid-template-areas:
+    "nazwa_zst menus menus menus rozmiar_font kontrast toggler";
+}
+.navbar .nazwa_zst {
+  grid-area: nazwa_zst;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .nazwa_zst a {
+  text-decoration: none;
+  color: var(--text_strona);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.navbar .nazwa_zst a h1 {
+  text-align: center;
+  color: var(--text_tlo);
+  text-shadow: -.8px 0 #fff, 0 .8px #fff, .8px 0 #fff, 0 -.8px #fff;
+  line-height: 2rem;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+.navbar .nazwa_zst a h1 span {
+  font-size: 1.4rem;
+  letter-spacing: 0px;
+  color: var(--text_strona);
+  text-shadow: -.8px 0 #000, 0 .8px #000, .8px 0 #000, 0 -.8px #000;
+}
+.navbar .menus, nav .menus {
+  grid-area: menus;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar .menus ul, nav .menus ul {
+  list-style: none;
+  display: flex;
+}
+.navbar .menus ul li, nav .menus ul li {
+  padding-right: 1vw;
+}
+.navbar .menus ul li a, nav .menus ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--text_strona);
+  text-transform: uppercase;
+}
+.navbar .rozmiar_font, nav .rozmiar_font {
+  grid-area: rozmiar_font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .rozmiar_font .text_rozmiar, nav .rozmiar_font .text_rozmiar {
+  text-transform: uppercase;
+}
+.navbar .rozmiar_font .ikony_rozmiar ul, nav .rozmiar_font .ikony_rozmiar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text_strona);
+}
+.navbar .rozmiar_font .ikony_rozmiar ul li, nav .rozmiar_font .ikony_rozmiar ul li {
+  padding: .4vw;
+  cursor: pointer;
+}
+.navbar .rozmiar_font .ikony_rozmiar ul li .fas, nav .rozmiar_font .ikony_rozmiar ul li .fas {
+  font-size: 1rem;
+}
+.navbar .rozmiar_font .ikony_rozmiar ul li:first-child .fas, nav .rozmiar_font .ikony_rozmiar ul li:first-child .fas {
+  font-size: .8rem;
+}
+.navbar .rozmiar_font .ikony_rozmiar ul li:last-child .fas, nav .rozmiar_font .ikony_rozmiar ul li:last-child .fas {
+  font-size: 1.1rem;
+}
+.navbar .kontrast, nav .kontrast {
+  grid-area: kontrast;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .kontrast .text_kontrast, nav .kontrast .text_kontrast {
+  text-transform: uppercase;
+}
+.navbar .kontrast .ikona_kontrast, nav .kontrast .ikona_kontrast {
+  padding: .4vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.navbar .toggler, nav .toggler {
+  grid-area: toggler; 
+  cursor: pointer;
+  display: none;
+}
+/* nawigacja kontrast koniec */
