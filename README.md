@@ -39,7 +39,7 @@ Jest to repozytorium strony internetowej powstałej na e-praktykach.
 | https://github.com/ExenHomie  | Wiktor Musiał  | Git |
 | https://github.com/Baranek-programmer  | Sebastian Baran  | Git |
 | https://github.com/Pr0grammingTeenager  | Gorczyca Dominik  | Git |
-| https://github.com/  | Dominik Kuczała  | Git |
+| https://github.com/Gacek18 | Dominik Kuczała  | Git |
 | https://github.com/Xeno-coder  | Michał Chmura  | Określenie wymagań |
 | https://github.com/  | Amadeusz Pikul  | Okreslenie wymagań |
 
