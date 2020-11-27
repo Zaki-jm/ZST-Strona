@@ -5,7 +5,7 @@
 kolor ciemny niebieski - 10,60,132 0A3C84
 kolor ciemny-odcien niebieski - 18,96,206 1260ce
 kolor jasny-stary niebieski - 3,169,244 03A9F4
-*/--tlo: #000;
+*/--tlo: #C0C0C0;
   --menu_tlo: rgba(0,0,0,.4);
   --background_tlo: rgba(0,0,0,1);
   --gradient: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 60%, rgba(12,12,12,1) 100%);
