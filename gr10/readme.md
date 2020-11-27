@@ -3,5 +3,5 @@
 <br>
 </div>
 
-<center><b>Projekt front-endu platformy internetowej oraz system administracyjny w CMS. <br>
-(Z wdrożeniem zasad SEO i RWD dla placówki oświatowej.)</b></center>
+<div align="center"><b>Projekt front-endu platformy internetowej oraz system administracyjny w CMS. <br>
+(Z wdrożeniem zasad SEO i RWD dla placówki oświatowej.)</b></div>
