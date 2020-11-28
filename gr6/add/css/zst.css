@@ -1112,7 +1112,8 @@ kolor jasny-stary niebieski - 3,169,244 03A9F4
   .olipiady_men a:hover h1, .sport a:hover h1, .esport a:hover h1, .akademie a:hover h1, .wycieczki a:hover h1
   {
     font-size: 3vw;
-    text-shadow:  var(--text-shadow);
+    text-shadow: 0px 0px 0px #9ac6ff;
+    -webkit-text-stroke: 1px black;
   }
   .strefa_tlo {
     background: var(--color_belka_tlo);
