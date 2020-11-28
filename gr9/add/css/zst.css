@@ -342,8 +342,7 @@ header .tytul_nag .into {
   letter-spacing: .1vw;
   padding-left: 20vw;
   padding-right: 20vw;
-  color: #000;
-  text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+  color: #FFF;
 /*   background: -webkit-linear-gradient(120deg, #000, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
