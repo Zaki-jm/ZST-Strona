@@ -5,19 +5,20 @@
 kolor ciemny niebieski - 10,60,132 0A3C84
 kolor ciemny-odcien niebieski - 18,96,206 1260ce
 kolor jasny-stary niebieski - 3,169,244 03A9F4
-*/--tlo: #000;
-  --menu_tlo: rgba(0,0,0,.4);
-  --background_tlo: rgba(0,0,0,1);
+*/--tlo: #6F9DC7;
+  --tlo_artykul: #00013C;
+  --menu_tlo: rgba(0,1,60,.2);
+  --background_tlo: #00013C;
   --gradient: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 60%, rgba(12,12,12,1) 100%);
   --text_shadow: -1px -1px 1px rgba(172,172,171, .1), 1px 1px 1px rgba(236,236,236, .8);
   --box-shadow: -1rem 0 2rem #c3c3c3;
   --text_tlo: #000;
   --text_strona: #FFF;
-  --text_strona_a: #a1a1a1;
-  --text_strona_h: linear-gradient(90deg, rgba(232,232,232,1) 0%, rgba(208,208,208,1) 47%, rgba(149,149,149,1) 100%);
+  --text_strona_a: #fff;
+  --text_strona_h: #FFF;
   --color_cien: #c3c3c3;
-  --color_header: linear-gradient(90deg, rgba(78, 73, 76,1) 0%, rgba(214, 212, 206,1) 47%, rgba(78, 73, 76,1) 100%);
-  --color_header_hover: linear-gradient(90deg, rgba(214, 212, 206,1) 0%, rgba(78, 73, 76,1) 47%, rgba(214, 212, 206,1) 100%);
+  --color_header: #FFF;
+  --color_header_hover: #FFF;
   --color_belka_tlo : linear-gradient(#000000, #1c1c1c, #000000);
   --card_icon: #111;
   --card_icon_art: #333;
@@ -138,23 +139,23 @@ header .tytul_nag .into {
   cursor: pointer;
 }
 .btn {
-  background-image: var(--color_header);
+  background-color: var(--tlo_artykul);
   text-transform: uppercase;
   font-size: .8vw;
   font-weight: 700;
   text-decoration: none;
-  color: var(--text_tlo);
+  color: #fff;
   padding: .4vh .8vw .4vh .8vw;
   border-radius: .2vw;
   border: .1vw solid var(--tlo);
 }
 .btn_small {
-  background-image: var(--color_header);
+  background-color: var(--tlo_artykul);
   text-transform: uppercase;
   font-size: .55vw;
   font-weight: 700;
   text-decoration: none;
-  color: var(--text_tlo);
+  color: #fff;
   padding: .4vh .8vw .4vh .8vw;
   border-radius: .2vw;
   border: .1vw solid var(--tlo);
@@ -162,12 +163,12 @@ header .tytul_nag .into {
 }
 .btn:hover {
   background-image: var(--tlo);
-  color: var(--text_shadow);
+  color: #c3c3c3;
   border: .1vw solid var(--color_cien);
 }
 .btn_small:hover {
   background-image: var(--tlo);
-  color: var(--text_shadow);
+  color: #c3c3c3;
   border: .1vw solid var(--color_cien);
 }
 /* banner slider */
@@ -186,7 +187,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/programista.webp);
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/programista.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(0%); */
@@ -195,7 +196,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/informatyk2.webp);
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/informatyk2.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(0%); */
@@ -204,7 +205,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/spawacz.webp);
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/spawacz.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -213,7 +214,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/int_dom.webp);
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/int_dom.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -222,7 +223,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/mechanik2.webp);
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/mechanik2.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -231,7 +232,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/cnc.webp);
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/cnc.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -240,7 +241,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/elektryk.webp);
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/elektryk.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -249,7 +250,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/elektro_mechanik.webp);
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/elektro_mechanik.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -258,7 +259,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/mechanik.webp);
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/mechanik.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -651,7 +652,8 @@ nav.black {
   padding: 0;
   border-radius: 12px;
   background: var(--tlo);
-  box-shadow: var(--box-shadow);
+  border: solid 2px white;
+  background-color: var(--tlo_artykul);
   transition: .2s;
 }
 .card:hover {
@@ -741,7 +743,6 @@ nav.black {
 .video .plik_video video, .video .plik_video2 video {
   width: 100%;
   height: auto;
-  box-shadow: var(--box-shadow);
 }
 .video .text_video {
   grid-area: text_video;
@@ -771,6 +772,7 @@ nav.black {
   justify-content: center;
   align-items: center;
   margin: 10vh 0 10vh 0;
+  
 }
 .main_art {
   grid-area: main_art;
@@ -781,6 +783,7 @@ nav.black {
   margin: 10vh;
   box-shadow: var(--box-shadow);
   border-radius: 2vw;
+  background-color: var(--tlo_artykul);
 }
 .main_art .artykul_card .img_artykul {
   position: relative;
@@ -864,6 +867,7 @@ nav.black {
   margin-left: .8vw;
   bottom: 22vh;
   display: flex;
+  color: #fff;
 }
 .main_art .info_data .data ul {
   display: flex;
@@ -919,6 +923,7 @@ nav.black {
   border-radius: 1vw;
   height: 24vh;
   margin-bottom: 2.8vh;
+  background-color: var(--tlo_artykul);
 }
 .aside_art .blog_post .blog_post_img {
   position: relative;
@@ -944,7 +949,7 @@ nav.black {
   list-style: none;
 }
 .aside_art .blog_post .blog_post_date ul li {
-  color: var(--card_icon_art);
+  color: #fff;
   font-size: .5vw;
   font-weight: 600;
   text-transform: uppercase;
@@ -1383,38 +1388,3 @@ a {
   background-color: transparent;
 }
 /******************* parallax koniec **********/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
