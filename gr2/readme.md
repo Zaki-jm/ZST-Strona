@@ -1,1 +1,1 @@
-
+nie usuwaj
