@@ -1,911 +1,1599 @@
-<!DOCTYPE html>
-<html lang='pl'>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="canonical" href="https://www.ec53.pl" />
-  <title>ZST ::</title>
-  <meta name='description' content='Toturial HTML5 budowa dokumentu opis strony do 160 znaków' />
-  <meta name='keywords' content='HTML5, toturial, budowa, dokumentu' />
-  <meta name='author' content='2GTb & BlackLeo' />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="add/css/zst.css" type="text/css" />
-  <link rel="stylesheet" href="add/font/awesome/css/all.min.css" type="text/css" />
-  <link rel="stylesheet" href="add/css/aos.css" type="text/css" />
-</head>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  /* 
+kolor ciemny niebieski - 10,60,132 0A3C84
+kolor ciemny-odcien niebieski - 18,96,206 1260ce
+kolor jasny-stary niebieski - 3,169,244 03A9F4
+*/--tlo: #6F9DC7;
+  --tlo_artykul: #00013C;
+  --menu_tlo: rgba(0,1,60,.2);
+  --background_tlo: #00013C;
+  --gradient: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 60%, rgba(12,12,12,1) 100%);
+  --text_shadow: -1px -1px 1px rgba(172,172,171, .1), 1px 1px 1px rgba(236,236,236, .8);
+  --box-shadow: -1rem 0 2rem #c3c3c3;
+  --text_tlo: #000;
+  --text_strona: #FFF;
+  --text_strona_a: #fff;
+  --text_strona_h: #FFF;
+  --color_cien: #c3c3c3;
+  --color_header: #FFF;
+  --color_header_hover: rgb(255, 255, 255);
+  --color_belka_tlo : linear-gradient(rgb(102, 151, 190), #6f9dc7,rgb(55, 90, 114));
+  --card_icon: #111;
+  --card_icon_art: #333;
+  --primary: #0A3C84;
+  --success: #00FF08;
+  --info: #0098FF;
+  --warning: #FFC300;
+  --danger: #F80006;
+  --light: #f8f9fa;
+  --dark: #161616;
+  --white: #FFF;
+  --black: #000;
+  --font_family: 'Montserrat', sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font-family: var(--font_family);
+  font-size: .8rem;
+  font-weight: 200;
+  background: var(--tlo);
+  color: var(--text_strona);
+}
+h6 {
+  font-family: var(--font_family);
+  font-size: 1vw;
+  font-weight: 300;
+}
+h5 {
+  font-family: var(--font_family);
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+h4 {
+  font-family: var(--font_family);
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+h3 {
+  font-family: var(--font_family);
+  font-size: 1.6vw;
+  font-weight: 600;
+}
+h2 {
+  font-family: var(--font_family);
+  font-size: 2vw;
+  font-weight: 700;
+}
+h1 span {
+  font-family: var(--font_family);
+  font-size: 3vw;
+  font-weight: 700;
+}
+h1 {
+  font-family: var(--font_family);
+  font-size: 2.4vw;
+  font-weight: 700;
+}
+p {
+  font-family: var(--font_family);
+  font-size: .8vw;
+  font-weight: 200;
+}
+header {
+  text-transform: uppercase;
+  padding: 4vh 0 4vh 0; 
+}
+header p {
+  text-transform: none;
+}
+header .tytul_nag {
+  text-align: center;
+}
+header .tytul_nag h6 {
+  font-size: .6vw;
+}
+header .tytul_nag .into {
+  letter-spacing: 1px;
+}
+/* nagówek zst */
+.tytul_nag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tytul_nag h1 {
+  letter-spacing: 1px;
+}
+.tytul_nag h2 {
+  font-size: 1.6vw;
+}
+/* koniec nagłówka zst */
+.container-fluid {
+  width: 100%;
+  margin: 0;
+}
+.container {
+  width: 60%;
+  margin: 0 20% 0 20%;
+}
+.color_header {
+  background: var(--color_header);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color_header:hover {
+  background: var(--color_header_hover);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.btn {
+  background-color: var(--tlo_artykul);
+  text-transform: uppercase;
+  font-size: .8vw;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  padding: .4vh .8vw .4vh .8vw;
+  border-radius: .2vw;
+  border: .1vw solid var(--tlo);
+}
+.btn_small {
+  background-color: var(--tlo_artykul);
+  text-transform: uppercase;
+  font-size: .55vw;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  padding: .4vh .8vw .4vh .8vw;
+  border-radius: .2vw;
+  border: .1vw solid var(--tlo);
+  float: right;
+}
+.btn:hover {
+  background-image: var(--tlo);
+  color: #c3c3c3;
+  border: .1vw solid var(--color_cien);
+}
+.btn_small:hover {
+  background-image: var(--tlo);
+  color: #c3c3c3;
+  border: .1vw solid var(--color_cien);
+}
+/* banner slider */
+.slider {
+  overflow: hidden;
+  height: 100vh;
+}
+.slider .banner {
+  width: 1000vw;
+  margin: 0;
+  left: 0;
+  position: relative;
+  animation: 50s slide infinite;
+}
+.slider .banner .banner_img {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/programista.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(0%); */
+}
+.slider .banner .banner_img1 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/informatyk2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(0%); */
+}
+.slider .banner .banner_img2 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/spawacz.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+.slider .banner .banner_img3 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/int_dom.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+.slider .banner .banner_img4 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/mechanik2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+.slider .banner .banner_img5 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/cnc.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+.slider .banner .banner_img6 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/elektryk.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+.slider .banner .banner_img7 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/elektro_mechanik.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+.slider .banner .banner_img8 {
+  height: 100vh;
+  width: 100vw;
+  float: left;
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../img/slider/czarno_biale/mechanik.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   filter: grayscale(100%); */
+}
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  5% {
+    left: 0;
+  }
+  10% {
+    left: -100.6%;
+  }
+  15% {
+    left: -100.6%;
+  }
+  20% {
+    left: -201%;
+  }
+  25% {
+    left: -201%;
+  }
+  30% {
+    left: -301.8%;
+  }
+  35% {
+    left: -301.8%;
+  }
+  40% {
+    left: -402.4%;
+  }
+  45% {
+    left: -402.4%;
+  }
+  50% {
+    left: -503%;
+  }
+  55% {
+    left: -503%;
+  }
+  60% {
+    left: -603.6%;
+  }
+  65% {
+    left: -603.6%;
+  }
+  70% {
+    left: -704.2%;
+  }
+  75% {
+    left: -704.2%;
+  }
+  80% {
+    left: -804.8%;
+  }
+  85% {
+    left: -804.8%;
+  }
+  90% {
+    left: -905.4%;
+  }
+  95% {
+    left: -905.4%;
+  }
+  100% {
+    left: -905.4%;
+  }
+}
+.slider .banner .banner_info {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.slider .banner .banner_info h1 {
+  text-transform: uppercase;
+  font-size: 4vw;
+  letter-spacing: .1vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  color: #FFF;
+/*   background: -webkit-linear-gradient(120deg, #000, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+.slider .banner .banner_info h6 {
+  text-transform: uppercase;
+  padding-left: 20vw;
+  color: var(--text_strona);
+}
+.slider .banner .banner_info p {
+  font-size: 1vw;
+  padding-left: 20vw;
+  color: var(--text_strona);
+}
+/* banner koniec */
+.pas_gorny {
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  position: absolute;
+}
+/* pasek logo telefony */
+.info_zst {
+  min-height: 60px;
+  padding: .4vh 2vw .4vh 2vw;
+  color: var(--text_strona);
+  background: var(--menu_tlo);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info_zst a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.info_zst ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.info_zst ul li {
+  padding-left: 1vw;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text_strona);
+}
+/* pasek logo telefony koniec */
+/* nawigacja kontrast */
+.navbar {
+  background: var(--menu_tlo);
+  padding: .4vh 2vw .4vh 2vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr .3fr .3fr .1fr;
+  grid-template-areas:
+    "nazwa_zst menus menus menus rozmiar_font kontrast toggler";
+}
+.navbar .nazwa_zst {
+  grid-area: nazwa_zst;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .nazwa_zst a {
+  text-decoration: none;
+  color: var(--text_strona);
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+.navbar .nazwa_zst a h1 {
+  text-align: center;
+  color: var(--text_strona);
+  line-height: 1.2rem;
+  padding-top: 1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.navbar .nazwa_zst a h1 span {
+  font-size: 1rem;
+  letter-spacing: 0px;
+  color: var(--text_strona);
+}
+.navbar .menus {
+  grid-area: menus;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar .menus ul {
+  list-style: none;
+  display: flex;
+}
+.navbar .menus ul li {
+  padding-right: 1vw;
+}
+.navbar .menus ul li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text_strona);
+  text-transform: uppercase;
+}
+.navbar .menus ul li a:hover {
+  color: var(--text_strona_a);
+}
+.navbar .rozmiar_font {
+  grid-area: rozmiar_font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text_strona);
+}
+.navbar .rozmiar_font .text_rozmiar {
+  text-transform: uppercase;
+}
+.navbar .rozmiar_font .ikony_rozmiar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .rozmiar_font .ikony_rozmiar ul li {
+  padding: .4vw;
+  cursor: pointer;
+}
+.navbar .rozmiar_font .ikony_rozmiar ul li .fas {
+  font-size: 1rem;
+}
+.navbar .rozmiar_font .ikony_rozmiar ul li:first-child .fas {
+  font-size: .8rem;
+}
+.navbar .rozmiar_font .ikony_rozmiar ul li:last-child .fas {
+  font-size: 1.1rem;
+}
+.navbar .kontrast {
+  grid-area: kontrast;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text_strona);
+}
+.navbar .kontrast .text_kontrast {
+  text-transform: uppercase;
+}
+.navbar .kontrast .ikona_kontrast {
+  padding: .4vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.navbar .toggler {
+  grid-area: toggler; 
+  cursor: pointer;
+  display: none;
+}
+/* nawigacja kontrast koniec */
+/* przycisk dalej w dol */
+.pas_dolny {
+  width: 100%;
+  min-height: 100vh;
+  top: 96vh;
+  position: absolute;
+}
+.pas_dolny .icon_dol {
+  min-height: 60px;
+  padding: 0 2vw 0 2vw;
+  color: var(--text_strona);
+  background: var(--menu_tlo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.pas_dolny .icon_dol a {
+  color: var(--text_strona);
+  cursor: pointer;
+}
+/* przycisk dalej w dol */
+/* nav bar */
 
-  <body>
-    <div class="container-fluid slider">
-     <section class="banner">
-       
-       <div class="banner_img">
-         <div class="banner_info">
-           <h1>Technik Programista</h1>
-           <h6>TECHNIKUM</h6>
-           <p>Nowość</p>
-         </div>
-       </div>
-       <div class="banner_img1">
-         <div class="banner_info">
-           <h1>Technik Informatyk</h1>
-           <h6>TECHNIKUM</h6>
-           <p>Rozszerzenie: e-sport i tworzenie gier komputerowych</p>
-         </div>
-       </div>
-       <div class="banner_img2">
-         <div class="banner_info">
-           <h1>Technik Spawalnictwa</h1>
-           <h6>TECHNIKUM</h6>
-           <p>Nowość</p>
-         </div>
-       </div>
-       <div class="banner_img3">
-         <div class="banner_info">
-           <h1>Technik Elektryk</h1>
-           <h6>TECHNIKUM i BRANŻOWA SZKOŁA II STOPNIA</h6>
-           <p>Inteligentne systemy sterowania automatyką budynku - "Smart Home"</p>
-         </div>
-       </div>
-       <div class="banner_img4">
-         <div class="banner_info">
-           <h1>Technik Pojazdów Samochodowych</h1>
-           <h6>TECHNIKUM i BRANŻOWA SZKOŁA II STOPNIA</h6>
-           <p>Zostań specjalistą w motoryzacji</p>
-         </div>
-       </div>
-       <div class="banner_img5">
-         <div class="banner_info">
-           <h1>Technik Mechanik</h1>
-           <h6>TECHNIKUM i BRANŻOWA SZKOŁA II STOPNIA</h6>
-           <p>Programowanie i obsługa obrabiarek CNC</p>
-         </div>
-       </div>
-       <div class="banner_img6">
-         <div class="banner_info">
-           <h1>Elektryk</h1>
-           <h6>BRANŻOWA SZKOŁA I STOPNIA</h6>
-         </div>
-       </div>
-       <div class="banner_img7">
-         <div class="banner_info">
-           <h1>Elektromechanik Pojazdów Samochodowych</h1>
-           <h6>BRANŻOWA SZKOŁA I STOPNIA</h6>
-         </div>
-       </div>
-       <div class="banner_img8">
-         <div class="banner_info">
-           <h1>Mechanik Pojazdów Samochodowych</h1>
-           <h6>BRANŻOWA SZKOŁA I STOPNIA</h6>
-         </div>
-       </div>
-       <div class="banner_img">
-         <div class="banner_info">
-           <h1>Technik Programista</h1>
-           <h6>TECHNIKUM</h6>
-           <p>Nowość</p>
-         </div>
-       </div>
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: var(--background_tlo);
+  height: 80px;
+  z-index: 10000;
+}
+nav.black {
+    background: #000;
+  }
+.navbar_sticky {
+  padding: .4vh 2vw .4vh 2vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr .3fr .3fr .1fr;
+  grid-template-areas:
+    "nav_logo_sticky menus menus menus rozmiar_font kontrast toggler";
+}
+.navbar_sticky .nav_logo_sticky {
+  grid-area: nav_logo_sticky;
+  height: 50px;
+  width: auto;
+  padding: .4vh 2vw .4vh 2vw; 
+}
+.navbar_sticky .menus {
+  grid-area: menus;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar_sticky .menus ul {
+  list-style: none;
+  display: flex;
+}
+.navbar_sticky .menus ul li {
+  padding-right: 1vw;
+}
+.navbar_sticky .menus ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--text_strona);
+  text-transform: uppercase;
+}
+.navbar_sticky .rozmiar_font {
+  grid-area: rozmiar_font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text_strona);
+}
+.navbar_sticky .rozmiar_font .text_rozmiar {
+  text-transform: uppercase;
+}
+.navbar_sticky .rozmiar_font .ikony_rozmiar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar_sticky .rozmiar_font .ikony_rozmiar ul li {
+  padding: .4vw;
+  cursor: pointer;
+}
+.navbar_sticky .rozmiar_font .ikony_rozmiar ul li .fas {
+  font-size: 1rem;
+}
+.navbar_sticky .rozmiar_font .ikony_rozmiar ul li:first-child .fas {
+  font-size: .8rem;
+}
+.navbar_sticky .rozmiar_font .ikony_rozmiar ul li:last-child .fas {
+  font-size: 1.1rem;
+}
+.navbar_sticky .kontrast {
+  grid-area: kontrast;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text_strona);
+}
+.navbar_sticky .kontrast .text_kontrast {
+  text-transform: uppercase;
+}
+.navbar_sticky .kontrast .ikona_kontrast {
+  padding: .4vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.navbar_sticky .toggler {
+  grid-area: toggler; 
+  cursor: pointer;
+  display: none;
+}
+/* nav bar koniec */
 
-     </section>
-      
-  <section class="pas_gorny">
-    <div class="info_zst">
-      <a href="/"><figure> <img src="img/logotyp/logo.webp" alt="Zespół Szkół Techniczych im. Bohaterów Września w Jaśle"> </figure></a>
-      <ul>
-        <li><i class="fas fa-phone-volume"></i> 13 4463700</li>
-        <li><i class="fas fa-at"></i> zst@zstjaslo.pl</li>
-        <li><i class="fas fa-map-marker-alt"></i> Staszica 30, 38-200 Jasło</li>
-      </ul>
-    </div>
-    
-    <div class="navbar">
-      <div class="nazwa_zst">
-        <a href="/">
-            <h1>Zespół Szkół Techniczych<span><br> im. Bohaterów Września w Jaśle</span></h1>
-        </a>
-      </div>
-      <div class="menus">
-        <ul>
-          <li><a href="/"><i class="fas fa-home"></i></a></li>
-          <li><a href="?id=kierunki#Kierunki"><i class="fas fa-pencil-alt"></i> Rekrutacja</a></li>
-          <li><a href="?id=pracownie#Pracownie"><i class="fas fa-graduation-cap"></i> Strefa ucznia</a></li>
-          <li><a href="?id=kadra#Kadra"><i class="fas fa-id-card-alt"></i> Kierunki</a></li>
-          <li><a href="?id=esport#E-Sport"><i class="fas fa-user-graduate"></i> Kadra</a></li>
-          <li><a href="?id=esport#E-Sport"><i class="fas fa-at"></i> Poczta</a></li>
-          <li><a href="?id=kontakt#Kontakt"><i class="fas fa-map-marker-alt"></i> Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="rozmiar_font">
-        <div class="text_rozmiar">rozmiar</div>
-        <div class="ikony_rozmiar">
-          <ul>
-            <li><i class="fas fa-font"></i></li>
-            <li><i class="fas fa-font"></i></li>
-            <li><i class="fas fa-font"></i></li>
-          </ul>
-        </div>
-      </div>
-      <div class="kontrast">
-        <div class="text_kontrast">kontrast</div>
-        <div class="ikona_kontrast"><i class="fas fa-adjust"></i></div>
-      </div>
-      <div class="toggler">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>  
-  </section>
-  <section class="pas_dolny">
-      <div class="icon_dol">
-        <a href="#"><i class="fas fa-angle-double-down"></i></a>
-      </div>
-  </section>   
-      
-<!--   zamykanie slideru     -->
-    </div>
-<!--   koniec slider   -->
-<!-- navbar sticky -->
-<nav class="navbar_sticky" data-aos="zoom-in-up">
-  <div class="nav_logo_sticky">
-    <a href="/">
-      <figure> <img src="img/logotyp/logo.webp" alt="Zespół Szkół Techniczych im. Bohaterów Września w Jaśle"> </figure>
-    </a>
-  </div>
-  <div class="menus">
-    <ul>
-      <li><a href="/"><i class="fas fa-home"></i></a></li>
-      <li><a href="?id=kierunki#Kierunki"><i class="fas fa-pencil-alt"></i> Rekrutacja</a></li>
-      <li><a href="?id=pracownie#Pracownie"><i class="fas fa-graduation-cap"></i> Strefa ucznia</a></li>
-      <li><a href="?id=kadra#Kadra"><i class="fas fa-id-card-alt"></i> Kierunki</a></li>
-      <li><a href="?id=esport#E-Sport"><i class="fas fa-user-graduate"></i> Kadra</a></li>
-      <li><a href="?id=esport#E-Sport"><i class="fas fa-at"></i> Poczta</a></li>
-      <li><a href="?id=kontakt#Kontakt"><i class="fas fa-map-marker-alt"></i> Kontakt</a></li>
-    </ul>
-  </div>
-  <div class="rozmiar_font">
-    <div class="text_rozmiar">rozmiar</div>
-    <div class="ikony_rozmiar">
-      <ul>
-        <li><i class="fas fa-font"></i></li>
-        <li><i class="fas fa-font"></i></li>
-        <li><i class="fas fa-font"></i></li>
-      </ul>
-    </div>
-  </div>
-  <div class="kontrast">
-    <div class="text_kontrast">kontrast</div>
-    <div class="ikona_kontrast"><i class="fas fa-adjust"></i></div>
-  </div>
-  <div class="toggler">
-    <i class="fas fa-bars"></i>
-  </div>
-</nav> 
-<!--   navbar sticky   -->
-    
-<!-- napis zst     -->
-    
-     <div class="container">
-            <header>
-              <div class="tytul_nag" data-aos="fade-up">
-                <small class="into">Witamy na stronie</small>
-                <h1 data-aos="zoom-in-up" class=" color_header"><span>Zespół Szkół Technicznych</span></h1>
-                <h2 data-aos="zoom-in-up" class=" color_header"><span>im. Bohaterów Września w Jaśle</span></h2>
-                <h6 data-aos="fade-down">
-                   Szkoła kształci już 120 lat
-                </h6>
-              </div>
-            </header>
-    </div>
-    
-<!-- napis zst koniec -->
-    
-<!--  karty info  -->
- 
-  <section class="container-fluid card-list">
-    
-    <article class="card">
-
-      <header class="card-header">
-        <h2 class="color_header">Dokumenty</h2>
-        <p>W tym miejscu znajdują się wszystkie ważne dokumenty szkoły, takie jak Statut, WSO, Programy profilaktyczne, opiekuńcze ...</p>
-        <i class="fas fa-file-alt"></i>
-      </header>
-      
-      <div class="card-autor">
-        <a class="autor_avatar" href="#"><img src="img/icon/man_silver.webp" alt="avatar szkoły"/></a>
-        <svg class="half-circle" viewBox="0 0 106 57">
-          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-        </svg>
-        
-        <div class="autor_name">
-          <div class="autor_name_prefix color_header">Autor</div>
-          ZST Dyrekcja
-        </div>
-        
-      </div>      
-    </article>
-    <article class="card">
-      <header class="card-header">
-          
-        <h2 class="color_header">Kierunki kształcenia</h2>
-        <p>Zapraszamy Absolwentów Szkół Podstawowych oraz Opiekunów Prawnych do zapoznania się z ofertą naszej szkoły ...</p>
-        <i class="fas fa-file-alt"></i>
-      </header>
-      
-      <div class="card-autor">
-        <a class="autor_avatar" href="#"><img src="img/icon/man_silver.webp" alt="avatar szkoły"/></a>
-        <svg class="half-circle" viewBox="0 0 106 57">
-          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-        </svg>
-        
-        <div class="autor_name">
-          <div class="autor_name_prefix color_header">Autor</div>
-          ZST Dyrekcja
-        </div>
-        
-      </div>      
-    </article>
-    <article class="card">
-      <header class="card-header">
-          
-        <h2 class="color_header">Mlegitymacja</h2>
-        <p>Nasza szkoła przystąpiła do projektu mLegitymacja – wspólnej inicjatywy Ministerstwa Edukacji Narodowej ...</p>
-        <i class="fas fa-file-alt"></i>
-      </header>
-      
-      <div class="card-autor">
-        <a class="autor_avatar" href="#"><img src="img/icon/man_silver.webp" alt="avatar szkoły"/></a>
-        <svg class="half-circle" viewBox="0 0 106 57">
-          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-        </svg>
-        
-        <div class="autor_name">
-          <div class="autor_name_prefix color_header">Autor</div>
-          ZST Dyrekcja
-        </div>
-        
-      </div>      
-    </article>
-    <article class="card">
-      <header class="card-header">
-          
-        <h2 class="color_header">E-DZIENNIK</h2>
-        <p>Zaloguj się do dziennika elektronicznego. Jak po raz pierwszy zalogować się do e-dziennika - instrukcja.</p>
-        <i class="fas fa-file-alt"></i>
-      </header>
-      
-      <div class="card-autor">
-        <a class="autor_avatar" href="#"><img src="img/icon/man_silver.webp" alt="avatar szkoły"/></a>
-        <svg class="half-circle" viewBox="0 0 106 57">
-          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-        </svg>
-        
-        <div class="autor_name">
-          <div class="autor_name_prefix color_header">Autor</div>
-          ZST Dyrekcja
-        </div>
-        
-      </div>      
-    </article>
-    <article class="card">
-      <header class="card-header">
-          
-        <h2 class="color_header">NASZA SZKOŁA</h2>
-        <p>Zespół Szkół Technicznych w obiektywie kamery. Kliknij, aby obejrzeć filmy prezentujące ofertę szkoły.</p>
-        <i class="fas fa-file-alt"></i>
-      </header>
-      
-      <div class="card-autor">
-        <a class="autor_avatar" href="#"><img src="img/icon/man_silver.webp" alt="avatar szkoły"/></a>
-        <svg class="half-circle" viewBox="0 0 106 57">
-          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-        </svg>
-        
-        <div class="autor_name">
-          <div class="autor_name_prefix color_header">Autor</div>
-          ZST Dyrekcja
-        </div>
-        
-      </div>      
-    </article>
-    <article class="card">
-      <header class="card-header">
-          
-        <h2 class="color_header">PROJEKTY</h2>
-        <p>Informacje na temat projektów dofinansowanych z UE realizowanych w Zespole Szkół Technicznych w Jaśle.</p>
-        <i class="fas fa-file-alt"></i>
-      </header>
-      
-      <div class="card-autor">
-        <a class="autor_avatar" href="#"><img src="img/icon/man_silver.webp" alt="avatar szkoły"/></a>
-        <svg class="half-circle" viewBox="0 0 106 57">
-          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-        </svg>
-        
-        <div class="autor_name">
-          <div class="autor_name_prefix color_header">Autor</div>
-          ZST Dyrekcja
-        </div>
-        
-      </div>      
-    </article>
-
-  </section>
- 
-<!-- karty info koniec -->
-<!-- napis media     -->
-    
-     <div class="container">
-            <header>
-              <div class="tytul_nag" data-aos="fade-up">
-                <small class="into">Media o nas</small>
-                <h1 data-aos="zoom-in-up" class=" color_header"><span>SZKOŁA W OBIEKTYWIE KAMERY</span></h1>
-                <h6 data-aos="fade-down">
-                   Poznawaj oglądając
-                </h6>
-              </div>
-            </header>
-    </div>
-    
-<!-- napis media koniec -->
-<!-- video szkoła promocja     -->
- <div class="parallax">
-    <section class="container video">
-      
-      <div class="plik_video">
-        <video controls>
-          <source src="video/projekt.mp4" type="video/mp4" />
-          <p>
-             Twoja przeglaądarka nie wspiera plików mp4 :(
-          </p>
-        </video>
-      </div>
-        
-      <div class="text_video">
-        <header>
-          <h1 class="color_header">Jakiś tytuł filmu</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quam cumque aperiam asperiores tenetur omnis dolore hic ut sunt illo.</p>
-        </header>
-
-      </div>
-      <div class="plik_video2">
-        <video controls>
-          <source src="video/projek2.mp4" type="video/mp4" />
-          <p>
-             Twoja przeglaądarka nie wspiera plików mp4 :(
-          </p>
-        </video>
-      </div>
-        
-      <div class="text_video2">
-        <header>
-          <h1 class="color_header">Jakiś tytuł filmu 2</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quam cumque aperiam asperiores tenetur omnis dolore hic ut sunt illo.</p>
-        </header>
-
-      </div>
-    
-    </section>
-</div>
-<!--   video szkoła promocja koniec   -->
-<!-- napis zst     -->
-    
-     <div class="container">
-            <header>
-              <div class="tytul_nag" data-aos="fade-up">
-                <small class="into">Artykuły & News</small>
-                <h1 data-aos="zoom-in-up" class=" color_header"><span>nowości z życia szkoły</span></h1>
-                <h6 data-aos="fade-down">
-                   Co w szkole piszczy
-                </h6>
-              </div>
-            </header>
-    </div>
-    
-<!-- napis zst koniec -->
-<!-- artykuły poczatek     -->
- <div class="container-fluid artykul_grid">
-   <main class="main_art">
-     <div class="artykul_card">
-       
-        <figure class="img_artykul">
-          <img src="img/slider/informatyk2.webp" alt="?" />
-        </figure>
-       
-        <div class="text_artykul">
-          <header>
-            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-          </header>
-          
-          <div class="autor_card">
-            <a class="autor_avatar" href="#"><img src="img/icon/man_silver.webp" alt="avatar szkoły"/></a>
-            <svg class="half-circle" viewBox="0 0 106 57">
-              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-            </svg>
-            <div class="autor_name">
-              <div class="autor_name_prefix color_header">Autor</div>
-              ZST Dyrekcja
-            </div>
-          </div>
-          
-          <article class="article">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum et nihil officiis alias voluptatum, facilis eaque rerum aliquid perspiciatis perferendis ipsa nulla reprehenderit hic laborum voluptatem soluta ut vero cumque, commodi dignissimos deserunt explicabo repellat repudiandae. Nesciunt harum rem possimus eaque neque, quas suscipit ad blanditiis aperiam maxime? Ut, ea.</p>
-         <div class="blog_post_btn">
-            <a href="#" class="btn">Czytaj ...</a>
-         </div>
-          </article>
-        </div>
-
-              <div class="info_data">
-                <div class="data">
-                  <ul>
-                    <li>23</li>
-                    <li>Listopad<br><span>2020</span></li>
-                  </ul>
-                </div>
-                <div class="info">
-                  <ul>
-                    <li><i class="far fa-eye"></i> 12554</li>
-                    <li><i class="far fa-heart"></i> 1244</li>
-                  </ul>
-                </div>
-              </div>
-     </div>
-   </main>
-   <aside class="aside_art">
-     <div class="blog_post">
-       <figure class="blog_post_img">
-         <img src="img/slider/informatyk2.webp" alt="?" />
-       </figure>
-       <div class="blog_post_info">
-         <div class="blog_post_date">
-          <ul>
-            <li>23</li>
-            <li>Listopad<br><span>2020</span></li>
-            <li>
-               <div class="blog_post_autor">
-                  <a class="autor_avatar" href="#"><img src="img/icon/man_silver.webp" alt="avatar szkoły"/></a>
-                  <svg class="half-circle" viewBox="0 0 106 57">
-                    <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                  </svg>
-                  <div class="autor_name">
-                    <div class="autor_name_prefix color_header">Autor</div>
-                     ZST Dyrekcja
-                  </div>
-               </div>
-            </li>
-          </ul>
-         </div>
-
-         <header>
-           <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-         </header>
-         <article class="article">
-         <p class="blog_post_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum et nihil officiis alias voluptatum, facilis eaque rerum aliquid perspiciatis perferendis ipsa nulla reprehenderit hic laborum voluptatem soluta ut vero cumque, commodi dignissimos deserunt explicabo repellat repudiandae. Nesciunt harum rem possimus eaque neque, quas suscipit ad blanditiis aperiam maxime? Ut, ea.</p>
-         </article>
-                <div class="blog_post_stats">
-                  <ul>
-                    <li><i class="far fa-eye"></i> 12554</li>
-                    <li><i class="far fa-heart"></i> 1244</li>
-                  </ul>
-                </div>
-         <div class="blog_post_btn">
-            <a href="#" class="btn_small">Czytaj ...</a>
-         </div>
-
-       </div>
-     </div>
-     <div class="blog_post">
-       <figure class="blog_post_img">
-         <img src="img/slider/informatyk2.webp" alt="?" />
-       </figure>
-       <div class="blog_post_info">
-         <div class="blog_post_date">
-          <ul>
-            <li>23</li>
-            <li>Listopad<br><span>2020</span></li>
-            <li>
-               <div class="blog_post_autor">
-                  <a class="autor_avatar" href="#"><img src="img/icon/man_silver.webp" alt="avatar szkoły"/></a>
-                  <svg class="half-circle" viewBox="0 0 106 57">
-                    <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                  </svg>
-                  <div class="autor_name">
-                    <div class="autor_name_prefix color_header">Autor</div>
-                     ZST Dyrekcja
-                  </div>
-               </div>
-            </li>
-          </ul>
-         </div>
-
-         <header>
-           <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-         </header>
-         <article class="article">
-         <p class="blog_post_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum et nihil officiis alias voluptatum, facilis eaque rerum aliquid perspiciatis perferendis ipsa nulla reprehenderit hic laborum voluptatem soluta ut vero cumque, commodi dignissimos deserunt explicabo repellat repudiandae. Nesciunt harum rem possimus eaque neque, quas suscipit ad blanditiis aperiam maxime? Ut, ea.</p>
-         </article>
-                <div class="blog_post_stats">
-                  <ul>
-                    <li><i class="far fa-eye"></i> 12554</li>
-                    <li><i class="far fa-heart"></i> 1244</li>
-                  </ul>
-                </div>
-         <div class="blog_post_btn">
-            <a href="#" class="btn_small">Czytaj ...</a>
-         </div>
-
-       </div>
-     </div>
-   </aside>
- 
- </div>    
-<!-- artykuły koniec -->
-<!-- napis zst     -->
-    
-     <div class="container">
-            <header>
-              <div class="tytul_nag" data-aos="fade-up">
-                <small class="into">Foto & Files</small>
-                <h1 data-aos="zoom-in-up" class="color_header"><span>Galerie & Strefa ucznia</span></h1>
-                <h6 data-aos="fade-down">
-                   Uczniowie w akcji
-                </h6>
-              </div>
-            </header>
-    </div>
-    
-<!-- napis zst koniec -->
-<!-- galerie strefa ucznia   -->
- <div class="parallax1">
-  <section class="container-fluid strefa">
-    <div class="galerie">
-
-        <div class="olipiady_men"><a href="#"><h1 class="color_header">olipiady</h1></a></div>
-        <div class="esport"><a href="#"><h1 class="color_header">esport</h1></a></div>
-        <div class="sport"><a href="#"><h1 class="color_header">sport</h1></a></div>
-        <div class="akademie"><a href="#"><h1 class="color_header">akademie</h1></a></div>
-        <div class="wycieczki"><a href="#"><h1 class="color_header">wycieczki</h1></a></div>
-
-    </div>
-  </section>
-</div>   
-  <section class="strefa_tlo">
-    <div class="container">
-
-          <header>
-            <div class="tytul_nag">
-              <h1 class="color_header">Info <span> ucznowie</span> zst</h1>
-            </div>
-          </header>
-
-    </div>
-  </section>
- <div class="parallax2"> 
-    <section class="service_szkola">
-      <div class="container service">
-        <ul>
-          <li>
-            <figure class="icon_sevice s1">
-              <a href="https://epuap.gov.pl/wps/portal/" target="_blank" rel=”nofollow”><img src="/img/icon/epuap_logo2.webp" class="img-fluid" alt="epuap" /></a>
-            </figure>
-          </li>
-          <li>
-            <figure class="icon_sevice s2">
-              <a href="#" target="_blank" rel=”nofollow”><img src="/img/icon/cisco.webp" class="img-fluid" alt="cisco" /></a>
-            </figure>
-          </li>
-          <li>
-            <figure class="icon_sevice s3">
-              <a href="#" target="_blank" rel=”nofollow”><img src="/img/icon/azure.webp" class="img-fluid" alt="azure" /></a>
-            </figure>
-          </li>
-          <li>
-            <figure class="icon_sevice s4">
-              <a href="#" target="_blank" rel=”nofollow”><img src="/img/icon/logo_wifi_zst.webp" class="img-fluid" alt="logo_wifi_zst" /></a>
-            </figure>
-          </li>
-        </ul>
-      </div>
-   </section>
-    <section class="dokumenty_szkola">
-      <ul>
-        <li><i class="fas fa-file-alt"></i> <a href=""> Dokumenty szkoły</a> <i class="fas fa-level-down-alt"></i>
-          <div class="doc_lista">
-          <ul>
-            <li><i class="fas fa-check-double"></i>  <a href="">Regulamin szkoły w okresie pandemii</a></li>
-            <li><i class="fas fa-check-double"></i>  <a href="">Zaświadczenie na oceny z praktyki</a></li>
-            <li><i class="fas fa-check-double"></i>  <a href="">Deklaracja przystąpienia do egzaminu<br> z kwalifikacji jednoliterowej</a></li>
-            <li><i class="fas fa-check-double"></i>  <a href="">mLegitymacja szkolna</a></li>
-            <li><i class="fas fa-check-double"></i>  <a href="">Ochrona danych osobowych RODO</a></li>
-            <li><i class="fas fa-check-double"></i>  <a href="">Statuty szkoły</a></li>
-            <li><i class="fas fa-check-double"></i>  <a href="">Programy wychowawczo-profilaktyczne</a></li>
-            <li><i class="fas fa-check-double"></i>  <a href="">Praktyki zawodowe</a></li>
-            <li><i class="fas fa-check-double"></i>  <a href="">Prawa osób niepełnosprawnych</a></li>
-            <li><i class="fas fa-check-double"></i>  <a href="">Regulamin Rady Rodziców</a></li>
-            <li><i class="fas fa-check-double"></i>  <a href="">Regulamin wycieczek</a></li>
-            <li><i class="fas fa-check-double"></i>  <a href="">Oświadczenie o dochodach <br>- DLA PRACOWNIKÓW SZKOŁY</a></li>
-          </ul>
-          </div>
-
-        
-        </li>
-        <li><i class="fas fa-project-diagram"></i>  <a href="">Projekty</a> <i class="fas fa-level-down-alt"></i>
-          <div class="doc_lista">
-            <ul>
-              <li><i class="fas fa-check-double"></i>  <a href="">Realizowane projekty unijne</a></li>
-              <li><i class="fas fa-check-double"></i>  <a href="">Zrealizowane projekty unijne</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><i class="fas fa-graduation-cap"></i>  <a href="">Egzamin maturalny</a></li>
-        <li><i class="fas fa-graduation-cap"></i>  <a href="">Egzamin zawodowy</a></li>
-        <li><i class="fas fa-hand-holding-usd"></i>  <a href="">DOBRY START - 300 dla ucznia</a></li>
-        <li><i class="fas fa-comments-dollar"></i>  <a href="">Projekty stypendialne</a></li>
-      </ul>
-    </section>
-</div>
-<!-- galerie strefa ucznia koniec   -->      
- <!-- kontakt zst     -->
-    
-     <div class="container">
-            <header>
-              <div class="tytul_nag" data-aos="fade-up">
-                <small class="into">dane adresowe</small>
-                <h1 data-aos="zoom-in-up" class="color_header"><span>Lokalizacja - kontakt</span></h1>
-                <h6 data-aos="fade-down">
-                   Zespół Szkół Techniczych im. Bohaterów Września w Jaśle
-                </h6>
-              </div>
-            </header>
-    </div>
-    <div class="dane_adresowe">
-      <div class="container dane_adres">
-        <ul>
-          <li><i class="fas fa-phone-volume color_header"></i> 13 4463700</li>
-          <li><i class="fas fa-at color_header"></i> zst@zstjaslo.pl</li>
-          <li><i class="fas fa-map-marker-alt color_header"></i> Stanisława Staszica 30, 38-200 Jasło</li>
-        </ul>
-      </div>
-      <div class="container-fluid">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2578.4437772969222!2d21.468567251886515!3d49.74009324607127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473db4728af2444f%3A0x12151c4ca4c70029!2zWmVzcMOzxYIgU3prw7PFgiBUZWNobmljem55Y2ggaW0uIEJvaGF0ZXLDs3cgV3J6ZcWbbmlhIHcgSmHFm2xl!5e0!3m2!1spl!2spl!4v1603912185672!5m2!1spl!2spl" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+/* karty w liscie  */
+.card-list {
+  display: flex;
+  padding: 6vh 0 6vh 0;
+/*   overflow-x: scroll; */
+  justify-content: center;
+  align-items: center;
+}
+/* .card-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.card-list::-webkit-scrollbar-thumb {
+  background: var(--tlo);
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0,0%,100%, .25),
+              inset -2px -2px 2px rgba(0,0,0, .25);
+}
+.card-list::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29,#201c29 1px, #17141d 0,#17141d);
+} */
+.card {
+  display:flex;
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 0;
+  border-radius: 12px;
+  background: var(--tlo);
+  border: solid 2px white;
+  background-color: var(--tlo_artykul);
+  transition: .2s;
+}
+.card:hover {
+  transform: translatey(-2rem);
+}
+.card:hover~.card {
+  transform: translatex(90px);
+}
+.card:not(:first-child) {
+  margin-left: -90px;
+}
+.card-header h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: -100vh 0 20vh 10vw;
+  text-transform: uppercase;
+  font-size: 1.1vw;
+}
+.card-header p {
+  text-transform: none;
+  font-size: .6vw;
+  margin: 1.4vh 1.2vw 1.4vh 1.2vw;
+}
+.card-header .fas {
+  color: var(--card_icon);
+  font-size: .8vw;
+  font-weight: 100;
+/*   padding-top: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-autor {
+  position: relative;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  margin: 1vh 0 0 1vw;
+}
+.autor_avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  display: block;
+  overflow: hidden;
+  margin: 16px 10px;
+}
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke: var(--color_cien);
+  stroke-width: 8;
+  stroke-linecap: round;
+  pointer-events: none;
   
-  <section class="container form">
-    <header>
-      <h6> Formularz kontaktowy </h6>
-    </header>
+}
+.autor_name_prefix {
+  font-family: var(--font_family);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
 
-    <form method="POST" action="mailto:zst@zstjaslo.pl" class="form_control">
-      <div class="input_grup"><!-- row100 -->
-        <div class="input_size"><!-- col -->
-          <div class="input_box">
-            <input type="text" id="imie" value="" required="required" />
-            <label for="imie" class="text">Wpisz imie</label>
-            <span class="line"></span>
-          </div>
-        </div>
-        <div class="input_size">
-          <div class="input_box">
-            <input type="text" id="nazwisko" value="" required="required" />
-            <label for="nazwisko" class="text">Wpisz nazwisko</label>
-            <span class="line"></span>
-          </div>
-        </div>
-      </div>
-      <div class="input_grup">
-        <div class="input_size">
-          <div class="input_box">
-            <input type="email" id="mail" value="" required="required" />
-            <label for="mail" class="text">Wpisz adres email</label>
-            <span class="line"></span>
-          </div>
-        </div>
-        <div class="input_size">
-          <div class="input_box">
-            <input type="tel" id="tel" value="" required="required" />
-            <label for="tel" class="text">Wpisz nr telefonu</label>
-            <span class="line"></span>
-          </div>
-        </div>
-      </div>
-      <div class="input_grup">
-        <div class="input_size">
-          <div class="input_box">
-            <input type="text" id="temat" value="" required="required" />
-            <label for="temat" class="text">Temat wiadomości</label>
-            <span class="line"></span>
-          </div>
-        </div>
-        <div class="input_size">
-          <div class="input_box">
-            <input type="text" id="wydzial" value="" required="required" />
-            <label for="wydzial" class="text">Wybierz wydział</label>
-            <span class="line"></span>
-          </div>
-        </div>
-      </div>
-      <div class="input_grup">
-        <div class="input_size">
-          <div class="input_box textarea">
-            <textarea id="textarea" required="required"></textarea>
-            <label for="textarea" class="text">Tu wpisz treść swojej wiadomości</label>
-            <span class="line"></span>
-          </div>
-        </div>
-      </div>
-
-      
-      <input type="submit" name="" class="btn_small" value="WYŚLIJ WIADOMOŚĆ" />
-    </form>
-  </section>
-    <div class="wspolpraca"> 
-        <ul>
-          <li>
-            <figure class="icon_sevice s1">
-              <a href="http://www.adamscomputers.pl" target="_blank" rel=”nofollow”><img src="/img/icon/adamscomputers2.webp" class="img-fluid" alt="adamscomputers" /></a>
-            </figure>
-          </li>
-          <li>
-            <figure class="icon_sevice s2">
-              <a href="https://erko.pl" target="_blank" rel=”nofollow”><img src="/img/icon/erko.webp" class="img-fluid" alt="erko" /></a>
-            </figure>
-          </li>
-          <li>
-            <figure class="icon_sevice s3">
-              <a href="http://www.sigma.jaslo.pl" target="_blank" rel=”nofollow”><img src="/img/icon/Logo-SIGMA.webp" class="img-fluid" alt="SIGMA" /></a>
-            </figure>
-          </li>
-          <li>
-            <figure class="icon_sevice s4">
-              <a href="https://kariera.pwpoland.com" target="_blank" rel=”nofollow”><img src="/img/icon/wsk.webp" class="img-fluid" alt="wsk" /></a>
-            </figure>
-          </li>
-          <li>
-            <figure class="icon_sevice s5">
-              <a href="https://www.sas.com/pl_pl/home.html" target="_blank" rel=”nofollow”><img src="/img/icon/sas-TPTK-sprite2.webp" class="img-fluid" alt="sas" /></a>
-            </figure>
-          </li>
-        </ul>
-    </div>
-        
-        
-      </div>
-
-    </div>
-<!-- kontakt zst koniec -->     
-<!--     socila media -->
-<div class="container">
-  <header>
-    <div class="tytul_nag" data-aos="fade-up">
-      <small class="into">FaceBook & YouTube</small>
-      <h1 data-aos="zoom-in-up" class="color_header"><span>social media</span></h1>
-      <h6 data-aos="fade-down">
-         social media ZST
-      </h6>
-    </div>
-  </header>
-</div>
-<section class="container-fluid">
-<div class="social-media">
-<dl><a href="https://www.facebook.com/informatyka.jaslo/" target="_blank"><i class="fab fa-facebook-f"></i><span class="syg">IT</span></a></dl>
-<dl><a href="https://www.facebook.com/zstjaslo" target="_blank"><i class="fab fa-facebook-f"></i><span class="syg">zst</span></a></dl>
-<dl><a href="https://www.youtube.com/user/ZSTwJasle" target="_blank"><i class="fab fa-youtube"></i></a></dl>
-<dl><a href="https://www.facebook.com/sportZSTJaslo/" target="_blank"><i class="fab fa-facebook-f"></i><span class="syg">wf</span></a></dl>
-<dl><a href="https://www.facebook.com/enigmacode53/" target="_blank"><i class="fab fa-facebook-f"></i><span class="syg">ec53</span></a></dl>
-</div>
-</section>
-<!--     social media koniec -->
-<!--     stopka strony info bip -->    
-
-<section class="strefa_tlo">
-<div class="container-fluid">
-<div class="stopka_inf">
-<div class="bip">
-<a href="https://www.bip.zstjaslo.pl" target="_blank">
-  <figure>
-    <img src="/img/icon/bip.webp" alt="Biuletyn Informacji Publicznej" />
-    <figcaption>Biuletyn Informacji Publicznej ZST w Jaśle</figcaption>
-  </figure>
-  <h6>
-    Biuletyn Informacji Publicznej ZST w Jaśle
-  </h6>
-</a>
-</div>
-<div class="linki_ciekawe">
-<h6>
-  Linki
-</h6>
-<ul>
-  <li><a href="http://www.oke.krakow.pl/inf/" target="_blank">OKE Kraków</a></li>
-  <li><a href="https://cke.gov.pl" target="_blank">CKE Warszawa</a></li>
-  <li><a href="https://www.ko.rzeszow.pl" target="_blank">Kuratorium Oświaty Rzeszów</a></li>
-  <li><a href="https://www.gov.pl/" target="_blank">Ministerstwo Edukacji Narodowej</a></li>
-  <li><a href="https://www.gov.pl/web/edukacja" target="_blank">Meet and Code 2019 w ZST w Jaśle</a></li>
-  <li><a href="https://wcag20.widzialni.org" target="_blank">Web Content Accessibility Guidelines</a></li>
-</ul>
-</div>
-<div class="service_www">
-<h6>
-  Serwisy szkolne
-</h6>
-<dl>
-  <dt><a href="https://www.biblioteka.zstjaslo.pl" target="_blank" >Biblioteka ZST</a></dt>
-  <dd>- Szkolny serwis biblioteczny</dd>
-  <dt><a href="https://www.it.zstjaslo.pl" target="_blank" >Technik informatyk</a></dt>
-  <dd>- Technik informatyk i programista</dd>
-  <dt><a href="https://www.elektryk.zstjaslo.pl" target="_blank" >Technik elektryk</a></dt>
-  <dd>- Technik elektryk</dd>
-  <dt><a href="https://www.mechanik.zstjaslo.pl" target="_blank" >Technik mechanik</a></dt>
-  <dd>- Technik mechanik</dd>
-  <dt><a href="https://www.moodle.zstjaslo.pl" target="_blank" >Moodle ZST</a></dt>
-  <dd>- Sewis Moodle</dd>
-</dl>
-</div>
-<div class="stowarzyszenia">
-<h6>
-  Stowarzyszenia
-</h6>
-<dl>
-  <dt><a href="https://www.stowarzyszenie.zstjaslo.pl/" target="_blank" >Stowarzyszenie ZSTechnicznych</a></dt>
-  <dd>- Stowarzyszenie ZSTechnicznych</dd>
-  <dt><a href="https://www.stowarzyszenie.zstjaslo.pl/" target="_blank" >Stowarzyszenie EnigmaCODE 53</a></dt>
-  <dd>- Stowarzyszenie EnigmaCODE 53</dd>
-</dl>
-</div>
-</div>
-</div>
-</section>
-
-<!--     stopka strony info bip koniec -->   
-<!--     stopka -->
-<div class="container-fluid">
-
-<div class="blackleo">
-  <h3 class="leo">Wszelkie prawa zastrzeżone. Copyright © 2020 ZST im. Bohaterów Września w Jaśle</h3> 
-</div>
-
-<div class="col col-es col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-hd-6 col-2k-6 col-4k-6">
-<div class="blackleo">
-  <h3 class="leol">realizacja: <a href="https://www.facebook.com/BlackLeoGamingEdu" target="_blank">BLACKLEO.PL</a></h3> 
-</div>              
-</div>
-
-</div>
-
-
-
-<!--     stopka -->
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-      
-
-
-<!-- animate aos -->
-<script src="add/js/aos.js"></script>
-    <script>
-      document.querySelector('html').classList.remove('no-js');
-      if (!window.Cypress) {
-        const scrollCounter = document.querySelector('.js-scroll-counter');
-        AOS.init({
-          duration: 2400
-        });
-        document.addEventListener('aos:in', function(e) {
-          console.log('in!', e.detail);
-        });
-        window.addEventListener('scroll', function() {
-          scrollCounter.innerHTML = window.pageYOffset;
-        });
-      }
-    </script>
-<!-- animate aos koniec -->
-  </body>
+/* karty w liscie */
+/* sekcja video */
+.video {
+  display: grid;
+  grid-gap: 3vw;
+  grid-template-areas: 
+    'text_video plik_video plik_video'
+    'plik_video2 plik_video2 text_video2';
+  justify-content: center;
+  align-items: center;
+  padding: 8vh 0 8vh 0;
+}
+.video .plik_video {
+  grid-area: plik_video;
+}
+.video .plik_video2 {
+  grid-area: plik_video2;
+}
+.video .plik_video video, .video .plik_video2 video {
+  width: 100%;
+  height: auto;
+}
+.video .text_video {
+  grid-area: text_video;
+}
+.video .text_video2 {
+  grid-area: text_video2;
+}
+.video .text_video h1, .video .text_video2 h1 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+}
+.video .text_video h1, .video .text_video p {
+  float: right;
+  text-align: right;
+}
+.video .text_video p, .video .text_video2 p  {
+  font-size: 1.1rem;
+}
+/* sekcja video koniec */
+/* artykul poczatek */
+.artykul_grid {
+  display: grid;
+  grid-column-gap: 1vw;
+  grid-template-areas: 
+    'main_art main_art main_art main_art aside_art aside_art';
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 0 10vh 0;
   
-</html>
+}
+.main_art {
+  grid-area: main_art;
+}
+.main_art .artykul_card {
+  height: 50vh;
+  width: 50vw;
+  margin: 10vh;
+  box-shadow: var(--box-shadow);
+  border-radius: 2vw;
+  background-color: var(--tlo_artykul);
+}
+.main_art .artykul_card .img_artykul {
+  position: relative;
+  float: left;
+  left: 2vw;
+  height: 30vh;
+  width: 30vw;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transform: translatey(-4vh);
+}
+.main_art .artykul_card .img_artykul img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.main_art .artykul_card .text_artykul {
+  margin-left: 34vw;
+  margin-right: 1vw;
+}
+.main_art .artykul_card .text_artykul header {
+  padding: 2vh 0 1vh 0;
+}
+.main_art .artykul_card .text_artykul header h1 {
+  font-size: 1.4vw;
+}
+.autor_card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  margin: 0 0 0 1vw;
+}
+.autor_avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  display: block;
+  overflow: hidden;
+  margin: 16px 10px;
+}
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke: var(--color_cien);
+  stroke-width: 8;
+  stroke-linecap: round;
+  pointer-events: none;
+  
+}
+.autor_name_prefix {
+  font-family: var(--font_family);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.main_art .article p {
+  font-size: .75vw;
+  text-align: justify;
+}
+.main_art .article .blog_post_btn {
+  padding-top: 1.4vh;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1vw;
+}
+.main_art .info_data {
+  display: flex;
+  align-items: center;
+}
+.main_art .info_data .data {
+  position: relative;
+  color: var(--card_icon);
+  margin-left: .8vw;
+  bottom: 22vh;
+  display: flex;
+  color: #fff;
+}
+.main_art .info_data .data ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+.main_art .info_data .data ul li {
+  font-size: 2vw;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.main_art .info_data .data ul li span {
+  font-size: 4vw;
+  font-weight: 700;
+}
+.main_art .info_data .data ul li:first-child {
+  font-size: 8vw;
+  font-weight: 700;
+}
+.main_art .info_data .data h6 {
+  font-size: 3vw;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.main_art .info_data .info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  bottom: 10vh;
+}
+.main_art .info_data .info ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.main_art .info_data .info ul li {
+  font-size: 1vw;
+  font-weight: 200;
+  padding-left: 1vw;
+  text-transform: uppercase;
+}
+.aside_art {
+  grid-area: aside_art;
+}
+.aside_art .blog_post {
+  width: 34vw;
+  padding: .05vw;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  border-radius: 1vw;
+  height: 24vh;
+  margin-bottom: 2.8vh;
+  background-color: var(--tlo_artykul);
+}
+.aside_art .blog_post .blog_post_img {
+  position: relative;
+  height: 14vh;
+  width: 13vw;
+  transform: translatex(-2.5vw);
+}
+.aside_art .blog_post .blog_post_img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  box-shadow: var(--box-shadow);
+}
+.aside_art .blog_post .blog_post_info {
+  height: 24vh;
+  width: 20vw;
+}
+.aside_art .blog_post .blog_post_info .blog_post_date ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+.aside_art .blog_post .blog_post_date ul li {
+  color: #fff;
+  font-size: .5vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.aside_art .blog_post .blog_post_info .blog_post_date ul li span {
+  font-size: 1vw;
+  font-weight: 400;
+}
+.aside_art .blog_post .blog_post_info .blog_post_date ul li:first-child {
+  font-size: 2vw;
+  font-weight: 600;
+}
+.aside_art .blog_post .blog_post_info .blog_post_date .blog_post_autor {
+  position: relative;
+  transform: translatex(2vw);
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  margin: 0;
+}
+.aside_art .blog_post .blog_post_info.blog_post_date .autor_avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  display: block;
+  overflow: hidden;
+  margin: 16px 10px;
+}
+.aside_art .blog_post .blog_post_info .blog_post_date .half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke: var(--color_cien);
+  stroke-width: 8;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+.aside_art .blog_post .blog_post_info .blog_post_date .autor_name {
+  color: var(--text_strona);
+  text-transform: none;
+  font-size: .8;
+  font-weight: 200;
+}
+.aside_art .blog_post .blog_post_info header {
+  padding: 1vh 0 1vh 0;
+}
+.aside_art .blog_post .blog_post_info header h1 {
+  font-size: 1vw;
+}
+.aside_art .blog_post .blog_post_info .blog_post_text {
+  padding-top: .6vh;
+  font-size: .5vw;
+  text-align: justify;
+}
+.aside_art .blog_post .blog_post_info .blog_post_stats {
+  padding-top: .9vh;
+  display: flex;
+  align-items: center;
+}
+.aside_art .blog_post .blog_post_info .blog_post_stats ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.aside_art .blog_post .blog_post_info .blog_post_stats ul li {
+  font-size: .5vw;
+  font-weight: 100;
+  padding-left: .2vw;
+  text-transform: uppercase;
+}
+.aside_art .blog_post .blog_post_info .blog_post_btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2vw;
+}
+/* artykul koniec */
+/* galerie strefa ucznia */
+a {
+    text-decoration: none;
+}
+.strefa {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+.galerie {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, .5fr);
+  grid-template-rows: repeat(8, .5fr);
+  grid-gap: .4vw;
+}
+.olipiady_men {
+  grid-column: 5 / 9;
+  grid-row: 3 / 7;
+  background-image: url(/galerie/temat/olipiady_men_c.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sport {
+  grid-column: 8 / 12;
+  grid-row: 5 / 8;
+  background-image: url(/galerie/temat/sport_c.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.akademie {
+  grid-column: 3 / 6;
+  grid-row: 1 / 5;
+  background-image: url(/galerie/temat/akademie_c.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wycieczki {
+  grid-column: 2 / 6;
+  grid-row: 5 / 8;
+  background-image: url(/galerie/temat/wycieczki_c.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.esport {
+  grid-column: 7 / 12;
+  grid-row: 1 / 4;
+  background-image: url(/galerie/temat/esport_c.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.olipiady_men a h1, .sport a h1, .esport a h1, .akademie a h1, .wycieczki a h1
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.3);
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 2vw;
+  font-weight: 700;
+  box-shadow: var(--box-shadow);
+}
+.olipiady_men a:hover h1, .sport a:hover h1, .esport a:hover h1, .akademie a:hover h1, .wycieczki a:hover h1
+{
+  font-size: 3vw;
+}
+.strefa_tlo {
+  background: linear-gradient(rgb(154, 199, 224),#6F9DC7);
+}
+.dokumenty_szkola {
+  width: 100%;
+  height: 36vh;
+  z-index: 333;
+}
+.dokumenty_szkola ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-transform: uppercase;
+}
+.dokumenty_szkola ul li {
+  list-style: none;
+  padding: 8vh 2vw 0 1vh;
+  font-size: .8vw;
+}
+.dokumenty_szkola ul li a {
+  text-decoration: none;
+  color: var(--text_strona);
+}
+.dokumenty_szkola ul li:hover, .dokumenty_szkola ul li a:hover {
+  color: var(--text_strona_a);
+}
+.dokumenty_szkola ul li .fas {
+  padding: 0 .2vw 0 .6vw;
+}
+.doc_lista {
+  display: none;
+}
+.dokumenty_szkola ul li:hover .doc_lista {
+  display: block;
+  transition: 2s;
+}
+.dokumenty_szkola .doc_lista {
+  padding: 1vh 0 0 1vw;
+}
+.dokumenty_szkola .doc_lista ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-transform: none;
+}
+.dokumenty_szkola .doc_lista ul li {
+  padding: 0 1vw 0 1vh;
+  float: left;
+  font-size: .6vw;
+}
+/******************* service_szkola start **********/
+.service_szkola {
+  padding: 6vh 0 4vh 0;
+}
+.wspolpraca {
+  padding: 4vh 0 4vh 0;
+}
+.service ul, .wspolpraca ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.service .icon_sevice, .wspolpraca .icon_sevice {
+  margin: 1vw;
+  text-align: center;
+}
+.service .icon_sevice img {
+  height: 120px;
+  width: 100%;
+  filter: opacity(80%);
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.wspolpraca .icon_sevice img {
+  height: 55px;
+  width: 100%;
+  filter: opacity(80%);
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); 
+  }
+.service .icon_sevice img:hover, .wspolpraca .icon_sevice img:hover {
+  filter: opacity(100%);
+}
+/******************* service_szkola koniec **********/
+/* kontak dane teleadresowe */
+.dane_adresowe {
+  margin: 4vh 0 4vh 0;
+}
+.dane_adresowe .dane_adres ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  padding: 2vh 0 2vh 0;
+}
+.dane_adresowe .dane_adres ul li {
+  list-style: none;
+  padding: 0 1vw 0 .8vw;
+  font-size: 1vw;
+  font-weight: 400;
+  color: var(--text_strona_a);
+}
+
+/* form */
+.form {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+.form h6 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.form_control {
+  width: 100%;
+  padding: .2vh .2vw;
+}
+.form_control .input_grup {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(312px,1fr));
+}
+.form_control .input_grup .input_size {
+  position: relative;
+  width: 100%;
+  padding: 0 1vw;
+  margin: 3vh 0 1vh 0;
+  transition: .5s;
+}
+.form_control .input_grup .input_box {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+.form_control .input_grup .input_box input,
+.form_control .input_grup .input_box.textarea textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  padding: 0 1vw;
+  z-index: 1;
+  color: var(--text_tlo);
+}
+.form_control .input_grup .input_box .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 1.2rem;
+  padding: 0 1vw;
+  display: block;
+  transition: .5s;
+  pointer-events: none;
+}
+.form_control .input_grup .input_box input:focus + .text,
+.form_control .input_grup .input_box input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+.form_control .input_grup .input_box .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--text_strona);
+  transition: .5s;
+  border-radius: .2vw;
+  pointer-events: none;
+}
+.form_control .input_grup .input_box input:focus ~ .line,
+.form_control .input_grup .input_box input:valid ~ .line {
+  height: 100%;
+}
+.form_control .input_grup .input_box.textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: .1vh 0;
+}
+.form_control .input_grup .input_box.textarea textarea {
+  height: 100%;
+  resize: none;
+}
+.form_control .input_grup .input_box textarea:focus + .text,
+.form_control .input_grup .input_box textarea:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+.form_control .input_grup .input_box textarea:focus ~ .line,
+.form_control .input_grup .input_box textarea:valid ~ .line {
+  height: 100%;
+}
+/* form */
+
+/* kontak dane teleadresowe koniec */
+.blackleo {
+  color: #eee;
+}
+.blackleo .leo {
+  font-size: .6vw;
+  font-weight: 200;
+}
+.blackleo .leol {
+  font-size: .6vw;
+  font-weight: 200;
+  text-align: right;
+  justify-content: right;
+}
+.blackleo .leol a {
+  text-decoration: none;
+  color: #eee;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* galerie strefa ucznia koniec   */
+/******************* parallax *****************/
+.parallax {
+  background: linear-gradient( rgba(0, 31, 82, 0.2), rgba(0, 31, 82, 0.2) ), url("/img/parallax/film.webp");
+  min-height: 200%;
+}
+
+.parallax1 {
+  background: linear-gradient( rgba(0, 31, 82, 0.2), rgba(0, 31, 82, 0.2) ),url("/img/parallax/aparat.webp");
+  min-height: 200px;
+}
+
+.parallax2 {
+  background: linear-gradient( rgba(0, 31, 82, 0.2), rgba(0, 31, 82, 0.2) ),url("/img/parallax/pliki_wifi.webp");
+  min-height: 100px;
+}
+.parallax3 {
+  background: linear-gradient( rgba(0, 31, 82, 0.2), rgba(0, 31, 82, 0.2) ),url("../img/carousel/banner.jpg");
+  min-height: 95px;
+}
+.parallax, .parallax1, .parallax2, .parallax3 {
+  position: relative;
+/*  opacity: 0.2; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-width: 600px) {
+    .parallax, .parallax1, .parallax2, .parallax3 {
+        background-attachment: scroll;
+    }
+} 
+.breadcrumb {
+  background-color: transparent;
+}
+/******************* parallax koniec **********/
+/******************* social media **********/
+.social-media, .social-medial2, .social-medial3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media dl, .social-medial2 dl, .social-medial3 dl {
+  list-style: none;
+  margin: 40px 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.social-media dl a .fab, .social-medial2 dl a .fab, .social-medial3 dl a .fab
+{
+  font-size: 46px;
+  color: #eee;
+  line-height: 80px;
+  transition: .5s;
+}
+.social-media dl a .syg, .social-medial2 dl a .syg, .social-medial3 dl a .syg
+{
+  color: #eee;
+  line-height: 80px;
+  text-transform: uppercase;
+  transition: .5s;
+}
+.social-media dl a, .social-medial2 dl a, .social-medial3 dl a {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #000;
+  text-align: center;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+  transition: .5s;
+  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+}
+.social-media dl a:before, .social-medial2 dl a:before, .social-medial3 dl a:before {
+  content:'';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #222;
+  transition: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+.social-media dl a:after, .social-medial2 dl a:after, .social-medial3 dl a:after
+{
+  content:'';
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #222;
+  transition: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+.social-media dl a:hover, .social-medial2 dl a:hover, .social-medial3 dl a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px,-20px);
+}
+.social-media dl:hover .fab, .social-medial2 dl:hover .fab, .social-medial3 dl:hover .fab {
+  color: #ddd;
+}
+.social-media dl:hover:nth-child(1) a {
+  background: #3b5999;
+  box-shadow: -50px 50px 50px rgba(59,89,153 ,1);
+}
+.social-media dl:hover:nth-child(1) a:before {
+  background: #2e4a86; 
+}
+.social-media dl:hover:nth-child(1) a:after {
+  background: #4a69ad; 
+}
+.social-media dl:hover:nth-child(2) a {
+  background: #3b5999;
+  box-shadow: -50px 50px 50px rgba(59,89,153 ,1);
+}
+.social-media dl:hover:nth-child(2) a:before {
+  background: #2e4a86; 
+}
+.social-media dl:hover:nth-child(2) a:after {
+  background: #4a69ad; 
+}
+.social-media dl:hover:nth-child(3) a {
+  background: #cd201f;
+  box-shadow: -50px 50px 50px rgba(205,32,31 ,1);
+}
+.social-media dl:hover:nth-child(3) a:before {
+  background: #c30f0f; 
+}
+.social-media dl:hover:nth-child(3) a:after {
+  background: #a80808; 
+}
+.social-media dl:hover:nth-child(4) a {
+  background: #3b5999;
+  box-shadow: -50px 50px 50px rgba(59,89,153 ,1);
+}
+.social-media dl:hover:nth-child(4) a:before {
+  background: #2e4a86; 
+}
+.social-media dl:hover:nth-child(4) a:after {
+  background: #4a69ad; 
+}
+.social-media dl:hover:nth-child(5) a {
+  background: #3b5999;
+  box-shadow: -50px 50px 50px rgba(59,89,153 ,1);
+}
+.social-media dl:hover:nth-child(5) a:before {
+  background: #2e4a86; 
+}
+.social-media dl:hover:nth-child(5) a:after {
+  background: #4a69ad; 
+}
+.social-medial2 dl:hover:nth-child(1) a {
+  background: #000;
+  box-shadow: -50px 50px 50px rgba(255,255,255 ,1);
+}
+.social-medial2 dl:hover:nth-child(1) a:before {
+  background: #000; 
+}
+.social-medial2 dl:hover:nth-child(1) a:after {
+  background: #000; 
+}
+.social-medial2 dl:hover:nth-child(2) a {
+  background: #cd201f;
+  box-shadow: -50px 50px 50px rgba(205,32,31 ,1);
+}
+.social-medial2 dl:hover:nth-child(2) a:before {
+  background: #c30f0f; 
+}
+.social-medial2 dl:hover:nth-child(2) a:after {
+  background: #a80808; 
+}
+.social-medial3 dl:hover:nth-child(1) a {
+  background: #55acee;
+  box-shadow: -50px 50px 50px rgba(85,172,238 ,1);
+}
+.social-medial3 dl:hover:nth-child(1) a:before {
+  background: #4184b7; 
+}
+.social-medial3 dl:hover:nth-child(1) a:after {
+  background: #4d9fde; 
+}
+/******************* social media koniec **********/
+/* stopka strony */
+.stopka_inf {
+  padding: 2vh 1vw 2vh 1vw;
+  display: grid;
+  grid-template-areas :
+    'bip linki_ciekawe service_www stowarzyszenia';
+}
+.bip {
+  grid-area: bip;
+  padding-right: 4vw;
+}
+.bip a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text_strona);
+}
+.bip a:hover {
+  color: var(--text_strona_a);
+}
+.bip a img {
+  width: 5vw;
+  height: auto;
+}
+figcaption {
+  color: var(--text_strona_a);
+}
+.linki_ciekawe {
+  grid-area: linki_ciekawe;
+  padding: 0 4vw 0 4vw;
+}
+.linki_ciekawe h6, .service_www h6, .stowarzyszenia h6 {
+  color: var(--text_strona_a);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 1vh;
+}
+.linki_ciekawe ul, .service_www dl, .stowarzyszenia dl {
+  text-decoration: none;
+  color: var(--text_strona);
+  list-style: none;
+}
+.linki_ciekawe ul li a, .service_www dl dt a, .stowarzyszenia dl dt a {
+  color: var(--text_strona);
+  font-size: .8vw;
+}
+.linki_ciekawe ul li a:hover, .service_www dl dt a:hover, .stowarzyszenia dl dt a:hover {
+  color: var(--text_strona_a);
+}
+.service_www dl dt dd, .stowarzyszenia dl dt dd{
+  color: var(--text_strona_a);
+}
+.service_www {
+  grid-area: service_www;
+  padding: 0 4vw 0 4vw;
+}
+.stowarzyszenia {
+  grid-area: stowarzyszenia;
+}
+/* stopka strony koniec */
