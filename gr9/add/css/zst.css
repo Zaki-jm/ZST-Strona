@@ -1092,11 +1092,12 @@ a {
   text-transform: uppercase;
   font-size: 2vw;
   font-weight: 700;
-  box-shadow: var(--box-shadow);
+  box-shadow: 5px 5px 60px black;
 }
 .olipiady_men a:hover h1, .sport a:hover h1, .esport a:hover h1, .akademie a:hover h1, .wycieczki a:hover h1
 {
   font-size: 3vw;
+  -webkit-text-stroke: 2px black;
 }
 .strefa_tlo {
   background: linear-gradient(rgb(154, 199, 224),#6F9DC7);
