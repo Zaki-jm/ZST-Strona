@@ -1,0 +1,13 @@
+AddHandler application/x-httpd-php74 php
+<filesMatch ".(css|webp|webm|png|gif|js|ico|woff|woff2|ttf)$">
+##Header set Cache-Control "max-age=31536000, public, must-revalidate"
+</filesMatch>
+### ochrona plikow ###
+<FilesMatch '\.(htaccess|htpasswd|ini|fla|psd|log|sh)$'>
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
