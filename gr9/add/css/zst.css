@@ -18,8 +18,8 @@ kolor jasny-stary niebieski - 3,169,244 03A9F4
   --text_strona_h: #FFF;
   --color_cien: #c3c3c3;
   --color_header: #FFF;
-  --color_header_hover: #FFF;
-  --color_belka_tlo : linear-gradient(rgb(55, 90, 114), #6F9DC7,rgb(55, 90, 114));
+  --color_header_hover: rgb(255, 255, 255);
+  --color_belka_tlo : linear-gradient(rgb(174, 219, 255), #6f9dc7,rgb(55, 90, 114));
   --card_icon: #111;
   --card_icon_art: #333;
   --primary: #0A3C84;
@@ -1087,7 +1087,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--menu_tlo);
+  background: rgba(0,0,0,0.3);
   height: 100%;
   text-transform: uppercase;
   font-size: 2vw;
@@ -1097,10 +1097,9 @@ a {
 .olipiady_men a:hover h1, .sport a:hover h1, .esport a:hover h1, .akademie a:hover h1, .wycieczki a:hover h1
 {
   font-size: 3vw;
-  text-shadow:  var(--text-shadow);
 }
 .strefa_tlo {
-  background: var(--color_belka_tlo);
+  background: linear-gradient(rgb(154, 199, 224),#6F9DC7);
 }
 .dokumenty_szkola {
   width: 100%;
@@ -1352,21 +1351,21 @@ a {
 /* galerie strefa ucznia koniec   */
 /******************* parallax *****************/
 .parallax {
-  background-image: url("/img/parallax/film.webp");
+  background: linear-gradient( rgba(0, 31, 82, 0.2), rgba(0, 31, 82, 0.2) ), url("/img/parallax/film.webp");
   min-height: 200%;
 }
 
 .parallax1 {
-  background-image: url("/img/parallax/aparat.webp");
+  background: linear-gradient( rgba(0, 31, 82, 0.2), rgba(0, 31, 82, 0.2) ),url("/img/parallax/aparat.webp");
   min-height: 200px;
 }
 
 .parallax2 {
-  background-image: url("/img/parallax/pliki_wifi.webp");
+  background: linear-gradient( rgba(0, 31, 82, 0.2), rgba(0, 31, 82, 0.2) ),url("/img/parallax/pliki_wifi.webp");
   min-height: 100px;
 }
 .parallax3 {
-  background-image: url("../img/carousel/banner.jpg");
+  background: linear-gradient( rgba(0, 31, 82, 0.2), rgba(0, 31, 82, 0.2) ),url("../img/carousel/banner.jpg");
   min-height: 95px;
 }
 .parallax, .parallax1, .parallax2, .parallax3 {
@@ -1387,3 +1386,214 @@ a {
   background-color: transparent;
 }
 /******************* parallax koniec **********/
+/******************* social media **********/
+.social-media, .social-medial2, .social-medial3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media dl, .social-medial2 dl, .social-medial3 dl {
+  list-style: none;
+  margin: 40px 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.social-media dl a .fab, .social-medial2 dl a .fab, .social-medial3 dl a .fab
+{
+  font-size: 46px;
+  color: #eee;
+  line-height: 80px;
+  transition: .5s;
+}
+.social-media dl a .syg, .social-medial2 dl a .syg, .social-medial3 dl a .syg
+{
+  color: #eee;
+  line-height: 80px;
+  text-transform: uppercase;
+  transition: .5s;
+}
+.social-media dl a, .social-medial2 dl a, .social-medial3 dl a {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #000;
+  text-align: center;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+  transition: .5s;
+  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+}
+.social-media dl a:before, .social-medial2 dl a:before, .social-medial3 dl a:before {
+  content:'';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #222;
+  transition: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+.social-media dl a:after, .social-medial2 dl a:after, .social-medial3 dl a:after
+{
+  content:'';
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #222;
+  transition: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+.social-media dl a:hover, .social-medial2 dl a:hover, .social-medial3 dl a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px,-20px);
+}
+.social-media dl:hover .fab, .social-medial2 dl:hover .fab, .social-medial3 dl:hover .fab {
+  color: #ddd;
+}
+.social-media dl:hover:nth-child(1) a {
+  background: #3b5999;
+  box-shadow: -50px 50px 50px rgba(59,89,153 ,1);
+}
+.social-media dl:hover:nth-child(1) a:before {
+  background: #2e4a86; 
+}
+.social-media dl:hover:nth-child(1) a:after {
+  background: #4a69ad; 
+}
+.social-media dl:hover:nth-child(2) a {
+  background: #3b5999;
+  box-shadow: -50px 50px 50px rgba(59,89,153 ,1);
+}
+.social-media dl:hover:nth-child(2) a:before {
+  background: #2e4a86; 
+}
+.social-media dl:hover:nth-child(2) a:after {
+  background: #4a69ad; 
+}
+.social-media dl:hover:nth-child(3) a {
+  background: #cd201f;
+  box-shadow: -50px 50px 50px rgba(205,32,31 ,1);
+}
+.social-media dl:hover:nth-child(3) a:before {
+  background: #c30f0f; 
+}
+.social-media dl:hover:nth-child(3) a:after {
+  background: #a80808; 
+}
+.social-media dl:hover:nth-child(4) a {
+  background: #3b5999;
+  box-shadow: -50px 50px 50px rgba(59,89,153 ,1);
+}
+.social-media dl:hover:nth-child(4) a:before {
+  background: #2e4a86; 
+}
+.social-media dl:hover:nth-child(4) a:after {
+  background: #4a69ad; 
+}
+.social-media dl:hover:nth-child(5) a {
+  background: #3b5999;
+  box-shadow: -50px 50px 50px rgba(59,89,153 ,1);
+}
+.social-media dl:hover:nth-child(5) a:before {
+  background: #2e4a86; 
+}
+.social-media dl:hover:nth-child(5) a:after {
+  background: #4a69ad; 
+}
+.social-medial2 dl:hover:nth-child(1) a {
+  background: #000;
+  box-shadow: -50px 50px 50px rgba(255,255,255 ,1);
+}
+.social-medial2 dl:hover:nth-child(1) a:before {
+  background: #000; 
+}
+.social-medial2 dl:hover:nth-child(1) a:after {
+  background: #000; 
+}
+.social-medial2 dl:hover:nth-child(2) a {
+  background: #cd201f;
+  box-shadow: -50px 50px 50px rgba(205,32,31 ,1);
+}
+.social-medial2 dl:hover:nth-child(2) a:before {
+  background: #c30f0f; 
+}
+.social-medial2 dl:hover:nth-child(2) a:after {
+  background: #a80808; 
+}
+.social-medial3 dl:hover:nth-child(1) a {
+  background: #55acee;
+  box-shadow: -50px 50px 50px rgba(85,172,238 ,1);
+}
+.social-medial3 dl:hover:nth-child(1) a:before {
+  background: #4184b7; 
+}
+.social-medial3 dl:hover:nth-child(1) a:after {
+  background: #4d9fde; 
+}
+/******************* social media koniec **********/
+/* stopka strony */
+.stopka_inf {
+  padding: 2vh 1vw 2vh 1vw;
+  display: grid;
+  grid-template-areas :
+    'bip linki_ciekawe service_www stowarzyszenia';
+}
+.bip {
+  grid-area: bip;
+  padding-right: 4vw;
+}
+.bip a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text_strona);
+}
+.bip a:hover {
+  color: var(--text_strona_a);
+}
+.bip a img {
+  width: 5vw;
+  height: auto;
+}
+figcaption {
+  color: var(--text_strona_a);
+}
+.linki_ciekawe {
+  grid-area: linki_ciekawe;
+  padding: 0 4vw 0 4vw;
+}
+.linki_ciekawe h6, .service_www h6, .stowarzyszenia h6 {
+  color: var(--text_strona_a);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 1vh;
+}
+.linki_ciekawe ul, .service_www dl, .stowarzyszenia dl {
+  text-decoration: none;
+  color: var(--text_strona);
+  list-style: none;
+}
+.linki_ciekawe ul li a, .service_www dl dt a, .stowarzyszenia dl dt a {
+  color: var(--text_strona);
+  font-size: .8vw;
+}
+.linki_ciekawe ul li a:hover, .service_www dl dt a:hover, .stowarzyszenia dl dt a:hover {
+  color: var(--text_strona_a);
+}
+.service_www dl dt dd, .stowarzyszenia dl dt dd{
+  color: var(--text_strona_a);
+}
+.service_www {
+  grid-area: service_www;
+  padding: 0 4vw 0 4vw;
+}
+.stowarzyszenia {
+  grid-area: stowarzyszenia;
+}
+/* stopka strony koniec */
