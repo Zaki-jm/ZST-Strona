@@ -6,19 +6,19 @@ kolor ciemny niebieski - 10,60,132 0A3C84
 kolor ciemny-odcien niebieski - 18,96,206 1260ce
 kolor jasny-stary niebieski - 3,169,244 03A9F4
 */--tlo: #871812;
-  --menu_tlo: rgba(0,0,0,.4);
-  --background_tlo: rgba(0,0,0,1);
+  --menu_tlo: rgba(49, 2, 2, 0.4);
+  --background_tlo: rgb(51, 5, 5);
   --gradient: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 60%, rgba(12,12,12,1) 100%);
   --text_shadow: -1px -1px 1px rgba(172,172,171, .1), 1px 1px 1px rgba(236,236,236, .8);
-  --box-shadow: -1rem 0 2rem #c3c3c3;
+  --box-shadow: -1rem 0 2rem #000;
   --text_tlo: #000;
   --text_strona: #FFF;
-  --text_strona_a: #a1a1a1;
+  --text_strona_a: #FFF;
   --text_strona_h: linear-gradient(90deg, rgba(232,232,232,1) 0%, rgba(208,208,208,1) 47%, rgba(149,149,149,1) 100%);
   --color_cien: #c3c3c3;
   --color_header: linear-gradient(90deg, rgba(78, 73, 76,1) 0%, rgba(214, 212, 206,1) 47%, rgba(78, 73, 76,1) 100%);
   --color_header_hover: linear-gradient(90deg, rgba(214, 212, 206,1) 0%, rgba(78, 73, 76,1) 47%, rgba(214, 212, 206,1) 100%);
-  --color_belka_tlo : linear-gradient(#000000, #1c1c1c, #000000);
+  --color_belka_tlo : linear-gradient(#000000, #4e0808, #000000);
   --card_icon: #111;
   --card_icon_art: #333;
   --primary: #0A3C84;
@@ -186,7 +186,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/programista.webp);
+  background-image: url(../../img/slider/programista.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(0%); */
@@ -195,7 +195,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/informatyk2.webp);
+  background-image: url(../../img/slider/informatyk2.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(0%); */
@@ -204,7 +204,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/spawacz.webp);
+  background-image: url(../../img/slider/spawacz.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -213,7 +213,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/int_dom.webp);
+  background-image: url(../../img/slider/int_dom.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -222,7 +222,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/mechanik2.webp);
+  background-image: url(../../img/slider/mechanik2.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -231,7 +231,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/cnc.webp);
+  background-image: url(../../img/slider/cnc.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -240,7 +240,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/elektryk.webp);
+  background-image: url(../../img/slider/elektryk.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -249,7 +249,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/elektro_mechanik.webp);
+  background-image: url(../../img/slider/elektro_mechanik.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
@@ -258,7 +258,7 @@ header .tytul_nag .into {
   height: 100vh;
   width: 100vw;
   float: left;
-  background-image: url(../../img/slider/czarno_biale/mechanik.webp);
+  background-image: url(../../img/slider/mechanik.webp);
   background-repeat: no-repeat;
   background-size: cover;
 /*   filter: grayscale(100%); */
