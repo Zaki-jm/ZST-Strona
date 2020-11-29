@@ -14,10 +14,10 @@ kolor jasny-stary niebieski - 3,169,244 03A9F4
   --text_tlo: #000;
   --text_strona: #FFF;
   --text_strona_a: #FFF;
-  --text_strona_h: linear-gradient(90deg, rgba(232,232,232,1) 0%, rgba(208,208,208,1) 47%, rgba(149,149,149,1) 100%);
+  --text_strona_h: #FFF;
   --color_cien: #c3c3c3;
-  --color_header: linear-gradient(90deg, rgba(78, 73, 76,1) 0%, rgba(214, 212, 206,1) 47%, rgba(78, 73, 76,1) 100%);
-  --color_header_hover: linear-gradient(90deg, rgba(214, 212, 206,1) 0%, rgba(78, 73, 76,1) 47%, rgba(214, 212, 206,1) 100%);
+  --color_header: #FFF;
+  --color_header_hover: #FFF;
   --color_belka_tlo : linear-gradient(#000000, #4e0808, #000000);
   --card_icon: #111;
   --card_icon_art: #333;
