@@ -5,7 +5,7 @@
 kolor ciemny niebieski - 10,60,132 0A3C84
 kolor ciemny-odcien niebieski - 18,96,206 1260ce
 kolor jasny-stary niebieski - 3,169,244 03A9F4
-*/--tlo: #6499cf;
+*/--tlo:  #627180;
   --menu_tlo: rgba(0, 0, 0, 0.795);
   --background_tlo: rgba(0,0,0,1);
   --gradient: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 60%, rgba(12,12,12,1) 100%);
@@ -14,16 +14,16 @@ kolor jasny-stary niebieski - 3,169,244 03A9F4
   --text_tlo: #000;
   --text_strona: #FFF;
   --text_strona_a: rgb(228, 228, 228);
-  --text_strona_h: linear-gradient(90deg, rgb(30, 172, 228) 0%, rgb(46, 167, 236) 47%, rgb(12, 149, 212) 100%);
+  --text_strona_h: linear-gradient(90deg, rgb(40, 42, 43) 0%, rgb(110, 114, 116) 47%, rgb(78, 86, 90) 100%);
   --color_cien: #fff;
   --color_header: linear-gradient(90deg, rgb(204, 230, 255) 0%, rgb(255, 255, 255) 47%, rgb(217, 237, 255) 100%);
   --color_header_hover: linear-gradient(90deg, rgb(168, 209, 255) 0%, rgb(226, 248, 255) 50%, rgb(174, 229, 255) 100%);
-  --color_belka_tlo : linear-gradient(#5b9ad8 , #8bc5ff, #519be6);
+  --color_belka_tlo : linear-gradient( #444e58 ,  #8f9aa5,  #73767a);
   --card_icon: #111;
   --card_icon_art: #333;
   --primary: #0A3C84;
   --success: #00FF08;
-  --info: #0098FF;
+  --info: #000000;
   --warning: #FFC300;
   --danger: #F80006;
   --light: #f8f9fa;

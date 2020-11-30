@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
   /* 
+kolor ciemny niebieski - 10,60,132 0A3C84
+kolor ciemny-odcien niebieski - 18,96,206 1260ce
+kolor jasny-stary niebieski - 3,169,244 03A9F4
 */--tlo: #627180;
   --menu_tlo: rgba(0, 0, 0, 0.795);
   --background_tlo: rgba(0,0,0,1);
@@ -11,16 +14,16 @@
   --text_tlo: #000;
   --text_strona: #FFF;
   --text_strona_a: rgb(255, 255, 255);
-  --text_strona_h: linear-gradient(90deg, rgb(158, 158, 158) 0%, rgb(100, 100, 100) 47%, rgb(141, 141, 141) 100%);
+  --text_strona_h: linear-gradient(90deg,rgb(40, 42, 43) 0%, rgb(110, 114, 116) 47%, rgb(78, 86, 90) 100%);
   --color_cien: #fff;
   --color_header: linear-gradient(90deg, rgb(204, 230, 255) 0%, rgb(255, 255, 255) 47%, rgb(217, 237, 255) 100%);
   --color_header_hover: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
-  --color_belka_tlo : #313436;
+  --color_belka_tlo :  #444e58;
   --card_icon: rgb(255, 255, 255);
   --card_icon_art: #fff;
   --primary: #0A3C84;
   --success: #00FF08;
-  --info: #0098FF;
+  --info: #000000;
   --warning: #FFC300;
   --danger: #F80006;
   --light: #f8f9fa;
