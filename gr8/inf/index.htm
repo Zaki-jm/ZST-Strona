@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+<meta charset="utf-8">
+<title>Okręgowa Komisja Egzaminacyjna w Krakowie - OKE w Krakowie</title>
+
+<!--WIDOKI ZGODNOSCI DLA EXPLORERA, URUCHOMIENIE jQuery -->
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="http://www.oke.krakow.pl/inf/layout/horizon/images/favicon.ico">
+<!--- Cookie EU -->
+<link rel="stylesheet" type="text/css" href="http://www.oke.krakow.pl/inf/layout/horizon/css_ltr/cookieconsent.min.css" />
+<script src="http://www.oke.krakow.pl/inf/layout/horizon/javascript/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#eaf7f7",
+      "text": "#5c7291"
+    },
+    "button": {
+      "background": "#56cbdb",
+      "text": "#ffffff"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "message": "UWAGA! Niniejsza strona wykorzystuje pliki cookies niezbędne do jej prawidłowego działania. Pozostając na stronie godzisz się na ich zapisywanie w Twojej przeglądarce.",
+    "dismiss": "Rozumiem",
+    "link": ""
+  }
+})});
+</script>
+<!-- <meta http-equiv="Pragma" content="no-cache"> -->
+<link rel="start contents" href="http://www.oke.krakow.pl/inf">
+
+<link rel="next" href="http://www.oke.krakow.pl/inf/index.php?page=2">
+<link rel="canonical" href="http://www.oke.krakow.pl/inf/">
+<link rel="search" href="http://www.oke.krakow.pl/inf/search.php" title="zaawansowane szukanie"><link rel="stylesheet" type="text/css" href="http://www.oke.krakow.pl/inf/vendor/uikit/css/uikit.gradient.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://www.oke.krakow.pl/inf/layout/horizon/vendor/uikit/css/components/uikit.gradient.css">
+<link rel="stylesheet" type="text/css" href="http://www.oke.krakow.pl/inf/layout/horizon/css_ltr/style.css">
+<link rel="stylesheet" type="text/css" href="http://www.oke.krakow.pl/inf/layout/horizon/custommenu/custommenu.css">
+<link rel="stylesheet" type="text/css" href="http://www.oke.krakow.pl/inf/layout/horizon/css_ltr/theme.css">
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/javascript/common.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/javascript/jquery.min.js"></script>
+<script type="text/javascript">
+var geeklog = {
+    doc: document,
+    win: window,
+    $: function (id) {
+        return this.doc.getElementById(id);
+    },
+    site_url:"http://www.oke.krakow.pl/inf",site_admin_url:"http://www.oke.krakow.pl/inf/admin",layout_url:"http://www.oke.krakow.pl/inf/layout/horizon",xhtml:"",lang:{iso639Code:"pl",tooltip_loading:"Loading...",tooltip_not_found:"Help page is not found.",tooltip_select_date:"Click to select a date",tabs_more:"More..",confirm_delete:"Do you really want to delete this item?",confirm_send:"Send this?"},device:{isMobile:false,isTablet:false},theme_options:{}
+};
+</script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/layout/horizon/javascript/script.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/vendor/uikit/js/uikit.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/vendor/uikit/js/components/datepicker.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/vendor/uikit/js/components/form-password.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/vendor/uikit/js/components/form-select.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/vendor/uikit/js/components/grid.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/vendor/uikit/js/components/lightbox.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/vendor/uikit/js/components/slideshow.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/vendor/uikit/js/components/slideshow-fx.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/vendor/uikit/js/components/slideset.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/vendor/uikit/js/components/sticky.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/vendor/uikit/js/components/tooltip.js"></script>
+<script type="text/javascript" src="http://www.oke.krakow.pl/inf/layout/horizon/javascript/theme.js"></script>
+
+<meta name="description" content="Oficjalny serwis Okręgowej Komisji Egzaminacyjnej w Krakowie.">
+<meta name="keywords" content="OKE, Kraków, Okręgowa Komisja Egzaminacyjna, oświata, egzaminy, krakow, matura, sprawdzian w szkole podstawowej, egzamin gimnazjalny, egzamin dojrzałości, świadectwo, egzamin zawodowy">
+<!--[if lt IE 8]><link rel="stylesheet" href="http://www.oke.krakow.pl/inf/layout/horizon/css_ltr/ie8.css"><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="http://www.oke.krakow.pl/inf/layout/horizon/javascript/respond.min.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body dir="ltr" class="left-center">
+<div id="secret-data" style="display:none;">
+    </div>
+<div class="uk-container uk-container-center uk-margin-small-top">
+    <div class="uk-float-left uk-margin"><a title="Okręgowa Komisja Egzaminacyjna w Krakowie" href="http://www.oke.krakow.pl/inf"><img width=75% alt="Okręgowa Komisja Egzaminacyjna w Krakowie" class="uk-border-rounded" src="http://www.oke.krakow.pl/inf/images/nowe_logo_oke_L.png"></a></div>
+    <div class="uk-float-right"><a title="Kanał Youtube OKE w Krakowie" href="https://www.youtube.com/user/OKEKrakow"><i class="uk-icon-button uk-border-rounded uk-icon-youtube uk-icon-large"></i></a></div>
+    <div class="uk-float-right"><a title="Portal telewizyjny OKE w Krakowie" href="http://www.okekrakow.tv/"><i class="uk-icon-button uk-icon-tv uk-border-rounded uk-icon-large"></i></a></div>
+    <div class="uk-float-right"><a title="Biuletyn Informacji Publicznej" href="http://okekrakow.bip.gov.pl/"><img class="uk-border-rounded uk-icon-button uk-icon-large" width=35px src="http://www.oke.krakow.pl/inf\images\331px-POL_BIP_icon.svg.png"></a></div>
+    <br><br>
+    <div class="uk-float-right"><a title="Największy rozmiar czczionki" href="#" onclick='pagesize(3)' alt="Największy rozmiar czczionki"><i class="uk-icon-button uk-border-rounded uk-icon-plus"></i></a></div>
+    <div class="uk-float-right"><a title="Większy rozmiar czczionki" href="#" onclick='pagesize(2)' alt="Większy rozmiar czczionki"><i class="uk-icon-button uk-border-rounded uk-icon-plus"></i></a></div>
+    <div class="uk-float-right"><a title="Standardowy rozmiar czczionki" href="#" onclick='pagesize(1)' alt="Standardowy rozmiar czczionki"><i class="uk-icon-button uk-border-rounded uk-icon-font"></i></a></div>
+    <br><br>
+    <div class="uk-float-right"><a title="Włącz/Wyłącz Wysoki kontrast" href="#" onclick='setcontrast()'><i class="uk-icon-button uk-border-rounded uk-icon-low-vision "></i></a></div>
+    </div>
+
+    <nav class="uk-navbar uk-margin-bottom" data-uk-sticky="{ top:-100, animation: 'uk-animation-slide-top', boundary:true }">
+    <!-- MENU GORNE NORMALNE-->
+      <ul class="menu-center uk-width-10-10 uk-navbar-nav uk-hidden-small link-styl-oke-menu">
+        <li><img src="http://www.oke.krakow.pl/inf/images/topics/oke.jpg"></li>
+        
+<li class=""><a href="http://www.oke.krakow.pl/inf/">STRONA GŁÓWNA</a></li>
+
+
+<li class=""><a href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20181105124511919">SIOEO</a></li>
+
+
+<li class=""><a href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20051116113600675">OBIEG</a></li>
+
+
+<li class=""><a href="https://smok.oke.krakow.pl/">SMOK</a></li>
+
+
+<li class=""><a href="https://krak.oke.krakow.pl">KRAK</a></li>
+
+
+<li class=""><a href="https://www.oke.krakow.pl/umowy/">UMOWY</a></li>
+
+
+<li class=""><a href="https://www.oke.krakow.pl/egzaminatorzy/">Moodle - Egzaminatorzy</a></li>
+
+
+<li class=""><a href="http://okekrakow.bip.gov.pl/">BIP</a></li>
+
+
+<li class=""><a href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=adresy">KONTAKT</a></li>
+
+
+<li class=""><a href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20071107144757477">O OKE</a></li>
+
+
+<li class="last"><a href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=200607261414250" class="last">LINKI</a></li>
+
+    	</ul>
+
+        
+      <div class="uk-navbar-flip uk-navbar-flip">
+      <a href="#uk-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas="">Menu </a>
+    </nav>
+
+    <div id="uk-offcanvas" class="uk-offcanvas">
+      <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+        <!--MENU BOCZNE MOBILE-->
+      <li><a href="http://www.oke.krakow.pl/inf"> <i class="uk-icon-home"></i>STRONA GŁÓWNA</a></li>
+      <li><a href="https://obieg.oke.krakow.pl"> <i class="uk-icon-external-link"></i>OBIEG</a></li>
+      <li><a href="https://sioeo.ksdo.gov.pl"> <i class="uk-icon-external-link"></i>SIOEO</a></li>
+      <li><a href="https://www.oke.krakow.pl/umowy/">UMOWY</a></li>
+      <li><a href="https://krak.oke.krakow.pl/">KRAK</a></li>
+      <li><a href="https://smok.oke.krakow.pl">SMOK</a></li>
+      <li><a href="https://www.oke.krakow.pl/egzaminatorzy"> <i class="uk-icon-external-link"></i>MOODLE - EGZAMINATORZY</a></li>
+        <li><a href="http://okekrakow.bip.gov.pl/">BIP</a></li>
+        <li><a href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=adresy">KONTAKT</a></li>
+        <li><a href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=200607261414250">LINKI</a></li>
+    	</ul>
+          <!--
+<li class=""><a href="http://www.oke.krakow.pl/inf/">STRONA GŁÓWNA</a></li>
+
+
+<li class=""><a href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20181105124511919">SIOEO</a></li>
+
+
+<li class=""><a href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20051116113600675">OBIEG</a></li>
+
+
+<li class=""><a href="https://smok.oke.krakow.pl/">SMOK</a></li>
+
+
+<li class=""><a href="https://krak.oke.krakow.pl">KRAK</a></li>
+
+
+<li class=""><a href="https://www.oke.krakow.pl/umowy/">UMOWY</a></li>
+
+
+<li class=""><a href="https://www.oke.krakow.pl/egzaminatorzy/">Moodle - Egzaminatorzy</a></li>
+
+
+<li class=""><a href="http://okekrakow.bip.gov.pl/">BIP</a></li>
+
+
+<li class=""><a href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=adresy">KONTAKT</a></li>
+
+
+<li class=""><a href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20071107144757477">O OKE</a></li>
+
+
+<li class="last"><a href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=200607261414250" class="last">LINKI</a></li>
+
+-->
+      </div>
+    </div>
+
+    <div id="container" class="uk-container uk-border-rounded uk-container-center uk-margin-large-bottom">
+<div class="uk-container uk-container-center">
+</div>
+        <div id="wrapper">
+
+            <div id="centerblocks">
+        <main id="main-content">
+          <p class="uk-text-left uk-margin-small-top"></p>
+          
+
+<article itemscope itemtype="http://schema.org/Article" class="uk-article">
+  <header>
+
+<h2     itemprop="name" class="uk-article-title uk-margin-remove"><a href="http://www.oke.krakow.pl/inf/article.php?story=20201125101231335" class="non-ul">Odpowiedzi na najczęściej zadawane pytania uczniów, nauczycieli i rodziców</a></h2>
+    <div class="uk-grid">
+      <div class="uk-width-1-2">
+        <ul class="uk-article-meta uk-subnav uk-flex-left">
+          <li itemprop="datePublished">środa, 25-11-2020 godz. 10:12 &nbsp;</li>
+          <li> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"></span></span></li>
+          <li>Odsłon 203</li>
+        </ul>
+      </div>
+    <div class="uk-width-1-2">
+        <div class="uk-subnav uk-flex-right">
+          <a href="http://www.oke.krakow.pl/inf/article.php?story=20201125101231335&amp;mode=print" rel="nofollow"><img src="http://www.oke.krakow.pl/inf/layout/horizon/images/print.png" alt="Wersja do Wydruku" title="Wersja Do Wydruku"></a>        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div itemprop="articleBody" class="uk-margin-top">
+    <p>Wideochat z dyrektorem Centralnej Komisji Egzaminacyjnej</p><p>  <span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;mso-ansi-language:PL;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><a href="https://www.facebook.com/ministerstwo.edukacji/videos/2822544454690124/?sfnsn=mo">https://www.facebook.com/ministerstwo.edukacji/videos/2822544454690124/?sfnsn=mo</a></span></p>  </div>
+
+</article>
+
+
+<article itemscope itemtype="http://schema.org/Article" class="uk-article">
+  <header>
+
+<h2     itemprop="name" class="uk-article-title uk-margin-remove"><a href="http://www.oke.krakow.pl/inf/article.php?story=20201124130344476" class="non-ul">Informacja o przekazywaniu danych uczniów i absolwentów oraz materiałach szkoleniowych</a></h2>
+    <div class="uk-grid">
+      <div class="uk-width-1-2">
+        <ul class="uk-article-meta uk-subnav uk-flex-left">
+          <li itemprop="datePublished">wtorek, 24-11-2020 godz. 13:03 &nbsp;</li>
+          <li> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"></span></span></li>
+          <li>Odsłon 79</li>
+        </ul>
+      </div>
+    <div class="uk-width-1-2">
+        <div class="uk-subnav uk-flex-right">
+          <a href="http://www.oke.krakow.pl/inf/article.php?story=20201124130344476&amp;mode=print" rel="nofollow"><img src="http://www.oke.krakow.pl/inf/layout/horizon/images/print.png" alt="Wersja do Wydruku" title="Wersja Do Wydruku"></a>        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div itemprop="articleBody" class="uk-margin-top">
+    <p>Szanowni Państwo Dyrektorzy,</p><p style="text-align:justify"><span style="line-height:12.6pt">przekazanie danych uczniów i absolwentów, którzy zadeklarowali przystąpienie do egzaminu maturalnego w 2021 roku, odbywać się będzie w nowym Systemie Informatycznym Obsługującym Egzaminy Ogólnokształcące (<b><a href="http://sioeo.ksdo.gov.pl/">SIOEO</a></b>)<b><span style="text-decoration:none"><span style="text-underline:none">. </span></span><span style="font-weight:normal"><span style="text-decoration:none"><span style="text-underline:none">Otwarcie systemu jest planowane </span></span></span></b><b><span style="color:#1f4e79">w grudniu 2020 r.</span></b> Do logowania należy użyć tego samego loginu i hasła jak do SIO. Dokładny termin podamy w komunikacie.</span></p><p>System SIOEO jest zintegrowany z Systemem Informacji Oświatowej (<b><a href="https://sio.men.gov.pl/sio/podmiot/91404/main/podglad">SIO</a></b>). Dane szkół i dane uczniów, którzy są zgłoszeni w SIO będą wykorzystane do zgłaszania danych do OKE. Działaniem poprzedzającym przekazanie w SIOEO danych uczniów przystępujących do egzaminu maturalnego jest weryfikacja danych szkoły i zgłoszenie uczniów do egzaminu w SIO.<br>Link do instrukcji technicznej zgłaszania danych w SIO: <a href="https://pomocsio.men.gov.pl/grupowe-zgloszenie-do-egzaminu/">Instrukcja</a><br><strong><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#1f4e79">Dyrektorzy, którzy jeszcze tego nie zrobili, proszeni są o weryfikację i wprowadzenie danych w SIO.</span></span></strong></p><p><strong><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="font-weight:normal">Prosimy o zapoznanie się z materiałami szkoleniowymi z konferencji przeprowadzonej 19 listopada 2020 roku.</span></span></span></strong></p><p><strong><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="font-weight:normal">Prezentacje bez dźwięku oraz linki do materiałów filmowych znajdują się w materiałach OBIEG-u i SIOEO.</span></span></span></strong></p>  </div>
+
+</article>
+
+
+<article itemscope itemtype="http://schema.org/Article" class="uk-article">
+  <header>
+
+<h2     itemprop="name" class="uk-article-title uk-margin-remove"><a href="http://www.oke.krakow.pl/inf/article.php?story=20201106124728883" class="non-ul">Konferencje szkoleniowe on-line dla dyrektorów szkół przeprowadzających egzaminy maturalne</a></h2>
+    <div class="uk-grid">
+      <div class="uk-width-1-2">
+        <ul class="uk-article-meta uk-subnav uk-flex-left">
+          <li itemprop="datePublished">piątek, 06-11-2020 godz. 12:47 &nbsp;</li>
+          <li> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"></span></span></li>
+          <li>Odsłon 342</li>
+        </ul>
+      </div>
+    <div class="uk-width-1-2">
+        <div class="uk-subnav uk-flex-right">
+          <a href="http://www.oke.krakow.pl/inf/article.php?story=20201106124728883&amp;mode=print" rel="nofollow"><img src="http://www.oke.krakow.pl/inf/layout/horizon/images/print.png" alt="Wersja do Wydruku" title="Wersja Do Wydruku"></a>        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div itemprop="articleBody" class="uk-margin-top">
+    <p style="margin-bottom:11.25pt"><span style="background:white"><span style="line-height:normal"><span style="font-size:11.0pt"><span style="font-weight:normal">Szanowni Państwo,</span></span></span></span></p><p style="margin-top:11.25pt; margin-right:0cm; margin-bottom:11.25pt; margin-left:0cm; text-align:justify"><span style="background:white"><span style="line-height:normal"><span style="font-size:11.0pt"><span style="font-weight:normal">w związku z otwarciem w grudniu systemu informatycznego SIOEO do obsługi egzaminu maturalnego zapraszamy Dyrektorów wszystkich szkół w województwie lubelskim, małopolskim i podkarpackim na konferencje on-line 19 listopada o godzinie 11:00.</span></span></span></span></p><p style="margin-top:11.25pt; margin-right:0cm; margin-bottom:11.25pt; margin-left:0cm; text-align:justify"><span style="background:white"><span style="line-height:normal"><span style="font-size:11.0pt"><span style="font-weight:normal">Tematem konferencji będą:</span></span></span></span></p><ul>	<li><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-weight:normal">Wybrane zagadnienia prawne dotyczące egzaminu maturalnego.</span></span></span></li>	<li><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-weight:normal">Prezentacja nowego Systemu Informatycznego Obsługującego Egzaminy Ogólnokształcące. </span></span></span></li>	<li><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-weight:normal">Organizacja egzaminu i wprowadzanie danych do SIOEO.</span></span></span></li>	<li><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-weight:normal">Wprowadzanie dostosowań formy i warunków egzaminu maturalnego do SIOEO.</span></span></span></li>	<li><span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-weight:normal">Wyniki egzaminu maturalnego.</span></span></span></li></ul><p style="margin-top:11.25pt; margin-right:0cm; margin-bottom:11.25pt; margin-left:0cm; text-align:justify"><span style="background:white"><span style="line-height:normal"><span style="font-size:11.0pt"><span style="font-weight:normal"><strong>Prezentacje z konferencji on-line zostały zamieszczone </strong></span></span></span></span><span style="display: inline !important; float: none; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: sans-serif,Arial,Verdana,&quot;Trebuchet MS&quot;; font-size: 14.66px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">w obu systemach: OBIEG oraz SIOEO, </span><span style="background:white"><span style="line-height:normal"><span style="font-size:11.0pt"><span style="font-weight:normal"><strong>w dziale Materiały, w folderze Materiały szkoleniowe dla PZE jako plik zip: "Prezentacje z konferencji 19-11-2020 - bez dźwięku".</strong></span></span></span></span></p>  </div>
+
+</article>
+
+
+<article itemscope itemtype="http://schema.org/Article" class="uk-article">
+  <header>
+
+<h2     itemprop="name" class="uk-article-title uk-margin-remove"><a href="http://www.oke.krakow.pl/inf/article.php?story=20201104104537348" class="non-ul">Ankieta po konferencjach on-line z dyrektorami szkół podstawowych</a></h2>
+    <div class="uk-grid">
+      <div class="uk-width-1-2">
+        <ul class="uk-article-meta uk-subnav uk-flex-left">
+          <li itemprop="datePublished">środa, 04-11-2020 godz. 10:45 &nbsp;</li>
+          <li> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"></span></span></li>
+          <li>Odsłon 268</li>
+        </ul>
+      </div>
+    <div class="uk-width-1-2">
+        <div class="uk-subnav uk-flex-right">
+          <a href="http://www.oke.krakow.pl/inf/article.php?story=20201104104537348&amp;mode=print" rel="nofollow"><img src="http://www.oke.krakow.pl/inf/layout/horizon/images/print.png" alt="Wersja do Wydruku" title="Wersja Do Wydruku"></a>        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div itemprop="articleBody" class="uk-margin-top">
+    <p>Szanowni Państwo,</p><p style="-webkit-text-stroke-width:0px"><span style="box-sizing:inherit"><span style="color:rgba(0, 0, 0, 0.87)"><span style="orphans:2"><span style="word-spacing:0px">w Strefie Pracownika SIO w dziale Aktualności w zakładce „Ankiety" została dla Państwa udostępniona ankieta dotycząca konferencji szkoleniowych dla dyrektorów, które odbyły się on-line w dniach 27 i 28 października 2020 r. </span></span></span></span><span style="color:#444444">Dziękujemy Państwu za udział w konferencji.</span></p><p style="-webkit-text-stroke-width:0px"><span style="box-sizing:inherit"><span style="color:rgba(0, 0, 0, 0.87)"><span style="orphans:2"><span style="word-spacing:0px"><span style="color:rgba(0, 0, 0, 0.87); -webkit-text-stroke-width:0px"><span style="orphans:2"><span style="float:none"><span style="word-spacing:0px"><span style="background:white">Ankieta ma na celu zebranie informacji o zapoznaniu się Państwa z materiałami z konferencji. </span></span></span></span></span></span></span></span></span></p><p style="-webkit-text-stroke-width:0px"><span style="box-sizing:inherit"><span style="color:rgba(0, 0, 0, 0.87)"><span style="orphans:2"><span style="word-spacing:0px"><span style="color:rgba(0, 0, 0, 0.87); -webkit-text-stroke-width:0px"><span style="orphans:2"><span style="float:none"><span style="word-spacing:0px"><span style="background:white">Prosimy o wypełnienie ankiety najpóźniej do 20 listopada br.</span></span></span></span></span></span></span></span></span></p><p style="margin-top:11.25pt; margin-right:0cm; margin-bottom:11.25pt; margin-left:0cm; -webkit-text-stroke-width:0px"><strong><span style="orphans:2"><span style="word-spacing:0px"><span style="color:#444444">W komunikatach systemu SIOEO zostały udostępnione linki do nagrań ze szkolenia.</span></span></span></strong></p>  </div>
+
+</article>
+
+
+<article itemscope itemtype="http://schema.org/Article" class="uk-article">
+  <header>
+
+<h2     itemprop="name" class="uk-article-title uk-margin-remove"><a href="http://www.oke.krakow.pl/inf/article.php?story=20201030151020342" class="non-ul">Sprawozdania o egzaminach maturalnych oraz egzaminie ósmoklasisty</a></h2>
+    <div class="uk-grid">
+      <div class="uk-width-1-2">
+        <ul class="uk-article-meta uk-subnav uk-flex-left">
+          <li itemprop="datePublished">piątek, 30-10-2020 godz. 15:10 &nbsp;</li>
+          <li> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"></span></span></li>
+          <li>Odsłon 363</li>
+        </ul>
+      </div>
+    <div class="uk-width-1-2">
+        <div class="uk-subnav uk-flex-right">
+          <a href="http://www.oke.krakow.pl/inf/article.php?story=20201030151020342&amp;mode=print" rel="nofollow"><img src="http://www.oke.krakow.pl/inf/layout/horizon/images/print.png" alt="Wersja do Wydruku" title="Wersja Do Wydruku"></a>        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div itemprop="articleBody" class="uk-margin-top">
+    <p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="line-height: 107%; font-size: 11pt; font-weight: normal;">Szanowni Państwo,</span></span></p><p style="text-align: justify;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="line-height: 107%; font-size: 11pt; font-weight: normal;">w zakładce <strong>Wyniki egzaminów</strong>, pod linkami: egzamin ósmoklasisty oraz egzamin maturalny, zostały zamieszczone sprawozdania<br>z tych egzaminów w roku 2020. Sprawozdania dotyczą poszczególnych przedmiotów egzaminacyjnych i zostały opracowane dla poszczególnych województw. Sprawozdania ogólne zawierają dane dotyczące populacji uczniów, opisują przebieg egzaminu, przedstawiają podstawowe dane statystyczne oraz przedstawiają obszerne komentarze do arkuszy egzaminacyjnych.</span></span></p><p style="text-align:justify"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background: white; line-height: 107%; font-size: 11pt; font-weight: normal;">Prosimy o zapoznanie się z zamieszczonymi sprawozdaniami</span>.</span></p>  </div>
+
+</article>
+
+
+<ul class="uk-pagination uk-margin-large-top uk-margin-bottom ">
+<li class="uk-disabled"><span><i class="uk-icon-angle-double-left"></i></span></li>
+<li class="uk-disabled"><span><i class="uk-icon-angle-left"></i></span></li>
+<li class="uk-active"><span>1</span></li><li><a href="http://www.oke.krakow.pl/inf/index.php?page=2">2</a></li><li><a href="http://www.oke.krakow.pl/inf/index.php?page=3">3</a></li><li><a href="http://www.oke.krakow.pl/inf/index.php?page=4">4</a></li><li><a href="http://www.oke.krakow.pl/inf/index.php?page=5">5</a></li><li><a href="http://www.oke.krakow.pl/inf/index.php?page=6">6</a></li><li><a href="http://www.oke.krakow.pl/inf/index.php?page=7">7</a></li><li><a href="http://www.oke.krakow.pl/inf/index.php?page=2"><span><i class="uk-icon-angle-right"></i></span></a></li>
+<li><a href="http://www.oke.krakow.pl/inf/index.php?page=26"><i class="uk-icon-angle-double-right"></i></a></li>
+</ul>
+
+        </main>
+      </div>
+      
+      
+  <div id="leftblocks" role="complementary">
+
+    
+    
+    <section class="block-left">
+      <h2 class="block-title"> Menu Główne</h2>
+      <div class="block-left-content">
+
+<div class="uk-panel uk-margin-small-bottom styl-zielony uk-badge-notification uk-panel-box"><a title="Egzamin ósmoklasisty " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20190103115717492">Egzamin ósmoklasisty</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-pomaranczowy uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Egzamin maturalny " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20190103120219305">Egzamin maturalny</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-czerwony uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Egzamin zawodowy " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20190103120554691">Egzamin zawodowy</a></div>
+<div class="uk-panel uk-margin-small-bottom uk-badge-notification styl-brazowy uk-panel-box uk-panel-box-primary"><a title="Egzamin eksternistyczny " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20190103120810246">Egzamin eksternistyczny</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-oke uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Panel Zdającego " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20190103121435785">Dla zdających i absolwentów</a></div>
+<hr>
+<div class="uk-panel uk-margin-small-bottom styl-oke uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Arkusze egzaminacyjne " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20190107152352244">Arkusze egzaminacyjne</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-oke uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Wyniki egzaminów " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20160429154830137">Wyniki egzaminów</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-oke uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Portal telewizyjny OKE w Krakowie" class="stylbialy" href="http://www.okekrakow.tv/">Portal telewizyjny OKE</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-oke uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Szklenia na egzaminatorów " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=szkoleniaE">Szkolenia na egzaminatorów</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-oke uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Obserwacje egzaminów zewnętrznych " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20120706151353993">Obserwacje egzaminów zew.</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-oke uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Publikacje pracowników OKE " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20051020135127485">Publikacje pracowników OKE</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-oke uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Formularz zgłoszenia / likwidacji(zespołu szkół, szkoły, placówki, pracodawcy)" class="stylbialy" href="http://www.oke.krakow.pl/inf/filemgmt/visit.php?lid=5045">Zgłoszenie / likwidacja szkoły</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-oke uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Zamówienia publiczne " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20050831115608569">Zamówienia publiczne</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-oke uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Oferty pracy " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20080218120445435">Oferty pracy</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-oke uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="RODO " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20180525150449588">RODO</a></div>
+<div class="uk-panel uk-margin-small-bottom styl-oke uk-badge-notification uk-panel-box uk-panel-box-primary"><a title="Deklaracja dostępności " class="stylbialy" href="http://www.oke.krakow.pl/inf/staticpages/index.php?page=20190927124242513">Deklaracja dostępności</a></div>
+
+
+      </div>
+    </section>
+
+  </div>
+
+
+      
+    </div>
+    
+  </div>
+    <div class="uk-margin-large-top uk-margin-large-bottom uk-text-center"><a class="uk-icon-small uk-icon-hover uk-icon-chevron-up" data-uk-smooth-scroll="" href="#"></a></div>
+
+    <footer id="footer" class="uk-clearfix">
+      <div id="footer-content">
+        <p class="uk-float-left uk-text-small"></p>
+        <p class="uk-float-right uk-text-small">
+          <span>Wersja&nbsp;<a href="http://www.geeklog.net/">Geeklog</a></span><br>
+          <span>Strona wygenerowana w  0,26 sekund</span>
+        </p>
+      </div>
+      <div class="uk-container-center uk-width-medium-1-2">
+        <a href="https://cie.men.gov.pl/projekty-realizowane-3/"><img src="http://www.oke.krakow.pl/inf/images/logo_ue.png" alt="Europejski fundusz społeczny" style="height:50px; width:auto; margin-bottom:3px"></a>
+        <a href="http://naszeszkoly.krakow.pl"><img src="http://www.oke.krakow.pl/inf/images/baner_portal_edukacyjny4.jpg" alt="Nasze szkoły" style="height:50px; width:auto; margin-bottom:3px"></a>
+        <a href="http://www.mcdn.nazwa.pl/"><img src="http://www.oke.krakow.pl/inf/images/mcdn_banner.jpg" alt="Hejnał oświatowy" style="height:50px; width:auto; margin-bottom:3px"></a>
+        <a href="http://www.ptde.org/"><img src="http://www.oke.krakow.pl/inf/images/logo_PTDE.jpg" alt="Polskie Towarzystwo Diagnostyki Edukacyjnej" style="height:50px; width:auto; margin-bottom:3px"></a>
+        <a href="https://www.openhorizon.com.pl/"><img src="http://www.oke.krakow.pl/inf/images/logo_OH.png" alt="Open Hirozon" style="height:50px; width:auto; margin-bottom:3px"></a>
+        <a href="http://wupkrakow.praca.gov.pl/"><img src="http://www.oke.krakow.pl/inf/images/wup.png" alt="Wojewódzki urząd pracy w Krakowie" style="height:100px; width:auto; margin-bottom:3px"></a>
+        <a href="http://ewd.edu.pl/"><img src="http://www.oke.krakow.pl/inf/images/ewd_logo.png" alt="Edukacyjna wartość dodana" style="height:50px; width:50px; margin-bottom:3px"></a>
+
+    </div>
+    </footer>
+
+  
+  <!-- Depending on the situation, HTML body element's class attribute to specify a value by JavaScript
+       The argument from the left, the right block container, the middle block left the right block id attribute value -->
+  <script type="text/javascript">
+  <!--
+    FixHTML('leftblocks', 'centerblocks', 'rightblocks');
+  -->
+  </script>
+
+
+</body>
+
+</html>
