@@ -1,1 +1,1 @@
-W tym folderze znajdują się pliki css strony 
+W tym folderze znajdują się pliki css strony projektu
