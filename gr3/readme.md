@@ -1,2 +1,0 @@
-Chochół Dawid
-Darek Kurowski
