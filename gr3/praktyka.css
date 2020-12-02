@@ -1,0 +1,1591 @@
+@import  url ( 'https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap' );
+@import  url ( 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300; 1,400 ; 1500; 1600; 1700; 1800; 1900 & display = swap ' );
+: root {
+  / * 
+ /--tlo : # F9F510; 
+  --menu_tlo : rgba ( 245 ,  252 ,  145 ,  0,308 );
+  --background_tlo :#F9F510 rgba ( 0 , 0 , 0 , 1 );
+  --gradient : gradient liniowy ( 180 stopni ,  rgba ( 0 , 0 , 0 , 1 ) 0 % ,  rgba ( 18 , 18 , 18 , 1 ) 60 % ,  rgba ( 12 , 12 , 12 , 1 ) 100 % ) ;
+  --text_shadow : -1px -1px 1 px  rgba ( 172 , 172 , 171 ,   ) ,  1 px  1 px  1 px  rgba ( 236 , 236 , 236 ,  .8 );
+  --box-shadow : -1rem 0  2 rem  # c3c3c3;
+  --text_tlo : # 000 ;
+  --text_strona : # FFF ;
+  --text_strona_a :a1a1a1; rgb ( 232 ,  232 ,  232,1) % ;
+  --text_strona_h : gradient liniowy ( 90 stopni ,  rgba ( 232 ,  232 ,  232 ) 0 % ,  rgba ( 208 ,  208 ,  208,1 ) 47 % ,  rgba  (214 ,  212 ,  206,1) 100 % );
+  --color_cien : # c3c3c3;
+  --color_header : gradient liniowy ( 90 stopni ,  rgba ( 78,73,76,1) 0 % ,  rgba ( 214 ,  212 ,  206,1) 47 % ,  rgba ( 78 ,  73,  ,76,1) 100 % );
+  --color_header_hover : gradient liniowy ( 90 stopni ,  rgb ( 214 ,  212 ,  206.1 ) 0 % ,  rgb ( 78,  73 ,  76,1 ) 47 % ,  rgba ( 78 ,  73,  76,1 ) 100 % );
+  --color_belka_tlo :(#fffb00,#ffef95, #1#fffb00,);
+  --card_icon : #111;
+  --card_icon_art : # 333;
+  - podstawowy : # 0A3C84;
+  - sukces : # 00FF08;
+  --info : # 0098FF;
+  - ostrzeżenie : # FFC300 ;
+  - niebezpieczeństwo : # F80006 ;
+  --light : # f8f9fa ;
+  - ciemny : # 161616;
+  --white : # FFF ;
+  - czarny : # 000;
+  --font_family : „Montserrat” ,  bezszeryfowa ;
+}
+  * {
+    box-size : border-box;
+    margines : 0 ;
+    wyściółka : 0 ;
+  }
+  html ,  body {
+    rodzina czcionek : var ( --font_family );
+    rozmiar czcionki : .8 rem ;
+    waga czcionki : 200 ;
+    tło : var ( --tlo );
+    kolor : var ( --text_strona );
+  }
+  h6 {
+    rodzina czcionek : var ( --font_family );
+    rozmiar czcionki : 1 vw ;
+    font-weight : 300 ;
+  }
+  h5 {
+    rodzina czcionek : var ( --font_family );
+    rozmiar czcionki : 1,2 vw ;
+    waga czcionki : 400 ;
+  }
+  h4 {
+    rodzina czcionek : var ( --font_family );
+    rozmiar czcionki : 1,4 vw ;
+    waga czcionki : 500 ;
+  }
+  h3 {
+    rodzina czcionek : var ( --font_family );
+    rozmiar czcionki : 1,6 vw ;
+    waga czcionki : 600 ;
+  }
+  h2 {
+    rodzina czcionek : var ( --font_family );
+    rozmiar czcionki : 2 vw ;
+    waga czcionki : 700 ;
+  }
+  h1  span {
+    rodzina czcionek : var ( --font_family );
+    rozmiar czcionki : 3 vw ;
+    waga czcionki : 700 ;
+  }
+  h1 {
+    rodzina czcionek : var ( --font_family );
+    rozmiar czcionki : 2,4 vw ;
+    waga czcionki : 700 ;
+  }
+  p {
+    rodzina czcionek : var ( --font_family );
+    rozmiar czcionki : .8 vw ;
+    waga czcionki : 200 ;
+  }
+  nagłówek {
+    text-transform : wielkie litery;
+    wyściółka : 4 vh  0  4 vh  0 ;
+  }
+  nagłówek  p {
+    text-transform : brak;
+  }
+  nagłówek . tytul_nag {
+    wyrównywanie tekstu : do środka;
+  }
+  nagłówek . tytul_nag  h6 {
+    rozmiar czcionki : .6 vw ;
+  }
+  nagłówek . tytul_nag . do {
+    odstępy między literami : 1 piksel ;
+  }
+  / * nagówek zst * /
+  . tytul_nag {
+    wyświetlacz : elastyczny;
+    flex-direction : kolumna;
+    justify-content : center;
+    align-items : center;
+  }
+  . tytul_nag  h1 {
+    odstępy między literami : 1 piksel ;
+  }
+  . tytul_nag  h2 {
+    rozmiar czcionki : 1,6 vw ;
+  }
+  / * koniec nag? ówka zst * /
+  . container-fluid {
+    szerokość : 100 % ;
+    margines : 0 ;
+  }
+  . pojemnik {
+    szerokość : 60 % ;
+    marża : 0  20 %  0  20 % ;
+  }
+  . color_header {
+    tło : var ( --color_header );
+    text-shadow : brak;
+    background-clip : tekst;
+    -webkit-background-clip : tekst;
+    -webkit-text-fill-color : przezroczysty;
+  }
+  . color_header : hover {
+    background : var ( --color_header_hover );
+    text-shadow : brak;
+    background-clip : tekst;
+    -webkit-background-clip : tekst;
+    -webkit-text-fill-color : przezroczysty;
+    kursor : wskaźnik;
+  }
+  . btn {
+    background-image : var ( --color_header );
+    text-transform : wielkie litery;
+    rozmiar czcionki : .8 vw ;
+    waga czcionki : 700 ;
+    dekoracja tekstu : brak;
+    kolor : var ( --text_tlo );
+    wyściółka : .4 vh  .8 vw  .4 vh  .8 vw ;
+    border-radius : .2 vw ;
+    border : .1 vw solid var ( --tlo );
+  }
+  . btn_small {
+    background-image : var ( --color_header );
+    text-transform : wielkie litery;
+    rozmiar czcionki : .55 vw ;
+    waga czcionki : 700 ;
+    dekoracja tekstu : brak;
+    kolor : var ( --text_tlo );
+    wyściółka : .4 vh  .8 vw  .4 vh  .8 vw ;
+    border-radius : .2 vw ;
+    border : .1 vw solid var ( --tlo );
+    float : right;
+  }
+  . btn : hover {
+    background-image : var ( --tlo );
+    kolor : var ( --text_shadow );
+    obramowanie : .1 vw solid var ( --color_cien );
+  }
+  . btn_small : hover {
+    background-image : var ( --tlo );
+    kolor : var ( --text_shadow );
+    obramowanie : .1 vw solid var ( --color_cien );
+  }
+  / * suwak banera * /
+  . slider {
+    przepełnienie : ukryte;
+    wysokość : 100 vh ;
+  }
+  . suwak . banner {
+    szerokość : 1000 vw ;
+    margines : 0 ;
+    po lewej : 0 ;
+    pozycja : względna;
+    animacja : nieskończona ilość slajdów 50 s ;
+  }
+  . suwak . baner . banner_img {
+    wysokość : 100 vh ;
+    szerokość : 100 vw ;
+    float : left;
+    background-image : url (.. / .. / img / slider / czarno_biale / programista.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  / * filtr: skala szarości (0%); * /
+  }
+  . suwak . baner . banner_img1 {
+    wysokość : 100 vh ;
+    szerokość : 100 vw ;
+    float : left;
+    background-image : url (.. / .. / img / slider / czarno_biale / informatyk2.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  / * filtr: skala szarości (0%); * /
+  }
+  . suwak . baner . banner_img2 {
+    wysokość : 100 vh ;
+    szerokość : 100 vw ;
+    float : left;
+    background-image : url (.. / .. / img / slider / czarno_biale / spawacz.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  / * filtr: skala szarości (100%); * /
+  }
+  . suwak . baner . banner_img3 {
+    wysokość : 100 vh ;
+    szerokość : 100 vw ;
+    float : left;
+    background-image : url (.. / .. / img / slider / czarno_biale / int_dom.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  / * filtr: skala szarości (100%); * /
+  }
+  . suwak . baner . banner_img4 {
+    wysokość : 100 vh ;
+    szerokość : 100 vw ;
+    float : left;
+    background-image : url (.. / .. / img / slider / czarno_biale / mechanik2.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  / * filtr: skala szarości (100%); * /
+  }
+  . suwak . baner . banner_img5 {
+    wysokość : 100 vh ;
+    szerokość : 100 vw ;
+    float : left;
+    background-image : url (.. / .. / img / slider / czarno_biale / cnc.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  / * filtr: skala szarości (100%); * /
+  }
+  . suwak . baner . banner_img6 {
+    wysokość : 100 vh ;
+    szerokość : 100 vw ;
+    float : left;
+    background-image : url (.. / .. / img / slider / czarno_biale / elektryk.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  / * filtr: skala szarości (100%); * /
+  }
+  . suwak . baner . banner_img7 {
+    wysokość : 100 vh ;
+    szerokość : 100 vw ;
+    float : left;
+    background-image : url (.. / .. / img / slider / czarno_biale / elektro_mechanik.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  / * filtr: skala szarości (100%); * /
+  }
+  . suwak . baner . banner_img8 {
+    wysokość : 100 vh ;
+    szerokość : 100 vw ;
+    float : left;
+    background-image : url (.. / .. / img / slider / czarno_biale / mechanik.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  / * filtr: skala szarości (100%); * /
+  }
+  @keyframes slide {
+    0 % {
+      po lewej : 0 ;
+    }
+    5 % {
+      po lewej : 0 ;
+    }
+    10 % {
+      po lewej : -100,6 % ;
+    }
+    15 % {
+      po lewej : -100,6 % ;
+    }
+    20 % {
+      po lewej : -201 % ;
+    }
+    25 % {
+      po lewej : -201 % ;
+    }
+    30 % {
+      po lewej : -301,8 % ;
+    }
+    35 % {
+      po lewej : -301,8 % ;
+    }
+    40 % {
+      po lewej : -402,4 % ;
+    }
+    45 % {
+      po lewej : -402,4 % ;
+    }
+    50 % {
+      po lewej : -503 % ;
+    }
+    55 % {
+      po lewej : -503 % ;
+    }
+    60 % {
+      po lewej : -603,6 % ;
+    }
+    65 % {
+      po lewej : -603,6 % ;
+    }
+    70 % {
+      po lewej : -704,2 % ;
+    }
+    75 % {
+      po lewej : -704,2 % ;
+    }
+    80 % {
+      po lewej : -804,8 % ;
+    }
+    85 % {
+      po lewej : -804,8 % ;
+    }
+    90 % {
+      po lewej : -905,4 % ;
+    }
+    95 % {
+      po lewej : -905,4 % ;
+    }
+    100 % {
+      po lewej : -905,4 % ;
+    }
+  }
+  . suwak . baner . banner_info {
+    wysokość : 100 vh ;
+    wyświetlacz : elastyczny;
+    flex-direction : kolumna;
+    justify-content : center;
+    align-items : flex-start;
+  }
+  . suwak . baner . banner_info  h1 {
+    text-transform : wielkie litery;
+    rozmiar czcionki : 4 vw ;
+    odstępy między literami : .1 vw ;
+    wyściółka-lewa : 20 vw ;
+    padding-right : 20 vw ;
+    kolor : # 000 ;
+    text-shadow : -2px 0  # fff ,  0  2 px  # fff ,  2 px  0  # fff ,  0 -2px # fff ;
+  / * tło: -webkit-linear-gradient (120 stopni, # 000, # 333);
+    -webkit-background-clip: tekst;
+    -webkit-text-fill-color: przezroczysty; * /
+  }
+  . suwak . baner . banner_info  h6 {
+    text-transform : wielkie litery;
+    wyściółka-lewa : 20 vw ;
+    kolor : var ( --text_strona );
+  }
+  . suwak . baner . banner_info  p {
+    rozmiar czcionki : 1 vw ;
+    wyściółka-lewa : 20 vw ;
+    kolor : var ( --text_strona );
+  }
+  / * banner koniec * /
+  . pas_gorny {
+    szerokość : 100 % ;
+    minimalna wysokość : 100 vh ;
+    góra : 0 ;
+    pozycja : bezwzględna;
+  }
+  / * pasek logo telefony * /
+  . info_zst {
+    minimalna wysokość : 60 pikseli ;
+    wyściółka : .4 vh  2 vw  .4 vh  2 vw ;
+    kolor : var ( --text_strona );
+    tło : var ( --menu_tlo );
+    wyświetlacz : siatka;
+    grid-template-columns : powtórz ( 3 ,  1 fr );
+  }
+  . info_zst  img {
+    wysokość : 56 px ;
+    szerokość : auto;
+    wyściółka : .2 vh  1 vw ;
+    Siatka kolumna : 1  /  2 ;
+  }
+  . info_zst  a {
+    dekoracja tekstu : brak;
+    wyświetlacz : elastyczny;
+    align-items : center;
+  }
+  . info_zst  ul {
+    styl listy : brak;
+    wyświetlacz : elastyczny;
+    justify-content : flex-end;
+    align-items : center;
+    Siatka kolumna : 2  /  4 ;
+  }
+  . info_zst  ul  li {
+    padding-left : 1 vw ;
+    rozmiar czcionki : .8 vw ;
+    waga czcionki : 400 ;
+    kolor : var ( --text_strona );
+  }
+  . info_zst  ul  li . fas {
+    rozmiar czcionki : 0,8 vw ;
+    kolor : var ( --text_strona_a );
+   }
+  / * pasek logo telefony koniec * /
+  / * nawigacja kontrast * /
+  . navbar {
+    tło : var ( --menu_tlo );
+    wyściółka : .4 vh  2 vw  .4 vh  2 vw ;
+    wyświetlacz : siatka;
+    Siatka-szablon-kolumny : 1 fr  1 fr  1 fr  1 fr  .3 fr  .3 fr  .1 fr ;
+    grid-template-area :
+      "nazwa_zst menus menus menus rozmiar_font kontrast toggler" ;
+  }
+  . navbar . nazwa_zst {
+    grid-area : nazwa_zst;
+    wyświetlacz : elastyczny;
+    align-items : center;
+    justify-content : center;
+  }
+  . navbar . nazwa_zst  a {
+    dekoracja tekstu : brak;
+    kolor : var ( --text_strona );
+    text-transform : wielkie litery;
+    odstępy między literami : 0,01 vw ;
+  }
+  . navbar . nazwa_zst  a  h1 {
+    wyrównywanie tekstu : do środka;
+    kolor : var ( --text_strona );
+    wysokość linii : 1,6 vh ;
+    padding-top : 1 vh ;
+    rozmiar czcionki : 1,2 vw ;
+    waga czcionki : 400 ;
+  }
+  . navbar . nazwa_zst  a  h1  span {
+    rozmiar czcionki : .8 vw ;
+    odstępy między literami : 0 vw ;
+    kolor : var ( --text_strona );
+  }
+  . navbar . menu {
+    obszar siatki : menu;
+    wyświetlacz : elastyczny;
+    align-items : center;
+    justify-content : flex-end;
+  }
+  . navbar . menus  ul {
+    styl listy : brak;
+    wyświetlacz : elastyczny;
+  }
+  . navbar . menus  ul  li {
+    padding-right : 1 vw ;
+  }
+  . navbar . menus  ul  li  a {
+    dekoracja tekstu : brak;
+    rozmiar czcionki : .8 vw ;
+    waga czcionki : 400 ;
+    kolor : var ( --text_strona );
+    text-transform : wielkie litery;
+  }
+  . navbar . menus  ul  li  a : hover {
+    kolor : var ( --text_strona_a );
+  }
+  . navbar . rozmiar_font {
+    obszar siatki : rozmiar_font;
+    wyświetlacz : elastyczny;
+    flex-direction : kolumna;
+    align-items : center;
+    justify-content : center;
+    kolor : var ( --text_strona );
+  }
+  . navbar . rozmiar_font . text_rozmiar {
+    text-transform : wielkie litery;
+    rozmiar czcionki : .6 vw ;
+  }
+  . navbar . rozmiar_font . ikony_rozmiar  ul {
+    styl listy : brak;
+    wyświetlacz : elastyczny;
+    align-items : center;
+    justify-content : center;
+  }
+  . navbar . rozmiar_font . ikony_rozmiar  ul  li {
+    wyściółka : .4 vw ;
+    kursor : wskaźnik;
+  }
+  . navbar . rozmiar_font . ikony_rozmiar  ul  li . fas {
+    rozmiar czcionki : .7 vw ;
+  }
+  . navbar . rozmiar_font . ikony_rozmiar  ul  li : first-child . fas {
+    rozmiar czcionki : .6 vw ;
+  }
+  . navbar . rozmiar_font . ikony_rozmiar  ul  li : last-child . fas {
+    rozmiar czcionki : .8 vw ;
+  }
+  . navbar . kontrast {
+    powierzchnia siatki : kontrast;
+    wyświetlacz : elastyczny;
+    flex-direction : kolumna;
+    align-items : center;
+    justify-content : center;
+    kolor : var ( --text_strona );
+  }
+  . navbar . kontrast . text_kontrast {
+    text-transform : wielkie litery;
+    rozmiar czcionki : .6 vw ;
+  }
+  . navbar . kontrast . ikona_kontrast {
+    wyściółka : .4 vw ;
+    rozmiar czcionki : .6 vw ;
+    kursor : wskaźnik;
+  }
+  . navbar . toggler {
+    grid-area : toggler;
+    rozmiar czcionki : 4 vw ;
+    padding-top : .6 vh ;
+    float : right;
+    kolor : var ( --text_strona );
+    margin-right : .1 vw ;
+    kursor : wskaźnik;
+    wyświetlacz : brak;
+  }
+  / * nawigacja kontrast koniec * /
+  / * przycisk dalej w dol * /
+  . pas_dolny {
+    szerokość : 100 % ;
+    minimalna wysokość : 100 vh ;
+    góra : 96 vh ;
+    pozycja : bezwzględna;
+  }
+  . pas_dolny . icon_dol {
+    minimalna wysokość : 60 pikseli ;
+    wyściółka : 0 ;
+    kolor : var ( --text_strona );
+    tło : var ( --menu_tlo );
+    wyświetlacz : elastyczny;
+    justify-content : center;
+    align-items : center;
+    rozmiar czcionki : 1 vw ;
+  }
+  . pas_dolny . icon_dol  a {
+    kolor : var ( --text_strona );
+    kursor : wskaźnik;
+    text-transform : wielkie litery;
+  }
+  / * przycisk dalej w dol * /
+  / * pasek nawigacyjny * /
+  
+  nav {
+    pozycja : lepka;
+    góra : 0 ;
+    szerokość : 100 % ;
+    tło : var ( --background_tlo );
+    wysokość : 80 px ;
+    indeks z : 10000 ;
+  }
+  nav . czarny {
+      tło : # 000 ;
+    }
+  . navbar_sticky {
+    wyściółka : .4 vh  2 vw  .4 vh  2 vw ;
+    wyświetlacz : siatka;
+    Siatka-szablon-kolumny : 1 fr  1 fr  1 fr  1 fr  .3 fr  .3 fr  .1 fr ;
+    grid-template-area :
+      "nav_logo_sticky menus menus menus rozmiar_font kontrast toggler" ;
+  }
+  . navbar_sticky . nav_logo_sticky {
+    grid-area : nav_logo_sticky;
+    wysokość : 50 px ;
+    szerokość : auto;
+    wyściółka : .4 vh  2 vw  .4 vh  2 vw ;
+  }
+  . navbar_sticky . menu {
+    obszar siatki : menu;
+    wyświetlacz : elastyczny;
+    align-items : center;
+    justify-content : flex-end;
+  }
+  . navbar_sticky . menus  ul {
+    styl listy : brak;
+    wyświetlacz : elastyczny;
+  }
+  . navbar_sticky . menus  ul  li {
+    padding-right : 1 vw ;
+  }
+  . navbar_sticky . menus  ul  li  a {
+    dekoracja tekstu : brak;
+    rozmiar czcionki : 1 rem ;
+    kolor : var ( --text_strona );
+    text-transform : wielkie litery;
+  }
+  . navbar_sticky . rozmiar_font {
+    obszar siatki : rozmiar_font;
+    wyświetlacz : elastyczny;
+    flex-direction : kolumna;
+    align-items : center;
+    justify-content : center;
+    kolor : var ( --text_strona );
+  }
+  . navbar_sticky . rozmiar_font . text_rozmiar {
+    text-transform : wielkie litery;
+  }
+  . navbar_sticky . rozmiar_font . ikony_rozmiar  ul {
+    styl listy : brak;
+    wyświetlacz : elastyczny;
+    align-items : center;
+    justify-content : center;
+  }
+  . navbar_sticky . rozmiar_font . ikony_rozmiar  ul  li {
+    wyściółka : .4 vw ;
+    kursor : wskaźnik;
+  }
+  . navbar_sticky . rozmiar_font . ikony_rozmiar  ul  li . fas {
+    rozmiar czcionki : 1 rem ;
+  }
+  . navbar_sticky . rozmiar_font . ikony_rozmiar  ul  li : first-child . fas {
+    rozmiar czcionki : .8 rem ;
+  }
+  . navbar_sticky . rozmiar_font . ikony_rozmiar  ul  li : last-child . fas {
+    rozmiar czcionki : 1,1 rem ;
+  }
+  . navbar_sticky . kontrast {
+    powierzchnia siatki : kontrast;
+    wyświetlacz : elastyczny;
+    flex-direction : kolumna;
+    align-items : center;
+    justify-content : center;
+    kolor : var ( --text_strona );
+  }
+  . navbar_sticky . kontrast . text_kontrast {
+    text-transform : wielkie litery;
+  }
+  . navbar_sticky . kontrast . ikona_kontrast {
+    wyściółka : .4 vw ;
+    rozmiar czcionki : 1 rem ;
+    kursor : wskaźnik;
+  }
+  . navbar_sticky . toggler {
+    grid-area : toggler;
+    kursor : wskaźnik;
+    wyświetlacz : brak;
+  }
+  / * nav bar koniec * /
+  
+  / * karty w liscie * /
+  . card-list {
+    wyświetlacz : elastyczny;
+    wyściółka : 6 vh  0  6 vh  0 ;
+  / * overflow-x: scroll; * /
+    justify-content : center;
+    align-items : center;
+  }
+  / * .card-list :: - webkit-scrollbar {
+    szerokość: 10px;
+    wysokość: 10px;
+  }
+  .card-list :: - webkit-scrollbar-thumb {
+    tło: var (- tlo);
+    border-radius: 10px;
+    box-shadow: wstawka 2px 2px 2px hsla (0,0%, 100%, 0,25),
+                wstawka -2px -2px 2px rgba (0,0,0; 0,25);
+  }
+  .card-list :: - webkit-scrollbar-track {
+    tło: gradient liniowy (90 stopni, nr 201c29, nr 201c29 1px, nr 17141d 0, nr 17141d);
+  } * /
+  . card {
+    wyświetlacz : elastyczny;
+    pozycja : względna;
+    flex-direction : kolumna;
+    wysokość : 350 px ;
+    szerokość : 400 px ;
+    min-width : 250 px ;
+    wyściółka : 0 ;
+    border-radius : 12 pikseli ;
+    tło : var ( --tlo );
+    box-shadow : var ( --box-shadow );
+    przejście : 0,2 s ;
+  }
+  . card : hover {
+    transform : translatey (-2rem);
+  }
+  . karta : najedź ~ . card {
+    transform : translatex ( 90 px );
+  }
+  . card : not (: first-child ) {
+    margin-left : -90px;
+  }
+  . card-header  h2 {
+    wyświetlacz : elastyczny;
+    justify-content : center;
+    align-items : center;
+    wypełnienie : -100 vh 0  20 vh  10 vw ;
+    text-transform : wielkie litery;
+    rozmiar czcionki : 1,1 vw ;
+  }
+  . card-header  p {
+    text-transform : brak;
+    rozmiar czcionki : .6 vw ;
+    margines : 1,4 vh  1,2 vw  1,4 vh  1,2 vw ;
+  }
+  . nagłówek karty . fas {
+    kolor : var ( --card_icon );
+    rozmiar czcionki : .8 vw ;
+    waga czcionki : 100 ;
+  / * padding-top: 20px; * /
+    wyświetlacz : elastyczny;
+    justify-content : center;
+    align-items : center;
+  }
+  . card-autor {
+    pozycja : względna;
+    wyświetlacz : siatka;
+    grid-template-columns : 75 px  1 fr ;
+    align-items : center;
+    margines : 1 vh  0  0  1 vw ;
+  }
+  . autor_avatar  img {
+    szerokość : 40 px ;
+    wysokość : 40 px ;
+    border-radius : 50 % ;
+    filtr : skala szarości ( 100 % );
+    wyświetlacz : blokowy;
+    przepełnienie : ukryte;
+    margines : 16 px  10 px ;
+  }
+  . półkole {
+    pozycja : bezwzględna;
+    dół : 0 ;
+    po lewej : 0 ;
+    szerokość : 60 px ;
+    wysokość : 48 px ;
+    wypełnij : brak;
+    skok : var ( --color_cien );
+    szerokość kreski : 8 ;
+    kreska : okrągła;
+    zdarzenia wskaźnikowe : brak;
+    
+  }
+  . autor_name_prefix {
+    rodzina czcionek : var ( --font_family );
+    rozmiar czcionki : 1,4 rem ;
+    waga czcionki : 700 ;
+  }
+  
+  / * karty w liscie * /
+  / * sekcja wideo * /
+  . video {
+    wyświetlacz : siatka;
+    przerwa w siatce : 3 vw ;
+    grid-template-area :
+      „text_video plik_video plik_video”
+      „plik_video2 plik_video2 text_video2” ;
+    justify-content : center;
+    align-items : center;
+    wyściółka : 8 vh  0  8 vh  0 ;
+  }
+  . wideo . plik_video {
+    grid-area : plik_video;
+  }
+  . wideo . plik_video2 {
+    grid-area : plik_video2;
+  }
+  . wideo . plik_video  wideo , . wideo . plik_video2  video {
+    szerokość : 100 % ;
+    wysokość : auto;
+    box-shadow : var ( --box-shadow );
+  }
+  . wideo . text_video {
+    grid-area : text_video;
+  }
+  . wideo . text_video2 {
+    grid-area : text_video2;
+  }
+  . wideo . text_video  h1 , . wideo . text_video2  h1 {
+    text-transform : wielkie litery;
+    rozmiar czcionki : 2,8 rem ;
+  }
+  . wideo . text_video  h1 , . wideo . text_video  p {
+    float : right;
+    wyrównywanie tekstu : do prawej;
+  }
+  . wideo . text_video  p , . wideo . text_video2  p   {
+    rozmiar czcionki : 1,1 rem ;
+  }
+  / * sekcja wideo koniec * /
+  / * artykul poczatek * /
+  . artykul_grid {
+    wyświetlacz : siatka;
+    siatka-odstęp między kolumnami : 1 vw ;
+    grid-template-area :
+      'main_art main_art main_art main_art aside_art aside_art' ;
+    wysokość : 70 vh ;
+    justify-content : center;
+    align-items : center;
+    margines : 10 vh  0  10 vh  0 ;
+  }
+  . main_art {
+    grid-area : main_art;
+  }
+  . main_art . artykul_card {
+    wysokość : 50 vh ;
+    szerokość : 50 vw ;
+    margines : 10 vh ;
+    box-shadow : var ( --box-shadow );
+    border-radius : 2 vw ;
+  }
+  . main_art . artykul_card . img_artykul {
+    pozycja : względna;
+    float : left;
+    po lewej : 2 vw ;
+    wysokość : 30 vh ;
+    szerokość : 30 vw ;
+    box-shadow : var ( --box-shadow );
+    przepełnienie : ukryte;
+    wyświetlacz : elastyczny;
+    flex-direction : kolumna;
+    transform : translatey (-4vh);
+  }
+  . main_art . artykul_card . img_artykul  img {
+    Object-fit : okładka;
+    wyświetlacz : blokowy;
+    szerokość : 100 % ;
+    wysokość : auto;
+  }
+  . main_art . artykul_card . text_artykul {
+    margines lewy : 34 vw ;
+    margin-right : 1 vw ;
+  }
+  . main_art . artykul_card . text_artykul  header {
+    wyściółka : 2 vh  0  1 vh  0 ;
+  }
+  . main_art . artykul_card . text_artykul  nagłówek  h1 {
+    rozmiar czcionki : 1,4 vw ;
+  }
+  . autor_card {
+    pozycja : względna;
+    wyświetlacz : siatka;
+    grid-template-columns : 75 px  1 fr ;
+    align-items : center;
+    margines : 0  0  0  1 vw ;
+  }
+  . autor_avatar  img {
+    szerokość : 40 px ;
+    wysokość : 40 px ;
+    border-radius : 50 % ;
+    filtr : skala szarości ( 100 % );
+    wyświetlacz : blokowy;
+    przepełnienie : ukryte;
+    margines : 16 px  10 px ;
+  }
+  . półkole {
+    pozycja : bezwzględna;
+    dół : 0 ;
+    po lewej : 0 ;
+    szerokość : 60 px ;
+    wysokość : 48 px ;
+    wypełnij : brak;
+    skok : var ( --color_cien );
+    szerokość kreski : 8 ;
+    kreska : okrągła;
+    zdarzenia wskaźnikowe : brak;
+    
+  }
+  . autor_name_prefix {
+    rodzina czcionek : var ( --font_family );
+    rozmiar czcionki : 1,4 rem ;
+    waga czcionki : 700 ;
+  }
+  . main_art . artykuł  p {
+    rozmiar czcionki : 0,75 vw ;
+    wyrównywanie tekstu : justowanie;
+  }
+  . main_art . artykuł . blog_post_btn {
+    padding-top : 1,4 vh ;
+    wyświetlacz : elastyczny;
+    justify-content : flex-end;
+    padding-right : 1 vw ;
+  }
+  . main_art . info_data {
+    wyświetlacz : elastyczny;
+    align-items : center;
+  }
+  . main_art . info_data . data {
+    pozycja : względna;
+    kolor : var ( --card_icon );
+    margines lewy : .8 vw ;
+    na dole : 22 vh ;
+    wyświetlacz : elastyczny;
+  }
+  . main_art . info_data . data  ul {
+    wyświetlacz : elastyczny;
+    justify-content : flex-start;
+    align-items : center;
+    styl listy : brak;
+  }
+  . main_art . info_data . data  ul  li {
+    rozmiar czcionki : 2 vw ;
+    waga czcionki : 400 ;
+    text-transform : wielkie litery;
+  }
+  . main_art . info_data . data  ul  li  span {
+    rozmiar czcionki : 4 vw ;
+    waga czcionki : 700 ;
+  }
+  . main_art . info_data . data  ul  li : first-child {
+    rozmiar czcionki : 8 vw ;
+    waga czcionki : 700 ;
+  }
+  . main_art . info_data . data  h6 {
+    rozmiar czcionki : 3 vw ;
+    waga czcionki : 400 ;
+    text-transform : wielkie litery;
+  }
+  . main_art . info_data . info {
+    pozycja : względna;
+    wyświetlacz : elastyczny;
+    align-items : center;
+    na dole : 10 vh ;
+  }
+  . main_art . info_data . info  ul {
+    wyświetlacz : elastyczny;
+    justify-content : center;
+    align-items : center;
+    styl listy : brak;
+  }
+  . main_art . info_data . info  ul  li {
+    rozmiar czcionki : 1 vw ;
+    waga czcionki : 200 ;
+    padding-left : 1 vw ;
+    text-transform : wielkie litery;
+  }
+  . aside_art {
+    grid-area : aside_art;
+  }
+  . aside_art . blog_post {
+    szerokość : 34 vw ;
+    wyściółka : 0,05 vw ;
+    box-shadow : var ( --box-shadow );
+    wyświetlacz : elastyczny;
+    align-items : center;
+    border-radius : 1 vw ;
+    wysokość : 24 vh ;
+    margin-bottom : 2,8 vh ;
+  }
+  . aside_art . blog_post . blog_post_img {
+    pozycja : względna;
+    wysokość : 14 vh ;
+    szerokość : 13 vw ;
+    transform : translatex ( -2,5 vw );
+  }
+  . aside_art . blog_post . blog_post_img  img {
+    szerokość : 100 % ;
+    wysokość : auto;
+    Object-fit : okładka;
+    wyświetlacz : blokowy;
+    box-shadow : var ( --box-shadow );
+  }
+  . aside_art . blog_post . blog_post_info {
+    wysokość : 24 vh ;
+    szerokość : 20 vw ;
+  }
+  . aside_art . blog_post . blog_post_info . blog_post_date  ul {
+    wyświetlacz : elastyczny;
+    justify-content : flex-start;
+    align-items : center;
+    styl listy : brak;
+  }
+  . aside_art . blog_post . blog_post_date  ul  li {
+    kolor : var ( --card_icon_art );
+    rozmiar czcionki : .5 vw ;
+    waga czcionki : 600 ;
+    text-transform : wielkie litery;
+  }
+  . aside_art . blog_post . blog_post_info . blog_post_date  ul  li  span {
+    rozmiar czcionki : 1 vw ;
+    waga czcionki : 400 ;
+  }
+  . aside_art . blog_post . blog_post_info . blog_post_date  ul  li : first-child {
+    rozmiar czcionki : 2 vw ;
+    waga czcionki : 600 ;
+  }
+  . aside_art . blog_post . blog_post_info . blog_post_date . blog_post_autor {
+    pozycja : względna;
+    transform : translatex ( 2 vw );
+    wyświetlacz : siatka;
+    grid-template-columns : 75 px  1 fr ;
+    align-items : center;
+    margines : 0 ;
+  }
+  . aside_art . blog_post . blog_post_info . blog_post_date . autor_avatar  img {
+    szerokość : 40 px ;
+    wysokość : 40 px ;
+    border-radius : 50 % ;
+    filtr : skala szarości ( 100 % );
+    wyświetlacz : blokowy;
+    przepełnienie : ukryte;
+    margines : 16 px  10 px ;
+  }
+  . aside_art . blog_post . blog_post_info . blog_post_date . półkole {
+    pozycja : bezwzględna;
+    dół : 0 ;
+    po lewej : 0 ;
+    szerokość : 60 px ;
+    wysokość : 48 px ;
+    wypełnij : brak;
+    skok : var ( --color_cien );
+    szerokość kreski : 8 ;
+    kreska : okrągła;
+    zdarzenia wskaźnikowe : brak;
+  }
+  . aside_art . blog_post . blog_post_info . blog_post_date . autor_name {
+    kolor : var ( --text_strona );
+    text-transform : brak;
+    rozmiar czcionki : .8 ;
+    waga czcionki : 200 ;
+  }
+  . aside_art . blog_post . nagłówek blog_post_info  {
+    wypełnienie : 1 vh  0  1 vh  0 ;
+  }
+  . aside_art . blog_post . blog_post_info  nagłówek  h1 {
+    rozmiar czcionki : 1 vw ;
+  }
+  . aside_art . blog_post . blog_post_info . blog_post_text {
+    padding-top : .6 vh ;
+    rozmiar czcionki : .5 vw ;
+    wyrównywanie tekstu : justowanie;
+  }
+  . aside_art . blog_post . blog_post_info . blog_post_stats {
+    padding-top : .9 vh ;
+    wyświetlacz : elastyczny;
+    align-items : center;
+  }
+  . aside_art . blog_post . blog_post_info . blog_post_stats  ul {
+    wyświetlacz : elastyczny;
+    justify-content : center;
+    align-items : center;
+    styl listy : brak;
+  }
+  . aside_art . blog_post . blog_post_info . blog_post_stats  ul  li {
+    rozmiar czcionki : .5 vw ;
+    waga czcionki : 100 ;
+    padding-left : .2 vw ;
+    text-transform : wielkie litery;
+  }
+  . aside_art . blog_post . blog_post_info . blog_post_btn {
+    wyświetlacz : elastyczny;
+    justify-content : flex-end;
+    padding-right : 2 vw ;
+  }
+  / * artykul koniec * /
+  / * galerie strefa ucznia * /
+  a {
+      dekoracja tekstu : brak;
+  }
+  . strefa {
+    szerokość : 100 % ;
+    wysokość : 80 vh ;
+    wyświetlacz : elastyczny;
+  }
+  . galerie {
+    szerokość : 100 % ;
+    wysokość : 100 % ;
+    wyświetlacz : siatka;
+    grid-template-columns : powtórz ( 12 ,  .5 fr );
+    rzędy szablonu-siatki : powtórz ( 8 ,  .5 fr );
+    przerwa w siatce : .4 vw ;
+  }
+  . olipiady_men {
+    Siatka kolumny : 5  /  9 ;
+    siatki wiersz : 3  /  7 ;
+    background-image : url (/galerie/temat/olipiady_men_c.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  }
+  . sport {
+    Siatka kolumna : 8  /  12 ;
+    siatki wiersz : 5  /  8 ;
+    obraz tła : url (/galerie/temat/sport_c.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  }
+  . akademie {
+    Siatka kolumny : 3  /  6 ;
+    siatki wiersz : 1  /  5 ;
+    obraz tła : url (/galerie/temat/akademie_c.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  }
+  . wycieczki {
+    Siatka kolumna : 2  /  6 ;
+    siatki wiersz : 5  /  8 ;
+    background-image : url (/galerie/temat/wycieczki_c.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  }
+  . esport {
+    Siatka kolumna : 7  /  12 ;
+    siatki wiersz : 1  /  4 ;
+    background-image : url (/galerie/temat/esport_c.webp);
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  }
+  . olipiady_men  do  h1 , . sportu  na  h1 , . ESPORT  do  h1 , . Akademie  do  h1 , . wycieczki  a  h1
+  {
+    wyświetlacz : elastyczny;
+    justify-content : center;
+    align-items : center;
+    tło : var ( --menu_tlo );
+    wysokość : 100 % ;
+    text-transform : wielkie litery;
+    rozmiar czcionki : 2 vw ;
+    waga czcionki : 700 ;
+    box-shadow : var ( --box-shadow );
+  }
+  . olipiady_men  : aktywowania h1 , . sportu jest : aktywowanych h1 , . esport : aktywowania h1 , . Akademie : aktywowania h1 , . wycieczki a : hover h1         
+  {
+    rozmiar czcionki : 3 vw ;
+    text-shadow : 0 px  0 px  0 px  # 9ac6ff ;
+    -webkit-text-stroke : 1 px czarny;
+  }
+  . strefa_tlo {
+    tło : var ( --color_belka_tlo );
+  }
+  . dokumenty_szkola {
+    szerokość : 100 % ;
+    wysokość : 36 vh ;
+    indeks z : 333 ;
+  }
+  . dokumenty_szkola  ul {
+    wyświetlacz : elastyczny;
+    justify-content : center;
+    align-items : flex-start;
+    text-transform : wielkie litery;
+  }
+  . dokumenty_szkola  ul  li {
+    styl listy : brak;
+    wyściółka : 8 vh  2 vw  0  1 vh ;
+    rozmiar czcionki : .8 vw ;
+  }
+  . dokumenty_szkola  ul  li  a {
+    dekoracja tekstu : brak;
+    kolor : var ( --text_strona );
+  }
+  . dokumenty_szkola  ul  li : aktywowania , . dokumenty_szkola  ul  li  a : hover {
+    kolor : var ( --text_strona_a );
+  }
+  . dokumenty_szkola  ul  li . fas {
+    Wypełnienie : 0  0,2 vw  0  0,6 vw ;
+  }
+  . doc_lista {
+    wyświetlacz : brak;
+  }
+  . dokumenty_szkola  ul  li : hover . doc_lista {
+    wyświetlacz : blokowy;
+    przejście : 2 s ;
+  }
+  . dokumenty_szkola . doc_lista {
+    wyściółka : 1 vh  0  0  1 vw ;
+  }
+  . dokumenty_szkola . doc_lista  ul {
+    wyświetlacz : elastyczny;
+    flex-direction : kolumna;
+    justify-content : flex-start;
+    align-items : flex-start;
+    text-transform : brak;
+  }
+  . dokumenty_szkola . doc_lista  ul  li {
+    wyściółka : 0  1 vw  0  1 vh ;
+    float : left;
+    rozmiar czcionki : .6 vw ;
+  }
+  / ******************* service_szkola start ********** /
+  . service_szkola {
+    wyściółka : 6 vh  0  4 vh  0 ;
+  }
+  . wspolpraca {
+    wyściółka : 4 vh  0  4 vh  0 ;
+  }
+  . Usługa  ul , . wspolpraca  ul {
+    wyświetlacz : elastyczny;
+    styl listy : brak;
+    justify-content : center;
+    align-items : center;
+  }
+  . usługi . icon_sevice , . wspolpraca . icon_sevice {
+    margines : 1 vw ;
+    wyrównywanie tekstu : do środka;
+  }
+  . usługi . icon_sevice  img {
+    wysokość : 120 px ;
+    szerokość : 100 % ;
+    filtr : krycie ( 80 % );
+    -webkit-filter : skala szarości ( 100 % ); / * Safari 6.0 - 9.0 * /
+    filtr : skala szarości ( 100 % );
+  }
+  . wspolpraca . icon_sevice  img {
+    wysokość : 55 px ;
+    szerokość : 100 % ;
+    filtr : krycie ( 80 % );
+    -webkit-filter : skala szarości ( 100 % ); / * Safari 6.0 - 9.0 * /
+    filtr : skala szarości ( 100 % );
+    }
+  . usługi . icon_sevice  img : aktywowania , . wspolpraca . icon_sevice  img : hover {
+    filtr : krycie ( 100 % );
+  }
+  / ******************* service_szkola koniec ********** /
+  / * kontak dane teleadresowe * /
+  . dane_adresowe {
+    margines : 4 vh  0  4 vh  0 ;
+  }
+  . dane_adresowe . dane_adres  ul {
+    wyświetlacz : elastyczny;
+    justify-content : center;
+    align-items : center;
+    align-content : space-around;
+    wyściółka : 2 vh  0  2 vh  0 ;
+  }
+  . dane_adresowe . dane_adres  ul  li {
+    styl listy : brak;
+    Wypełnienie : 0  1 VW  0  0,8 vw ;
+    rozmiar czcionki : 1 vw ;
+    waga czcionki : 400 ;
+    kolor : var ( --text_strona_a );
+  }
+  
+  /* Formularz */
+  . form {
+    margin-top : 1 vh ;
+    margin-bottom : 1 vh ;
+    wyświetlacz : elastyczny;
+    justify-content : center;
+    align-items : center;
+    wysokość : 40 vh ;
+  }
+  . form  h6 {
+    text-transform : wielkie litery;
+    wyrównywanie tekstu : do środka;
+  }
+  . form_control {
+    szerokość : 100 % ;
+    wyściółka : .2 vh  .2 vw ;
+  }
+  . form_control . input_grup {
+    pozycja : względna;
+    szerokość : 100 % ;
+    wyświetlacz : siatka;
+    grid-template-columns : powtórz (auto-fit , minmax ( 312 px , 1 fr ));
+  }
+  . form_control . input_grup . input_size {
+    pozycja : względna;
+    szerokość : 100 % ;
+    wyściółka : 0  1 vw ;
+    margines : 3 vh  0  1 vh  0 ;
+    przejście : 0,5 s ;
+  }
+  . form_control . input_grup . input_box {
+    pozycja : względna;
+    szerokość : 100 % ;
+    wysokość : 40 px ;
+  }
+  . form_control . input_grup . wejście input_box  ,
+  . form_control . input_grup . input_box . textarea  textarea {
+    pozycja : bezwzględna;
+    szerokość : 100 % ;
+    wysokość : 100 % ;
+    tło : przezroczyste;
+    box-shadow : brak;
+    obramowanie : brak;
+    zarys : brak;
+    rozmiar czcionki : 1,4 rem ;
+    wyściółka : 0  1 vw ;
+    indeks z : 1 ;
+    kolor : var ( --text_tlo );
+  }
+  . form_control . input_grup . input_box . text {
+    pozycja : bezwzględna;
+    góra : 0 ;
+    po lewej : 0 ;
+    wysokość linii : 40 pikseli ;
+    rozmiar czcionki : 1,2 rem ;
+    wyściółka : 0  1 vw ;
+    wyświetlacz : blokowy;
+    przejście : 0,5 s ;
+    zdarzenia wskaźnikowe : brak;
+  }
+  . form_control . input_grup . input_box  input : focus  + . tekst ,
+  . form_control . input_grup . input_box  input : poprawne  + . text {
+    top : -35px;
+    po lewej : -10px;
+  }
+  . form_control . input_grup . input_box . line {
+    pozycja : bezwzględna;
+    dół : 0 ;
+    wyświetlacz : blokowy;
+    szerokość : 100 % ;
+    wysokość : 2 piksele ;
+    background : var ( --text_strona );
+    przejście : 0,5 s ;
+    border-radius : .2 vw ;
+    zdarzenia wskaźnikowe : brak;
+  }
+  . form_control . input_grup . input_box  input : focus  ~ . linia ,
+  . form_control . input_grup . input_box  input : prawidłowe  ~ . line {
+    wysokość : 100 % ;
+  }
+  . form_control . input_grup . input_box . textarea {
+    pozycja : względna;
+    szerokość : 100 % ;
+    wysokość : 100 px ;
+    wypełnienie : 0,1 vh  0 ;
+  }
+  . form_control . input_grup . input_box . textarea  textarea {
+    wysokość : 100 % ;
+    resize : none;
+  }
+  . form_control . input_grup . input_box  textarea : focus  + . tekst ,
+  . form_control . input_grup . input_box  textarea : poprawny  + . text {
+    top : -35px;
+    po lewej : -10px;
+  }
+  . form_control . input_grup . input_box  textarea : focus  ~ . linia ,
+  . form_control . input_grup . input_box  textarea : ważny  ~ . line {
+    wysokość : 100 % ;
+  }
+  /* Formularz */
+  
+  / * kontak dane teleadresowe koniec * /
+  . blackleo {
+    kolor : # eee ;
+    tło : var ( --color_belka_tlo );
+  }
+  . blackleo . leo {
+    rozmiar czcionki : .6 vw ;
+    waga czcionki : 200 ;
+  }
+  . blackleo . leol {
+    rozmiar czcionki : .6 vw ;
+    waga czcionki : 200 ;
+    wyrównywanie tekstu : do prawej;
+    justify-content : right;
+  }
+  . blackleo . leol  a {
+    dekoracja tekstu : brak;
+    kolor : # eee ;
+    odstępy między literami : 1 piksel ;
+  }
+  / * galerie strefa ucznia koniec * /
+  / ******************* paralaksa ***************** /
+  . paralaksa {
+    background-image : url ( "/img/parallax/film.webp" );
+    minimalna wysokość : 200 % ;
+  }
+  
+  . parallax1 {
+    background-image : url ( "/img/parallax/aparat.webp" );
+    minimalna wysokość : 200 pikseli ;
+  }
+  
+  . parallax2 {
+    background-image : url ( "/img/parallax/pliki_wifi.webp" );
+    minimalna wysokość : 100 pikseli ;
+  }
+  . parallax3 {
+    background-image : url ( "../img/carousel/banner.jpg" );
+    minimalna wysokość : 95 pikseli ;
+  }
+  . paralaksy , . parallax1 , . parallax2 , . parallax3 {
+    pozycja : względna;
+  / * krycie: 0,2; * /
+    załącznik w tle : naprawiono;
+    background-position : center;
+    background-repeat : bez powtórzeń;
+    background-size : okładka;
+  }
+   / * Wyłącz przewijanie paralaksy na wszystkich tabletach i telefonach. W razie potrzeby zwiększ / zmniejsz liczbę pikseli * /
+  @media  tylko ekran i ( maksymalna szerokość : 600 px ) {
+      . paralaksy , . parallax1 , . parallax2 , . parallax3 {
+          załącznik w tle : przewijanie;
+      }
+  } 
+  . breadcrumb {
+    background-color : przezroczysty;
+  }
+  / ******************* paralaksa koniec ********** /
+  /******************* Media społecznościowe **********/
+  . społeczne-media , . socjalszowiniści medial2 , . social-medial3 {
+    pozycja : względna;
+    margines : 0 ;
+    wyściółka : 0 ;
+    wyświetlacz : elastyczny;
+    justify-content : center;
+    align-items : center;
+  }
+  . społeczne-media  dl , . społeczno-medial2  dl , . social-medial3  dl {
+    styl listy : brak;
+    margines : 40 px  40 px ;
+    padding-top : 40 pikseli ;
+    padding-bottom : 40 pikseli ;
+  }
+  . media społecznościowe  dl  a . fab , . social-medial2  dl  a . fab , . social-medial3  dl  a . fab
+  {
+    rozmiar czcionki : 46 pikseli ;
+    kolor : # eee ;
+    wysokość linii : 80 pikseli ;
+    przejście : 0,5 s ;
+  }
+  . media społecznościowe  dl  a . syg , . social-medial2  dl  a . syg , . social-medial3  dl  a . syg
+  {
+    kolor : # eee ;
+    wysokość linii : 80 pikseli ;
+    text-transform : wielkie litery;
+    przejście : 0,5 s ;
+  }
+  . społeczne-media  dl  , . socjalszowiniści medial2 dl , . social-medial3 dl a {    
+    pozycja : względna;
+    wyświetlacz : blokowy;
+    szerokość : 80 px ;
+    wysokość : 80 px ;
+    tło : # 000 ;
+    wyrównywanie tekstu : do środka;
+    transform : perspektywa ( 1000 px ) rotate (-30deg) skew ( 25 deg ) translate ( 0 , 0 );
+    przejście : 0,5 s ;
+    box-shadow : -20px 20 px  10 px  rgba ( 0 , 0 , 0 , .5 );
+  }
+  . społeczne-media  dl  : przed , . społeczno-medial2 dl : przed , . social-medial3 dl a : before {    
+    treść : '' ;
+    pozycja : bezwzględna;
+    góra : 10 pikseli ;
+    po lewej : -20px;
+    wysokość : 100 % ;
+    szerokość : 20 px ;
+    tło : # 222 ;
+    przejście : 0,5 s ;
+    transformacja : obrót ( 0 stopni ) skewY (-45 stopni);
+  }
+  . społeczne-media  dl  : po , . społeczno-medial2 dl : po , . social-medial3 dl a : after    
+  {
+    treść : '' ;
+    pozycja : bezwzględna;
+    dół : -20px;
+    po lewej : -10px;
+    wysokość : 20 px ;
+    szerokość : 100 % ;
+    tło : # 222 ;
+    przejście : 0,5 s ;
+    transform : obrót ( 0 stopni ) skewX (-45 stopni);
+  }
+  . społeczne-media  dl  do : najechania kursorem , . społeczno-medial2  dl  : aktywowania , . social-medial3 dl a : hover {  
+    transform : perspektywa ( 1000 px ) rotate (-30deg) skew ( 25 deg ) translate ( 20 px , -20px);
+  }
+  . social-media  dl : hover . fab , . social-medial2  dl : hover . fab , . social-medial3  dl : hover . fab {
+    kolor : # ddd ;
+  }
+  . social-media  dl : hover : nth-child ( 1 ) a {
+    tło : # 3b5999 ;
+    box-shadow : -50px 50 px  50 px  rgba ( 59 , 89 , 153  , 1 );
+  }
+  . social-media  dl : hover : nth-child ( 1 ) a : before {
+    tło : # 2e4a86 ;
+  }
+  . social-media  dl : hover : nth-child ( 1 ) a : after {
+    tło : # 4a69ad ;
+  }
+  . social-media  dl : hover : nth-child ( 2 ) a {
+    tło : # 3b5999 ;
+    box-shadow : -50px 50 px  50 px  rgba ( 59 , 89 , 153  , 1 );
+  }
+  . social-media  dl : hover : nth-child ( 2 ) a : before {
+    tło : # 2e4a86 ;
+  }
+  . social-media  dl : hover : nth-child ( 2 ) a : after {
+    tło : # 4a69ad ;
+  }
+  . social-media  dl : hover : nth-child ( 3 ) a {
+    tło : # cd201f ;
+    box-shadow : -50px 50 px  50 px  rgba ( 205 , 32 , 31  , 1 );
+  }
+  . social-media  dl : hover : nth-child ( 3 ) a : before {
+    tło : # c30f0f ;
+  }
+  . social-media  dl : hover : nth-child ( 3 ) a : after {
+    tło : # a80808 ;
+  }
+  . social-media  dl : hover : nth-child ( 4 ) a {
+    tło : # 3b5999 ;
+    box-shadow : -50px 50 px  50 px  rgba ( 59 , 89 , 153  , 1 );
+  }
+  . social-media  dl : hover : nth-child ( 4 ) a : before {
+    tło : # 2e4a86 ;
+  }
+  . social-media  dl : hover : nth-child ( 4 ) a : after {
+    tło : # 4a69ad ;
+  }
+  . social-media  dl : hover : nth-child ( 5 ) a {
+    tło : # 3b5999 ;
+    box-shadow : -50px 50 px  50 px  rgba ( 59 , 89 , 153  , 1 );
+  }
+  . social-media  dl : hover : nth-child ( 5 ) a : before {
+    tło : # 2e4a86 ;
+  }
+  . social-media  dl : hover : nth-child ( 5 ) a : after {
+    tło : # 4a69ad ;
+  }
+  . social-medial2  dl : hover : nth-child ( 1 ) a {
+    tło : # 000 ;
+    box-shadow : -50px 50 px  50 px  rgba ( 255 , 255 , 255  , 1 );
+  }
+  . social-medial2  dl : hover : nth-child ( 1 ) a : before {
+    tło : # 000 ;
+  }
+  . social-medial2  dl : hover : nth-child ( 1 ) a : after {
+    tło : # 000 ;
+  }
+  . social-medial2  dl : hover : nth-child ( 2 ) a {
+    tło : # cd201f ;
+    box-shadow : -50px 50 px  50 px  rgba ( 205 , 32 , 31  , 1 );
+  }
+  . social-medial2  dl : hover : nth-child ( 2 ) a : before {
+    tło : # c30f0f ;
+  }
+  . social-medial2  dl : hover : nth-child ( 2 ) a : after {
+    tło : # a80808 ;
+  }
+  . social-medial3  dl : hover : nth-child ( 1 ) a {
+    tło : # 55acee ;
+    box-shadow : -50px 50 px  50 px  rgba ( 85 , 172 , 238  , 1 );
+  }
+  . social-medial3  dl : hover : nth-child ( 1 ) a : before {
+    tło : # 4184b7 ;
+  }
+  . social-medial3  dl : hover : nth-child ( 1 ) a : after {
+    tło : # 4d9fde ;
+  }
+  / ******************* media społecznościowe koniec ********** /
+  / * stopka strony * /
+  . stopka_inf {
+    wyściółka : 2 vh  1 vw  2 vh  1 vw ;
+    wyświetlacz : siatka;
+    grid-template-area :
+      'bip linki_ciekawe service_www stowarzyszenia' ;
+  }
+  . bip {
+    obszar siatki : bip;
+    padding-right : 4 vw ;
+  }
+  . bip  a {
+    wyświetlacz : elastyczny;
+    justify-content : center;
+    align-items : center;
+    dekoracja tekstu : brak;
+    kolor : var ( --text_strona );
+  }
+  . bip  a : hover {
+    kolor : var ( --text_strona_a );
+    dekoracja tekstu : podkreślenie;
+  }
+  . bip  a  img {
+    szerokość : 5 vw ;
+    wysokość : auto;
+  }
+  figcaption {
+    kolor : var ( --text_strona_a );
+  }
+  . linki_ciekawe {
+    obszar siatki : linki_ciekawe;
+    wyściółka : 0  4 vw  0  4 vw ;
+  }
+  . linki_ciekawe  h6 , . service_www  h6 , . stowarzyszenia  h6 {
+    kolor : var ( --text_strona_a );
+    text-transform : wielkie litery;
+    waga czcionki : 400 ;
+    padding-bottom : 1 vh ;
+  }
+  . linki_ciekawe  ul , . service_www  dl , . stowarzyszenia  dl {
+    dekoracja tekstu : brak;
+    kolor : var ( --text_strona );
+    styl listy : brak;
+  }
+  . linki_ciekawe  ul  li  , . service_www dl dt , . stowarzyszenia dl dt a {      
+    kolor : var ( --text_strona );
+    rozmiar czcionki : .8 vw ;
+  }
+  . linki_ciekawe  ul  li  : aktywowania , . service_www dl dt : aktywowania , . stowarzyszenia dl dt a : hover {      
+    kolor : var ( --text_strona_a );
+    dekoracja tekstu : podkreślenie;
+  }
+  . service_www  dl  dt  dd , . stowarzyszenia  dl  dt  dd {
+    kolor : var ( --text_strona_a );
+  }
+  . service_www {
+    grid-area : service_www;
+    wyściółka : 0  4 vw  0  4 vw ;
+  }
+  . stowarzyszenia {
+    grid-area : stowarzyszenia;
+  }
+  / * stopka strony koniec * /
