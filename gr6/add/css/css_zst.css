@@ -32,34 +32,7 @@ kolor jasny-stary niebieski - 3,169,244 03A9F4
   --karta: #2783ec;
   --font_family: 'Montserrat', sans-serif;
 }
-.slider .banner .banner_info {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.slider .banner .banner_info h1 {
-  text-transform: uppercase;
-  font-size: 4vw;
-  letter-spacing: .1vw;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  color: #FFF;
-/*   background: -webkit-linear-gradient(120deg, #000, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-}
-.slider .banner .banner_info h6 {
-  text-transform: uppercase;
-  padding-left: 20vw;
-  color: var(--text_strona);
-}
-.slider .banner .banner_info p {
-  font-size: 1vw;
-  padding-left: 20vw;
-  color: var(--text_strona);
-}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1061,6 +1034,34 @@ a {
   padding: 0 1vw 0 1vh;
   float: left;
   font-size: .6vw;
+}
+.slider .banner .banner_info {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.slider .banner .banner_info h1 {
+  text-transform: uppercase;
+  font-size: 4vw;
+  letter-spacing: .1vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  color: #FFF;
+/*   background: -webkit-linear-gradient(120deg, #000, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+.slider .banner .banner_info h6 {
+  text-transform: uppercase;
+  padding-left: 20vw;
+  color: var(--text_strona);
+}
+.slider .banner .banner_info p {
+  font-size: 1vw;
+  padding-left: 20vw;
+  color: var(--text_strona);
 }
 /******************* service_szkola start **********/
 .service_szkola {
