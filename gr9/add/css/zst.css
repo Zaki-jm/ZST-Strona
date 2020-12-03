@@ -7,6 +7,7 @@ kolor ciemny-odcien niebieski - 18,96,206 1260ce
 kolor jasny-stary niebieski - 3,169,244 03A9F4
 */--tlo: #6F9DC7;
   --tlo_artykul: #00013C;
+  --tlo_card: #3277b8;
   --menu_tlo: rgba(0,1,60,.2);
   --background_tlo:rgb(2,0,36);
   --gradient:linear-gradient(90deg, rgba(2,0,36,1) 3%, rgba(111,145,199,1) 24%, rgba(111,145,199,1) 71%, rgba(0,212,255,1) 100%);
@@ -92,7 +93,7 @@ header {
   margin: 0 20% 0 20%;
 }
 .btn {
-  background:#47a0f5;
+  background:var(--tlo_card);
   text-transform: uppercase;
   font-size: .8vw;
   font-weight: 700;
@@ -103,7 +104,7 @@ header {
   border: .1vw solid var(--tlo);
 }
 .btn_small {
-  background:#47a0f5;
+  background:var(--tlo_card);
   text-transform: uppercase;
   font-size: .55vw;
   font-weight: 700;
@@ -533,7 +534,7 @@ nav.black {
   width: 400px;
   padding: 0;
   border-radius: 12px;
-  background: #3277b8;
+  background: var(--tlo_card);
   box-shadow: var(--box-shadow);
   transition: .2s;
   border: solid 1px white;
@@ -656,7 +657,7 @@ nav.black {
   width: 50vw;
   margin: 10vh;
   border-radius: 2vw;
-  background: #3277b8;
+  background: var(--tlo_card);
   border: solid 1px white;
 }
 .main_art .artykul_card .img_artykul {
@@ -795,7 +796,7 @@ nav.black {
   border-radius: 1vw;
   height: 24vh;
   margin-bottom: 2.8vh;
-  background: #3277b8;
+  background: var(--tlo_card);
   border: solid 1px white;
 
 }
@@ -1851,7 +1852,7 @@ nav {
   max-width: 400px;
   padding-top: 2vh;
   border-radius: 12px;
-  background: var(--tlo);
+  background: var(--tlo_card);
   box-shadow: var(--box-shadow);
   transition: .2s;
   margin-top: 4vh;
@@ -2780,7 +2781,7 @@ nav {
   max-width: 320px;
   padding-top: 2vh;
   border-radius: 12px;
-  background: var(--tlo);
+  background: var(--tlo_card);
   box-shadow: var(--box-shadow);
   transition: .2s;
   margin-top: 4vh;
@@ -2877,7 +2878,6 @@ nav {
   height: 70vh;
   width: 92vw;
   margin: 2vh;
-  box-shadow: var(--box-shadow);
   border-radius: 2vw;
 }
 .main_art .artykul_card .img_artykul {
@@ -2887,7 +2887,6 @@ nav {
   height: 40vh;
   max-height: 50vh;
   width: 40vw;
-  box-shadow: var(--box-shadow);
   overflow: hidden;
   display: flex;
   flex-direction: column;
