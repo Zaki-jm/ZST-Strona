@@ -9,12 +9,12 @@ kolor jasny-stary niebieski - 3,169,244 03A9F4
   --background_tlo: rgba(0,0,0,1);
   --gradient: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 60%, rgba(12,12,12,1) 100%);
   --text_shadow: -1px -1px 1px rgba(172,172,171, .1), 1px 1px 1px rgba(236,236,236, .8);
-  --box-shadow: -1rem 0 2rem #000;
-  --text_tlo: #000;
-  --text_strona: #000;
+  --box-shadow: -1rem 0 2rem #FFF;
+  --text_tlo: #FFF;
+  --text_strona: #FFF;
   --text_strona_a: #000;
   --text_strona_h: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,17,156,1) 35%, rgba(0,212,255,1) 100%);
-  --color_cien: #000;
+  --color_cien: #0098FF;
   --color_header: linear-gradient(84deg, rgba(0,69,255,1) 0%, rgba(156,163,163,1) 24%, rgba(0,69,255,1) 49%, rgba(156,161,163,1) 78%, rgba(0,69,255,1) 100%);
   --color_belka_tlo: linear-gradient(0deg, rgba(0,191,255,1) 0%, rgba(0,30,125,0.7679446778711485) 49%, rgba(0,191,255,1) 100%);
   --card_icon: #000;
@@ -27,7 +27,7 @@ kolor jasny-stary niebieski - 3,169,244 03A9F4
   --light: #f8f9fa;
   --dark: #161616;
   --white: #FFF;
-  --black: #000;
+  --black: #FFF;
   --karta: #006bad;
   --font_family: 'Montserrat', sans-serif;
 }
@@ -536,6 +536,7 @@ nav.black {
   background: var(--karta);
   box-shadow: var(--box-shadow);
   transition: .2s;
+  background-color: #006bad;
 }
 .card:hover {
   transform: translatey(-2rem);
@@ -656,6 +657,7 @@ nav.black {
   margin: 10vh;
   box-shadow: var(--box-shadow);
   border-radius: 2vw;
+  background-color: #006bad;
 }
 .main_art .artykul_card .img_artykul {
   position: relative;
@@ -794,6 +796,7 @@ nav.black {
   border-radius: 1vw;
   height: 24vh;
   margin-bottom: 2.8vh;
+  background-color: #006bad;
 }
 .aside_art .blog_post .blog_post_img {
   position: relative;
@@ -1218,22 +1221,25 @@ a {
 
 /******************* parallax *****************/
 .parallax {
-  background-image: url("/img/parallax/film.webp");
   min-height: 200%;
+  background-color: #3aa2fc;
 }
 
 .parallax1 {
   background-image: url("/img/parallax/aparat.webp");
   min-height: 200px;
+  background-color: #3aa2fc;
 }
 
 .parallax2 {
   background-image: url("/img/parallax/pliki_wifi.webp");
   min-height: 100px;
+  background-color: #3aa2fc;
 }
 .parallax3 {
   background-image: url("../img/carousel/banner.jpg");
   min-height: 95px;
+  background-color: #3aa2fc;
 }
 .parallax, .parallax1, .parallax2, .parallax3 {
   position: relative;
