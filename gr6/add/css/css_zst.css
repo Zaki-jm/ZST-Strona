@@ -1246,17 +1246,17 @@ a {
 
 /******************* parallax *****************/
 .parallax {
-  background-image: url("/img/parallax/film.webp");
+  background-image: url("../../img/parallax/film.webp");
   min-height: 200%;
 }
 
 .parallax1 {
-  background-image: url("/img/parallax/aparat.webp");
+  background-image: url("../../img/parallax/aparat.webp");
   min-height: 200px;
 }
 
 .parallax2 {
-  background-image: url("/img/parallax/pliki_wifi.webp");
+  background-image: url("../../img/parallax/pliki_wifi.webp");
   min-height: 100px;
 }
 .parallax3 {
@@ -1318,7 +1318,7 @@ a {
   display: block;
   width: 80px;
   height: 80px;
-  background: #000;
+  background: rgb(16, 34, 196);
   text-align: center;
   transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
   transition: .5s;
@@ -1331,7 +1331,7 @@ a {
   left: -20px;
   height: 100%;
   width: 20px;
-  background: #222;
+  background: rgb(12, 0, 177);
   transition: .5s;
   transform: rotate(0deg) skewY(-45deg);
 }
@@ -1343,7 +1343,7 @@ a {
   left: -10px;
   height: 20px;
   width: 100%;
-  background: #222;
+  background: rgb(12, 0, 177);
   transition: .5s;
   transform: rotate(0deg) skewX(-45deg);
 }
