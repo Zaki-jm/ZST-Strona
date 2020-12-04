@@ -120,7 +120,7 @@ header {
 }
 .btn_small:hover {
   background-image: var(--tlo);
-  color: var(--text_shadow);
+  color: black;
   border: .1vw solid var(--color_cien);
 }
 
@@ -5690,6 +5690,7 @@ nav {
 .btn{
   font-size: 2vw;
 }
+
 /* artykul koniec */ 
 /* galerie strefa ucznia */
 .dokumenty_szkola {
